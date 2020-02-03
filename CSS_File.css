@@ -1,0 +1,224 @@
+/*  Setting the CSS values for the entire page.  */
+*{
+    padding: 0;
+    margin: 0;
+
+    /*  Set the background color to be #F2CB07 for the whole page.  */
+    background-color: #F2CB07;
+}
+
+/*  Any time there is a link on-screen dont show any decoration.  */
+a {
+    text-decoration: none;
+}
+
+/*  If the user hovers over a link change the shadow.  */
+a:hover {
+    text-shadow: 0.1em 0.1em 0 #D9A404;
+}
+
+/*  Give each image a width of 100% and a border as well.  */
+img {
+    width: 100%;
+    border-radius: 2em;
+}
+
+/*  Setting the attributes for the header section which includes the title and links.  */
+header {
+    /*  Set the display to be flex to align the word directly in the center of the screen  */
+    display: flex;
+    justify-content: center;
+
+    /*  Set background color.  */
+    background-color: #F2CB07;
+}
+
+/*  Setting the attributes for the navigation bar.  */
+.title {
+    /*  Ensure that the text appears evenly spaced in the center with a total width of 980px.  */
+    width: 980px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /*  Set the font, font size, and color attributes of text.  */
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    color: #8C4E03;
+    text-shadow: 0.1em 0.1em 0 white;
+}
+
+/*  Setting the attributes for the title.  */
+.titleText {
+    /*  Set the font size and color attributes of text.  */
+    font-size: 1.7em;
+    color: #8C4E03;
+}
+
+/*  Setting the attributes of the navigation objects.  */
+.navObject {
+    /*  Set the font, font size, spacing, and color attributes of text.  */
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    color: #8C4E03;
+    text-shadow: 0.1em 0.1em 0 white;
+}
+
+/*  Setting the attributes for the main content of the site.  */
+article {
+    /*  Placing everything in the center of the screen  */
+    display: flex;
+    justify-content: center;
+}
+
+/*  If an image that's a link is hovered over, do the following.  */
+.imgLink:hover {
+    /*  Change the color of the border and the background of the image, as well as decrease opacity.  */
+    border-color: #D9A404;
+    background-color: #D9A404;
+    opacity: 0.75;
+
+    /*  Make the image appear larger.  */
+    transform: scale(1.02);
+}
+
+/*  Making the general display grid for all content.  */
+.wrapper {
+    /*  Changing the sizing attributes of the grid.  */
+    display: grid;
+    width: 980px;
+    height: 80vh;
+    grid-gap: .5em;
+}
+
+/*  Making the pasta display grid for choosing pasta.  */
+.pastaGrid {
+    /*  Changing the column sizing of the grid.  */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/*  pasta is for all pasta images displayed on the grid.  */
+.pasta {
+    /*  Ensure the height is standard at 80vh.  */
+    height: 80vh;
+
+    /*  Change the color, border, and placement of the pasta.  */
+    background-color: white;
+    border: 1em solid white;
+    border-radius: 2em;
+
+    grid-row: 1/4;
+}
+
+/*  Since the grid has a height of 80vh available to it, ensure the image is also this size.  */
+.pasta img {
+    height: 80vh;
+}
+
+/*  Making the pasta display grid for choosing sauces.  */
+.sauceGrid {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+/*  sauce is for all sauce images displayed on the grid.  */
+.sauce {
+    /*  Ensure the height is standard at 80vh.  */
+    height: 22.5vh;
+
+    /*  Change the color and border of the sauces.  */
+    background-color: white;
+    border: 1em solid white;
+    border-radius: 2em;
+}
+
+/*  Since the grid has a height of 22.5vh available to it, ensure the image is also this size.  */
+.sauce img{
+    height: 22.5vh;
+}
+
+/*  Making the recipe display grid for showing recipes.  */
+.cookGrid {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+/*  Making all tables displayed during recipe standardized.  */
+table {
+    /*  Change the color and border of the table.  */
+    border: 1em solid white;
+    background-color: white;
+    border-radius: 2em;
+
+    /*  Set 5px for spacing between the table.  */
+    border-spacing: 5px;
+}
+
+/*  For all lists inside the table, afford 3px of extra padding.  */
+th, td{
+    padding: 3px;
+}
+
+/*  Change the attributes of all table headings.  */
+th {
+    /*  Set the font, font size, and color attributes of text.  */
+    font-family: 'Pacifico', cursive;
+    font-size: 1em;
+    color: #F2CB07;
+
+    /*  Set the background and border attributes here.  */
+    background-color: #8C4E03;
+}
+
+/*  Change the attributes of the table rows after the heading.  */
+td {
+    /*  Add a padding to the left side of the screen so that the lists don't appear on the side.  */
+    padding-left: 40px;
+    background-color: #8C4E03;
+}
+
+/*  For all ordered and unordered lists do the following:  */
+ol, ul {
+    /*  Set the background color.  */
+    background-color: #8C4E03;
+
+    /*  Set the bottom border to be circular.  */
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+/*  For all the listed items do the following:  */
+li {
+    /*  Change the width and background color.  */
+    width: 15em;
+    background-color: #8C4E03;
+
+    /*  Set the font, font size, spacing, and color attributes of text.  */
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    color: #F2CB07;
+}
+
+/*  Creating a class for rounding off bottom left edges.  */
+.bottomLeftRounded {
+    border-bottom-left-radius: 2em;
+}
+
+/*  Creating a class for rounding off bottom right edges.  */
+.bottomRightRounded {
+    border-bottom-right-radius: 2em;
+}
+
+/*  Creating a class for rounding off top left edges.  */
+.topLeftRounded {
+    border-top-left-radius: 2em;
+}
+
+/*  Creating a class for rounding off top right edges.  */
+.topRightRounded {
+    border-top-right-radius: 2em;
+}
