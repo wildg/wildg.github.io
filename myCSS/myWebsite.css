@@ -1,0 +1,349 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.mobileOnly {
+    display: none;
+    align-self: center;
+    padding-bottom: 25px;
+}
+
+.mobileOnly img{
+    width: 100%;
+}
+
+.desktopOnly img{
+    width: 15em;
+}
+
+.bottomBar {
+    border-bottom: 0.2em solid;
+    width: 100%;
+}
+
+.leftPadding {
+    padding-left: 1.5em;
+}
+
+.rightPadding{
+    padding-right: 1.5em
+}
+
+.rightAlign {
+    text-align: right;
+    float: right;
+    background: transparent;
+}
+
+.horizontalCenter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*----------------------------------------------- TITLE THEME --------------------------------------------------------*/
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+
+    font-size: 5em;
+    font-family: "Courier New", monospace;
+    color: yellow;
+    background-color: #232323;
+    font-weight: bold;
+}
+
+/* .name is for the bottom section of the title */
+.name {
+    font-family: "Futura", serif;
+}
+
+/*------------------------------------------ BLINKING TYPEWRITER ANIMATION -------------------------------------------*/
+
+/* .blinkingLine defines the actual blinking line's attributes. */
+.blinkingLine{
+    border-right: 0.1em solid white;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* .anim-typewriter defines the amount of movements the blinking section does and for how long. */
+.anim-typewriter{
+    animation: typewriter 4s steps(1) 1s 1 normal both,
+    blinkTextCursor 900ms steps(4) infinite normal;
+    animation-duration: 1s;
+}
+
+/* This typewriter animation positions where the blinking section goes to. */
+@keyframes typewriter{
+    0% {width: 6.5em;}
+    20% {width: 7.77em;}
+    40% {width: 8.07em;}
+    60% {width: 8.37em;}
+    80% {width: 9.07em;}
+    100% {width: 9.5em;}
+}
+
+/* The blinkTextCursor animation designates the color of the blinker as it fades. */
+@keyframes blinkTextCursor{
+    0% {border-right-color: #ffffff;}
+    8.333% {border-right-color: #efefef;}
+    16.666% {border-right-color: #cecece;}
+    25% {border-right-color: #bcbcbc;}
+    33.333% {border-right-color: #ababab;}
+    41.666% {border-right-color: #9a9a9a;}
+    50% {border-right-color: #898989;}
+    58.333% {border-right-color: #787878;}
+    66.666% {border-right-color: #676767;}
+    75% {border-right-color: #565656;}
+    83.333% {border-right-color: #454545;}
+    91.666% {border-right-color: #343434;}
+    100% {border-right-color: #232323;}
+}
+
+/* ----------------------------------------------- NAVIGATION - BAR --------------------------------------------------*/
+
+.navigationBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2em;
+    text-align: center;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 999;
+
+    background-color: #232323;
+    font-size: 2em;
+    font-family: "Courier New", serif;
+    font-style: normal;
+    color: #F7FFF7;
+}
+
+.navObjects {
+    color: #F7FFF7;
+}
+
+/* ---------------------------------------------- NAVIGATION - HOVER -------------------------------------------------*/
+
+.dropdown {
+    display: none;
+}
+
+/* Changes the attributes of the bars and borders of hamburger menu. */
+.nav {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    margin: 1em 0 0 1em;
+
+    background: #232323;
+    border-color: #232323;
+    border-width: 5px;
+
+    z-index: 999;
+}
+
+/* Ensures the 3 divided red bars found in the hamburger menu are initiated. */
+.nav div{
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    top: 46px;
+    left: 11px;
+    position: fixed;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    font-family: "Courier New", serif;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    background-color: #232323;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{
+    display: block;
+    z-index: 999;
+}
+
+/* ---------------------------------------------- INFORMATION SECTION ------------------------------------------------*/
+
+.yellowSection {
+    background-color: #FFE66D;
+    color: #2F3061;
+}
+
+.blueSection {
+    background-color: #2F3061;
+    color: #FFE66D;
+}
+
+.infoBorder {
+    display: flex;
+    flex-direction: row;
+    width: 980px;
+    padding: 4em;
+}
+
+.talking {
+    display: flex;
+    flex-direction: column;
+    font-family: "Bookman Old Style", serif;
+    font-size: 1.3em;
+    width: 100%;
+}
+
+.talking a{
+    font-weight: bold;
+}
+
+.heading {
+    font-family: "Futura", serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+}
+
+.column1 {
+    grid-column: 1;
+}
+
+.column2 {
+    grid-column: 2;
+}
+
+.column3 {
+    grid-column: 3;
+}
+
+@media only screen and (max-width: 1150px) {
+    .infoBorder {
+        width: 80vw;
+        padding: 7.2vw;
+    }
+
+    .talking {
+        font-size: 1.2em;
+    }
+
+    .heading {
+        font-size: 1.4em
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .infoBorder {
+        width: 50vw;
+
+        flex-direction: column;
+
+        padding: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    /* start of phone styles */
+    .navigationBar {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .talking {
+        max-font-size: 1.3em;
+        font-size: 14px;
+
+        /*min-font-size: 14px;*/
+        /*font-size: 2vw;*/
+    }
+
+    .heading {
+        font-size: 14px;
+
+        /*font-size: 2.6vw;*/
+    }
+
+    .leftPadding {
+        padding-left: 0;
+    }
+
+    .rightPadding {
+        padding-right: 0;
+    }
+
+    .title {
+        font-size: 7vw;
+    }
+
+    .desktopOnly {
+        display: none;
+    }
+
+    .mobileOnly {
+        display: flex;
+    }
+
+    .mobileOnly img{
+        width: 200px;
+    }
+
+    ul {
+        padding-left: 3vw;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .infoBorder {
+        width: 270px;
+    }
+
+    .heading {
+        font-size: 14px;
+    }
+
+    .talking {
+        font-size: 14px;
+    }
+
+    .mobileOnly img{
+        width: 200px;
+    }
+}

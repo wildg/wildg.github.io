@@ -1,57 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href = "CSS_File.css" rel = "stylesheet" type = "text/css">
+<link href = "newCSS.css" rel = "stylesheet" type = "text/css">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <!--  Setting the title of my website.  -->
-    <title>Carboidrato</title>
-
-    <!--  Taking fonts from google.  -->
-    <link href="https://fonts.googleapis.com/css?family=Pacifico|Satisfy&display=swap" rel="stylesheet">
-
+    <title>Wild's Site</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body>
 
-    <!--  Inserting a header section here which includes the title.  -->
-    <header>
+    <nav class="dropdown">
+        <button class="nav">
+            <div class="barOne"></div>
+            <div class="barTwo"></div>
+            <div class="barThree"></div>
+        </button>
+        <div class="dropdown-content">
+            <a class="navObjects" href="#aboutMeSection">ABOUT ME</a>
+            <a class="navObjects" href="#workSection">WORK</a>
+            <a class="navObjects" href="#projectsSection">PROJECTS</a>
+            <a class="navObjects" href="#educationSection">EDUCATION</a>
+            <a class="navObjects" href="#skillsSection">SKILLS</a>
+        </div>
+    </nav>
 
-        <!--  Making a title section which will make the text appear in the center  -->
-        <nav class="title">
-            <!--  Creating the title.  -->
-            <div class="titleText">Carboidrató</div>
-        </nav>
+    <!------------------------------------------------  TITLE SECTION  ------------------------------------------------>
+
+    <header class="title">
+
+        <p class="hello">Hello World,</p>
+        <p class="name blinkingLine anim-typewriter">My name is Wild.</p>
 
     </header>
 
-    <!--  Article will contain the actual content of the website.  -->
+    <!-----------------------------------------------  NAVIGATION BAR  ------------------------------------------------>
+
+    <nav class="navigationBar bottomBar">
+        <a class="navObjects" href="#aboutMeSection">ABOUT ME</a>
+        <a class="navObjects leftPadding" href="#workSection">WORK</a>
+        <a class="navObjects leftPadding" href="#projectsSection">PROJECTS</a>
+        <a class="navObjects leftPadding" href="#educationSection">EDUCATION</a>
+        <a class="navObjects leftPadding" href="#skillsSection">SKILLS</a>
+    </nav>
+
+    <!---------------------------------------------  INFORMATION SECTION  --------------------------------------------->
+
     <article>
 
-        <!--  pastaGrid is a grid layout for the content.  -->
-        <div class="wrapper pastaGrid">
+        <!--------------------------------------------  ABOUT ME SECTION  --------------------------------------------->
 
-            <!--  Created a link to the linguine section of the website.  -->
-            <a href="linguine.html" class="pasta imgLink">
-                <img src="images/freshLinguine.jpg" alt="Fresh linguine">
-            </a>
+        <div id="aboutMeSection" class="blueSection horizontalCenter">
 
-            <!--  Created a link to the penne section of the website.  -->
-            <a href="penne.html" class="pasta imgLink">
-                <img src="images/freshPenne.jpeg" alt="Fresh penne">
-            </a>
+                <div class="infoBorder">
 
-            <!--  Created a link to the ravioli section of the website.  -->
-            <a href="ravioli.html" class="pasta imgLink">
-                <img src="images/freshRavioli.jpg" alt="Fresh ravioli">
-            </a>
+                    <div class="mobileOnly">
+                        <img src="DisMe.png" alt="My picture">
+                    </div>
 
-            <!--  Created a link to the gnocchi section of the website.  -->
-            <a href="gnocchi.html" class="pasta imgLink">
-                <img src="images/freshGnocchi.jpg" alt="Fresh gnocchi">
-            </a>
+                    <div class="talking">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut risus est. Integer quis nibh pharetra, rutrum metus eu, pellentesque tortor. Vivamus eros magna, euismod malesuada augue eget, aliquet porta nisi. Aliquam sapien libero, rutrum vel laoreet non, fringilla et odio. Proin vulputate tortor ligula, eu vehicula magna tincidunt sed. Integer bibendum erat orci, vel pretium ante ullamcorper non. Vivamus iaculis, nisi quis mattis mattis, sem lorem vehicula nulla, eget sodales metus massa viverra tellus. Nam ac dictum nisl. Pellentesque iaculis sapien ac laoreet bibendum. In eu iaculis arcu. Etiam eros lorem, sagittis at ullamcorper nec, vestibulum in leo. Praesent sit amet diam purus.
+                        </p>
+                    </div>
+
+                    <div class="leftPadding desktopOnly">
+                        <img src="DisMe.png" alt="My picture">
+                    </div>
+
+                </div>
+
+        </div>
+
+        <!----------------------------------------------  WORK SECTION  ----------------------------------------------->
+
+        <div id="workSection" class="yellowSection horizontalCenter">
+
+            <div class="infoBorder">
+
+                <div class="mobileOnly">
+                    <img src="Callysto.png" alt="Callysto Notebooks Logo">
+                </div>
+
+                <div class="desktopOnly rightPadding">
+                    <img src="Callysto.png" alt="Callysto Notebooks Logo">
+                </div>
+
+                <div class="talking">
+
+                    <div class="heading">
+                        Cybera & Callysto
+                        <div class="rightAlign">April 2019</div>
+                    </div>
+
+                    <p> <i>It's cliché, but knowledge is power.</i> Through the use of Jupyter notebooks, my
+                        cross-country team of students, researchers, and professors created interactive lessons for
+                        students in middle school through university. The mission was to develop a wealth of teaching
+                        resources that emphasize computer science technologies, employing Python, HTML, and other
+                        coding languages. Utilizing a weekly SCRUM development cycle, we individually
+                        <a href="https://github.com/callysto/curriculum-notebooks" target="_blank">designed dozens of
+                            fascinating notebooks.</a>
+                        The program was completed in association with the University of Calgary and the Pacific
+                        Institute for the Math Sciences (PIMS), as well as CanCode.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--------------------------------------------  PROJECTS SECTION  --------------------------------------------->
+
+        <div id="projectsSection" class="blueSection horizontalCenter">
+
+            <div class="infoBorder bottomBar">
+
+                <div class="mobileOnly">
+                    <img src="Website.png" alt="Image of Website">
+                </div>
+
+                <div class="talking">
+
+                    <div class="heading">
+                        Personal Website
+                        <div class="rightAlign">Ongoing</div>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut risus est. Integer quis nibh pharetra, rutrum metus eu, pellentesque tortor. Vivamus eros magna, euismod malesuada augue eget, aliquet porta nisi. Aliquam sapien libero, rutrum vel laoreet non, fringilla et odio. Proin vulputate tortor ligula, eu vehicula magna tincidunt sed. Integer bibendum erat orci, vel pretium ante ullamcorper non. Vivamus iaculis, nisi quis mattis mattis, sem lorem vehicula nulla, eget sodales metus massa viverra tellus. Nam ac dictum nisl. Pellentesque iaculis sapien ac laoreet bibendum. In eu iaculis arcu. Etiam eros lorem, sagittis at ullamcorper nec, vestibulum in leo. Praesent sit amet diam purus.
+                    </p>
+
+                </div>
+
+                <div class="desktopOnly leftPadding">
+                    <img src="Website.png" alt="Image of Website">
+                </div>
+
+            </div>
+
+            <div class="infoBorder bottomBar">
+
+                <div class="mobileOnly">
+                    <img src="Vinyl.png" alt="Image of Vinyl">
+                </div>
+
+                <div class="talking">
+
+                    <div class="heading">
+                        Music Pilot Study
+                        <div class="rightAlign">December 2019</div>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut risus est. Integer quis nibh pharetra, rutrum metus eu, pellentesque tortor. Vivamus eros magna, euismod malesuada augue eget, aliquet porta nisi. Aliquam sapien libero, rutrum vel laoreet non, fringilla et odio. Proin vulputate tortor ligula, eu vehicula magna tincidunt sed. Integer bibendum erat orci, vel pretium ante ullamcorper non. Vivamus iaculis, nisi quis mattis mattis, sem lorem vehicula nulla, eget sodales metus massa viverra tellus. Nam ac dictum nisl. Pellentesque iaculis sapien ac laoreet bibendum. In eu iaculis arcu. Etiam eros lorem, sagittis at ullamcorper nec, vestibulum in leo. Praesent sit amet diam purus.</p>
+
+                </div>
+
+                <div class="desktopOnly leftPadding">
+                    <img src="Vinyl.png" alt="Image of Vinyl">
+                </div>
+
+            </div>
+
+            <div class="infoBorder bottomBar">
+
+                <div class="mobileOnly">
+                    <img src="Kizum.png" alt="Image of Kizum Logo">
+                </div>
+
+                <div class="talking">
+
+                    <div class="heading">
+                        Music Platform
+                        <div class="rightAlign">June 2019</div>
+                    </div>
+
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut risus est. Integer quis nibh pharetra, rutrum metus eu, pellentesque tortor. Vivamus eros magna, euismod malesuada augue eget, aliquet porta nisi. Aliquam sapien libero, rutrum vel laoreet non, fringilla et odio. Proin vulputate tortor ligula, eu vehicula magna tincidunt sed. Integer bibendum erat orci, vel pretium ante ullamcorper non. Vivamus iaculis, nisi quis mattis mattis, sem lorem vehicula nulla, eget sodales metus massa viverra tellus. Nam ac dictum nisl. Pellentesque iaculis sapien ac laoreet bibendum. In eu iaculis arcu. Etiam eros lorem, sagittis at ullamcorper nec, vestibulum in leo. Praesent sit amet diam purus. </p>
+
+                </div>
+
+                <div class="desktopOnly leftPadding">
+                    <img src="Kizum.png" alt="Image of Kizum Logo">
+                </div>
+
+            </div>
+
+            <div class="infoBorder bottomBar">
+
+                <div class="mobileOnly">
+                    <img src="Kizum.png" alt="Image of Hospital Management System">
+                </div>
+
+                <div class="talking">
+
+                    <div class="heading">
+                        Hospital System
+                        <div class="rightAlign">April 2019</div>
+                    </div>
+
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut risus est. Integer quis nibh pharetra, rutrum metus eu, pellentesque tortor. Vivamus eros magna, euismod malesuada augue eget, aliquet porta nisi. Aliquam sapien libero, rutrum vel laoreet non, fringilla et odio. Proin vulputate tortor ligula, eu vehicula magna tincidunt sed. Integer bibendum erat orci, vel pretium ante ullamcorper non. Vivamus iaculis, nisi quis mattis mattis, sem lorem vehicula nulla, eget sodales metus massa viverra tellus. Nam ac dictum nisl. Pellentesque iaculis sapien ac laoreet bibendum. In eu iaculis arcu. Etiam eros lorem, sagittis at ullamcorper nec, vestibulum in leo. Praesent sit amet diam purus. </p>
+
+                </div>
+
+                <div class="desktopOnly leftPadding">
+                    <img src="Kizum.png" alt="Image of Hospital Management System">
+                </div>
+
+            </div>
+
+            <div class="infoBorder">
+
+                <div class="talking">
+
+                    <div class="mobileOnly">
+                        <img src="Game.png" alt="Image of Video Game Chair Character">
+                    </div>
+
+                    <div class="heading">
+                        Endless Runner Game
+                        <div class="rightAlign">April 2018</div>
+                    </div>
+
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut risus est. Integer quis nibh pharetra, rutrum metus eu, pellentesque tortor. Vivamus eros magna, euismod malesuada augue eget, aliquet porta nisi. Aliquam sapien libero, rutrum vel laoreet non, fringilla et odio. Proin vulputate tortor ligula, eu vehicula magna tincidunt sed. Integer bibendum erat orci, vel pretium ante ullamcorper non. Vivamus iaculis, nisi quis mattis mattis, sem lorem vehicula nulla, eget sodales metus massa viverra tellus. Nam ac dictum nisl. Pellentesque iaculis sapien ac laoreet bibendum. In eu iaculis arcu. Etiam eros lorem, sagittis at ullamcorper nec, vestibulum in leo. Praesent sit amet diam purus. </p>
+
+                </div>
+
+                <div class="desktopOnly leftPadding">
+                    <img src="Game.png" alt="Image of Video Game Chair Character">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-------------------------------------------  EDUCATION SECTION  --------------------------------------------->
+
+        <div id="educationSection" class="yellowSection horizontalCenter">
+
+            <!--------------------------------  EDUCATION: UNIVERSITY OF CALGARY  ------------------------------------->
+
+            <div class="infoBorder bottomBar">
+
+                <div class="mobileOnly">
+                    <img src="UofC.png" alt="University of Calgary Logo">
+                </div>
+
+                <!-- Inserting image here, with padding to the right to allow the text more space since the image
+                        appears on the left side while the text appears on the right side -->
+                <div class="desktopOnly rightPadding">
+                    <img src="UofC.png" alt="University of Calgary Logo">
+                </div>
+
+                <div class="talking">
+
+                    <div class="heading">
+                        University Of Calgary
+                        <div class="rightAlign">Ongoing</div>
+                    </div>
+
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut risus est. Integer quis nibh pharetra, rutrum metus eu, pellentesque tortor. Vivamus eros magna, euismod malesuada augue eget, aliquet porta nisi. Aliquam sapien libero, rutrum vel laoreet non, fringilla et odio. Proin vulputate tortor ligula, eu vehicula magna tincidunt sed. Integer bibendum erat orci, vel pretium ante ullamcorper non. Vivamus iaculis, nisi quis mattis mattis, sem lorem vehicula nulla, eget sodales metus massa viverra tellus. Nam ac dictum nisl. Pellentesque iaculis sapien ac laoreet bibendum. In eu iaculis arcu. Etiam eros lorem, sagittis at ullamcorper nec, vestibulum in leo. Praesent sit amet diam purus.</p>
+
+                </div>
+
+            </div>
+
+            <!-------------------------------  EDUCATION: UNIVERSITY OF AMSTERDAM  ------------------------------------>
+
+            <div class="infoBorder">
+
+                <div class="mobileOnly">
+                    <img src="UvA.png" alt="University of Amsterdam Logo">
+                </div>
+
+                <!-- Inserting image here, with padding to the right to allow the text more space since the image
+                        appears on the left side while the text appears on the right side -->
+                <div class="desktopOnly rightPadding">
+                    <img src="UvA.png" alt="University of Amsterdam Logo">
+                </div>
+
+                <div class="talking">
+
+                    <div class="heading">
+                        University Of Amsterdam
+                        <div class="rightAlign">Fall 2019</div>
+                    </div>
+
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut risus est. Integer quis nibh pharetra, rutrum metus eu, pellentesque tortor. Vivamus eros magna, euismod malesuada augue eget, aliquet porta nisi. Aliquam sapien libero, rutrum vel laoreet non, fringilla et odio. Proin vulputate tortor ligula, eu vehicula magna tincidunt sed. Integer bibendum erat orci, vel pretium ante ullamcorper non. Vivamus iaculis, nisi quis mattis mattis, sem lorem vehicula nulla, eget sodales metus massa viverra tellus. Nam ac dictum nisl. Pellentesque iaculis sapien ac laoreet bibendum. In eu iaculis arcu. Etiam eros lorem, sagittis at ullamcorper nec, vestibulum in leo. Praesent sit amet diam purus.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!---------------------------------------------  SKILLS SECTION  ---------------------------------------------->
+
+        <div id="skillsSection" class="blueSection horizontalCenter">
+
+            <div class="infoBorder bottomBar">
+
+                <div class="talking">
+
+                    <div class="heading">Coding Languages</div>
+
+                    <div class="wrapper">
+
+                        <div class="column1 leftPadding">
+                            <ul>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>C</li>
+                                <li>C++</li>
+                            </ul>
+                        </div>
+
+                        <div class="column2 leftPadding">
+                            <ul>
+                                <li>CSS</li>
+                                <li>HTML</li>
+                                <li>Javascript</li>
+                            </ul>
+                        </div>
+
+                        <div class="column3 leftPadding">
+                            <ul>
+                                <li>Assembly</li>
+                                <li>Prolog</li>
+                                <li>Haskell</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="infoBorder bottomBar">
+
+                <div class="talking">
+
+                    <div class="heading">Tools</div>
+
+                    <div class="wrapper">
+
+                        <div class="column1 leftPadding">
+                            <ul>
+                                <li>Eclipse</li>
+                                <li>Github</li>
+                                <li>VS Code</li>
+                                <li>Jupyter Notebooks</li>
+                            </ul>
+                        </div>
+
+                        <div class="column2 leftPadding">
+                            <ul>
+                                <li>Adobe XD</li>
+                                <li>Balsamiq</li>
+                                <li>Slack</li>
+                            </ul>
+                        </div>
+
+                        <div class="column3 leftPadding">
+                            <ul>
+                                <li>Trello</li>
+                                <li>Latex</li>
+                                <li>Excel</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="infoBorder">
+
+                <div class="talking">
+
+                    <div class="heading">Languages</div>
+
+                    <div class="wrapper">
+
+                        <div class="column1 leftPadding">
+                            <ul>
+                                <li>English</li>
+                            </ul>
+                        </div>
+
+                        <div class="column2 leftPadding">
+                            <ul>
+                                <li>Spanish</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 

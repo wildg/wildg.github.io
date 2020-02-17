@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href = "CSS/calculator.css" rel = "stylesheet" type = "text/css">
+
+<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <!--  Sizing and formatting where and how the calculator will show up.  -->
+    <div class="calcBorder">
+
+        <!--  Placing the calculator's buttons and items in a grid layout.  -->
+        <div class="wrapper">
+
+            <!--  Creating a previous display for the previous equation.  -->
+            <div class="display">
+                <div id="displayPrevious">
+                </div>
+            </div>
+
+            <!--  Creating a current display for the present equation.  -->
+            <div class="display">
+                <div id="displayCurrent">
+                </div>
+            </div>
+
+            <!--  Creating a left bracket button  -->
+            <button id="bLBracket" onclick='addToCurrentString(" ( ")' class="regularButton">
+                (
+            </button>
+
+            <!--  Creating a right bracket button  -->
+            <button id="bRBracket" onclick='addToCurrentString(" ) ")' class="regularButton">
+                )
+            </button>
+
+            <!--  Creating a delete button  -->
+            <button id="bDelete" onclick="deleteCurrentString()" class="regularButton">
+                CE
+            </button>
+
+            <!--  Creating a clear button  -->
+            <button id="bClear" onClick='clearCurrentString()' class="regularButton">
+                C
+            </button>
+
+            <!--  Creating a 7 button  -->
+            <button id="bSeven" onclick='addToCurrentString("7")' class="regularButton">
+                7
+            </button>
+
+            <!--  Creating a 8 button  -->
+            <button id="bEight" onclick='addToCurrentString("8")' class="regularButton">
+                8
+            </button>
+
+            <!--  Creating a 9 button  -->
+            <button id="bNine" onclick='addToCurrentString("9")' class="regularButton">
+                9
+            </button>
+
+            <!--  Creating a division button  -->
+            <button id="bDivide" onclick='addOperandToCurrentString(" / ")' class="regularButton">
+                /
+            </button>
+
+            <!--  Creating a 4 button  -->
+            <button id="bFour" onclick='addToCurrentString("4")' class="regularButton">
+                4
+            </button>
+
+            <!--  Creating a 5 button  -->
+            <button id="bFive" onclick='addToCurrentString("5")' class="regularButton">
+                5
+            </button>
+
+            <!--  Creating a 6 button  -->
+            <button id="bSix" onclick='addToCurrentString("6")' class="regularButton">
+                6
+            </button>
+
+            <!--  Creating a multiply button  -->
+            <button id="bMultiply" onclick='addOperandToCurrentString(" * ")' class="regularButton">
+                x
+            </button>
+
+            <!--  Creating a one button  -->
+            <button id="bOne" onclick='addToCurrentString("1")' class="regularButton">
+                1
+            </button>
+
+            <!--  Creating a 2 button  -->
+            <button id="bTwo" onclick='addToCurrentString("2")' class="regularButton">
+                2
+            </button>
+
+            <!--  Creating a 3 button  -->
+            <button id="bThree" onclick='addToCurrentString("3")' class="regularButton">
+                3
+            </button>
+
+            <!--  Creating a minus button  -->
+            <button id="bMinus" onclick='addOperandToCurrentString(" - ")' class="regularButton">
+                -
+            </button>
+
+            <!--  Creating a 0 button  -->
+            <button id="bZero" onclick='addToCurrentString("0")' class="regularButton">
+                0
+            </button>
+
+            <!--  Creating a decimal button  -->
+            <button id="bDot" onclick='addToCurrentString(".")' class="regularButton">
+                .
+            </button>
+
+            <!--  Creating an equals button.  -->
+            <button id="bEquals" onclick='calculate()' class="regularButton">
+                =
+            </button>
+
+            <!--  Creating a plus button.  -->
+            <button id="bPlus" onclick='addOperandToCurrentString(" + ")' class="regularButton">
+                +
+            </button>
+        </div>
+    </div>
+
+    <!--  Use the java script myJS.js for the code.  -->
+    <script src="JS/myJS.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+/*  Setting the attributes for the page  */
+* {
+    background-color: black;
+
+    margin: 0;
+    padding: 0;
+}
+
+/*  Setting the attributes for the content of the website  */
+body {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+}
+
+/*  Setting the sizing and formatting properties of where and how the calculator will show up.  */
+.calcBorder {
+    width: 600px;
+    height: 90vh;
+    border-radius: 1em;
+
+    background-color: darkslategray;
+}
+
+/*  Creating a grid layout for the calculator to display its items.  */
+.wrapper {
+    height: 85vh;
+
+    display: grid;
+    padding: 1em;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    column-gap: 0.5em;
+    row-gap: 0.5em;
+
+    background-color: darkslategray;
+    border-radius: 1em;
+}
+
+/*  Display previous will be for the previous calculations.  */
+#displayPrevious {
+    background-color: darkgray;
+    padding: 15px;
+
+    font-size: 15px;
+}
+
+/*  Display current will be for the current calculations.  */
+#displayCurrent {
+    background-color: white;
+    padding: 15px;
+
+    font-size: 20px;
+}
+
+/*  Formatting both of the displays properly.  */
+.display {
+    border: 5px solid black;
+
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    text-align: right;
+    align-self: center;
+
+    background-color: blue;
+
+    grid-column: 1/5;
+}
+
+/*  Setting the attributes of the buttons for the calculator.  */
+.regularButton {
+    background-color: ghostwhite;
+
+    border: 5px solid black;
+    border-bottom: 10px solid black;
+
+    border-radius: 2em;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+/*  Should the screen be of a certain max-width below the 980px, run the ensuing code.  */
+@media only screen and (max-width: 980px) {
+
+    /*  Changing the border of the calculator to fit the screen.  */
+    .calcBorder {
+        width: 100%;
+        height: 95vh;
+
+        border: 30px solid black;
+    }
+
+    /*  Changing the grid to be placed across the whole border.  */
+    .wrapper {
+        height: 94vh;
+
+        column-gap: 1em;
+        row-gap: 1em;
+
+        border-radius: 0;
+    }
+
+    /*  Changing the current display attributes.  */
+    #displayCurrent {
+        border: 10px solid black;
+
+        padding: 1em;
+        padding-right: 0.5em;
+        font-size: 60px;
+    }
+
+    /*  Changing the previous display attributes.  */
+    #displayPrevious {
+        border: 10px solid black;
+
+        padding: 1em;
+        padding-right: 0.5em;
+        font-size: 60px;
+    }
+
+    /*  Changing the button attributes.  */
+    .regularButton {
+        border: 10px solid black;
+        border-bottom: 20px solid black;
+
+        font-size: 60px;
+    }
+
+}
