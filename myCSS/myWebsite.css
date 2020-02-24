@@ -308,6 +308,7 @@ a:hover {
 
     .mobileOnly img{
         width: 200px;
+        height: 200px;
     }
 
     ul {
@@ -332,9 +333,5 @@ a:hover {
 
     .talking {
         font-size: 14px;
-    }
-
-    .mobileOnly img{
-        width: 200px;
     }
 }
