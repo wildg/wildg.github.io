@@ -210,15 +210,20 @@ a:hover {
 .infoBorder {
     display: flex;
     flex-direction: row;
-    width: 980px;
-    padding: 4em;
+    width: 860px;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 .talking {
     display: flex;
     flex-direction: column;
     font-family: "Bookman Old Style", serif;
-    font-size: 1.3em;
+    font-size: 20.7px;
     width: 100%;
 }
 
@@ -228,7 +233,7 @@ a:hover {
 
 .heading {
     font-family: "Futura", serif;
-    font-size: 1.5em;
+    font-size: 30px;
     font-weight: bold;
     padding-bottom: 0.5em;
 }
@@ -251,30 +256,17 @@ a:hover {
     grid-column: 3;
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1000px) {
     .infoBorder {
-        width: 80vw;
-        padding: 7.2vw;
-    }
-
-    .talking {
-        font-size: 1.2em;
-    }
-
-    .heading {
-        font-size: 1.4em
-    }
-}
-
-@media only screen and (max-width: 980px) {
-    .infoBorder {
-        width: 50vw;
+        width: 440px;
 
         flex-direction: column;
 
-        padding: 20px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        padding-top: 55px;
+        padding-bottom: 55px;
     }
 
     /* start of phone styles */
@@ -287,17 +279,11 @@ a:hover {
     }
 
     .talking {
-        max-font-size: 1.3em;
-        font-size: 14px;
-
-        /*min-font-size: 14px;*/
-        /*font-size: 2vw;*/
+        font-size: 16px;
     }
 
     .heading {
-        font-size: 14px;
-
-        /*font-size: 2.6vw;*/
+        font-size: 17px;
     }
 
     .leftPadding {
@@ -333,6 +319,11 @@ a:hover {
 
     .infoBorder {
         width: 270px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .heading {
