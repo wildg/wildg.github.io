@@ -17,12 +17,9 @@ a:hover {
     padding-bottom: 25px;
 }
 
-.mobileOnly img{
-    width: 100%;
-}
-
 .desktopOnly img{
     width: 15em;
+    height: 15em;
 }
 
 .bottomBar {
@@ -333,5 +330,10 @@ a:hover {
 
     .talking {
         font-size: 14px;
+    }
+
+    .mobileOnly img{
+        width: 200px;
+        height: 200px;
     }
 }
