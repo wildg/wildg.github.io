@@ -1,0 +1,209 @@
+<!-- Used the following website to set up my code:  -->
+<!-- https://socket.io/get-started/chat/  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Socket.IO chat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font: 13px 'Courier New';
+        }
+
+        .totalWrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .displayWrapper {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            bottom: 0;
+            width: 100%;
+            background: lightgray;
+        }
+
+        ul {
+            border: 1px solid black;
+            overflow: scroll;
+            height: 90vh;
+        }
+
+        #users {
+            margin: 0;
+            padding: 0;
+            font: 20px 'Courier New';
+        }
+
+        #messages {
+            overflow: scroll;
+            padding: 0;
+            margin-top: auto;
+        }
+
+        #users li {
+            display: flex;
+            justify-content: center;
+            padding: 5px 10px;
+        }
+
+        #messages li {
+            padding: 5px 10px;
+        }
+
+        #users li:nth-child(odd) {
+            background: whitesmoke;
+        }
+
+        #messages li:nth-child(odd) {
+            background: whitesmoke;
+        }
+
+        form {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: center;
+            align-self: center;
+
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: darkslategray;
+            height: 13vh;
+        }
+
+        form input {
+            width: 90%;
+            height: 10vh;
+            align-self: center;
+
+            font: 15px "Courier New";
+
+            border-bottom: 4px solid black;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+            border-radius: 20px;
+
+            margin-right: .5%;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        form button {
+            width: 10%;
+            height: 10vh;
+            align-self: center;
+            background: lightgray;
+
+            border-bottom: 3px solid black;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+            border-radius: 20px;
+
+            font-weight: bold;
+            font: 15px Futura;
+        }
+
+    </style>
+</head>
+
+<body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+        $(function () {
+            var socket = io();
+
+            // The following function is ran as soon as the user submits a new message to the server.
+            $('form').submit(function(e){
+                e.preventDefault(); // prevents page reloading
+
+                // Emitting chat message on the server side and giving it the socket id as well as the message.
+                socket.emit('chat message', {id: socket.id, msg: $('#m').val()} );
+
+                // Returning the form to empty once submitted.
+                $('#m').val('');
+                return false;
+            });
+
+            // When a user that is not the current one submits a message, display it in the following manner.
+            socket.on('chat message', function(info){
+                $('#messages').append($.parseHTML(`<li> <p style="color: #${info.nameColor};"> ${info.name}${info.time}</p> <p style="font: 15px Futura">${info.msg}</p>`));
+            });
+
+            // When the current user submits a message, display it in the following manner.
+            socket.on('my message', function(info) {
+                $('#messages').append($.parseHTML(`<li> <p style="color: #${info.nameColor};"> <b> ${info.name}${info.time}</p> <p style="font: 15px Futura; font-weight: lighter">${info.msg}</b> </p>`));
+            });
+
+            // When a new user connects, display them in the following way.
+            socket.on('new user', function(info) {
+                $('#users').append($.parseHTML(`<li id="${info.name}" style="color: #${info.color}"> ${info.name} </li>`));
+            });
+
+            // When the newly connected user is the current one, display them in the following way.
+            socket.on('new user me', function(info) {
+                $('#users').append($.parseHTML(`<li id="${info.name}" style="color: #${info.color}"> <b> ${info.name} </b> </li>`));
+            });
+
+            // Used the following site to understand element removal:
+            // https://www.codecademy.com/forum_questions/4fc4e20c48eae700030456bb?locale=en
+            socket.on('remove user', function(info) {
+                // Get the name we are trying to remove.
+                var nameForRemoval = document.getElementById(info.name);
+
+                // Get the list that contains the name we are trying to remove (parentnode) and remove the name we no
+                // longer want.
+                nameForRemoval.parentNode.removeChild(nameForRemoval);
+            });
+
+            // On an error with the input, display it in the an alert box.
+            socket.on('error pop up', function (info) {
+                alert("Special instruction \"" + info.msg + "\" failed.");
+            });
+        });
+    </script>
+
+    <div class="totalWrapper">
+
+        <div class="displayWrapper">
+
+            <div>
+                <ul id="messages">
+                    <!--  This is where the messages will be displayed.  -->
+                </ul>
+            </div>
+
+            <div>
+                <ul id="users">
+                    <!--  This is where the users will be displayed.  -->
+                </ul>
+            </div>
+
+        </div>
+
+        <div>
+            <form action="">
+                <!--  This is where the input for the text is placed.  -->
+                <input id="m" autocomplete="off" />
+
+                <!--  The button for sending the text.  -->
+                <button>Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
