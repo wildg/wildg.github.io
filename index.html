@@ -6,9 +6,13 @@
     <meta charset="UTF-8">
     <title>Wild's Site</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
+
+<!--  Use the java script myJS.js for the code.  -->
+<script src="myJS.js"></script>
 
 <nav class="dropdown">
     <button class="nav">
@@ -29,8 +33,14 @@
 
 <header class="title">
 
-    <p class="hello">Hello World,</p>
-    <p class="name blinkingLine anim-typewriter">My name is Wild.</p>
+    <div class="holdItPartner">
+        <p class="hello">
+            Hello World,
+            <p class="name blinkingLine anim-typewriter" style="font-family: 'Futura', serif;">
+            My name is Wild.</p>
+    </div>
+
+<!--    <div class="fadeBox"></div>-->
 
 </header>
 
@@ -38,10 +48,14 @@
 
 <nav class="navigationBar bottomBar">
     <a class="navObjects" href="#aboutMeSection">ABOUT ME</a>
-    <a class="navObjects leftPadding" href="#workSection">WORK</a>
-    <a class="navObjects leftPadding" href="#projectsSection">PROJECTS</a>
-    <a class="navObjects leftPadding" href="#educationSection">EDUCATION</a>
-    <a class="navObjects leftPadding" href="#skillsSection">SKILLS</a>
+    <div class="leftPadding"></div>
+    <a class="navObjects" href="#workSection">WORK</a>
+    <div class="leftPadding"></div>
+    <a class="navObjects" href="#projectsSection">PROJECTS</a>
+    <div class="leftPadding"></div>
+    <a class="navObjects" href="#educationSection">EDUCATION</a>
+    <div class="leftPadding"></div>
+    <a class="navObjects" href="#skillsSection">SKILLS</a>
 </nav>
 
 <!---------------------------------------------  INFORMATION SECTION  --------------------------------------------->
@@ -59,7 +73,7 @@
             </div>
 
             <div class="talking">
-                <p><i>Hi there!</i> Welcome to my website. I'm still working on it!
+                <p><i>Howdy!</i> Welcome to my website. I'm still working on it!
                 </p>
             </div>
 
@@ -97,8 +111,8 @@
                     students in middle school through university. The mission was to develop a wealth of teaching
                     resources that emphasize computer science technologies, employing Python, HTML, and other
                     coding languages. Utilizing a weekly SCRUM development cycle, we individually
-                    <a href="https://github.com/callysto/curriculum-notebooks" target="_blank"
-                       style="color: #2F3061;">designed dozens of fascinating notebooks.</a>
+                    <a class="highlightAnimYellow" href="https://github.com/callysto/curriculum-notebooks"
+                       target="_blank">designed dozens of fascinating notebooks.</a>
                     The program was completed in association with the University of Calgary and the Pacific
                     Institute for the Math Sciences (PIMS), as well as CanCode.
                 </p>
@@ -113,7 +127,7 @@
 
     <div id="projectsSection" class="blueSection horizontalCenter">
 
-        <div class="infoBorder bottomBar">
+        <div class="infoBorder">
 
             <div class="mobileOnly">
                 <img src="images/Website.png" alt="Image of Website">
@@ -141,7 +155,9 @@
 
         </div>
 
-        <div class="infoBorder bottomBar">
+        <div class="bottomBarFade"></div>
+
+        <div class="infoBorder">
 
             <div class="mobileOnly">
                 <img src="images/Vinyl.png" alt="Image of Vinyl">
@@ -155,7 +171,8 @@
                 </div>
 
                 <p>Still woking on this! My findings were presented at the University of Amsterdam in
-                    <a href="pdfs/MusicStudy.pdf" target="_blank" style="color: #FFE66D;">this PDF presentation.</a>
+                    <a class="highlightAnimBlue" href="pdfs/MusicStudy.pdf" target="_blank">
+                        this PDF presentation.</a>
                 </p>
 
             </div>
@@ -166,7 +183,9 @@
 
         </div>
 
-        <div class="infoBorder bottomBar">
+        <div class="bottomBarFade"></div>
+
+        <div class="infoBorder">
 
             <div class="mobileOnly">
                 <img src="images/Chimpanzee.png" alt="Image of Chimpanzee">
@@ -186,11 +205,10 @@
                     opportunity of researching how human playing behavior influences chimpanzees. Following the
                     completion of our tests we determined a potential link between competitive play in humans and
                     the imitation of these types of interactions in chimpanzees. Our findings were presented at
-                    Artis using
-                    <a href="pdfs/ChimpanzeeImitationStudy.pdf" target="_blank" style="color: #FFE66D;">this
-                        PDF presentation.</a>
+                    ARTIS Amsterdam Royal Zoo using
+                    <a class="highlightAnimBlue" href="pdfs/ChimpanzeeImitationStudy.pdf" target="_blank";">
+                    this PDF presentation.</a>
                 </p>
-
             </div>
 
             <div class="desktopOnly leftPadding">
@@ -199,7 +217,9 @@
 
         </div>
 
-        <div class="infoBorder bottomBar">
+        <div class="bottomBarFade"></div>
+
+        <div class="infoBorder">
 
             <div class="mobileOnly">
                 <img src="images/Kizum.png" alt="Image of Kizum Logo">
@@ -223,7 +243,9 @@
 
         </div>
 
-        <div class="infoBorder bottomBar">
+        <div class="bottomBarFade"></div>
+
+        <div class="infoBorder">
 
             <div class="mobileOnly">
                 <img src="images/HospitalManagementSystem.png" alt="Image of Hospital Management System">
@@ -245,6 +267,8 @@
             </div>
 
         </div>
+
+        <div class="bottomBarFade"></div>
 
         <div class="infoBorder">
 
@@ -277,7 +301,7 @@
 
         <!--------------------------------  EDUCATION: UNIVERSITY OF CALGARY  ------------------------------------->
 
-        <div class="infoBorder bottomBar">
+        <div class="infoBorder">
 
             <div class="mobileOnly">
                 <img src="images/UofC.png" alt="University of Calgary Logo">
@@ -302,6 +326,8 @@
             </div>
 
         </div>
+
+        <div class="bottomBarFade"></div>
 
         <!-------------------------------  EDUCATION: UNIVERSITY OF AMSTERDAM  ------------------------------------>
 
@@ -336,7 +362,7 @@
 
     <div id="skillsSection" class="blueSection horizontalCenter">
 
-        <div class="infoBorder bottomBar">
+        <div class="infoBorder">
 
             <div class="talking">
 
@@ -376,7 +402,9 @@
 
         </div>
 
-        <div class="infoBorder bottomBar">
+        <div class="bottomBarFade"></div>
+
+        <div class="infoBorder">
 
             <div class="talking">
 
@@ -414,6 +442,8 @@
             </div>
 
         </div>
+
+        <div class="bottomBarFade"></div>
 
         <div class="infoBorder">
 
