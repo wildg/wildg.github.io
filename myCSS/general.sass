@@ -1,0 +1,311 @@
+*
+  margin: 0
+  padding: 0
+
+  font-family: Poppins, sans-serif
+  font-weight: 300
+
+a
+  color: inherit
+  cursor: pointer
+
+a:hover
+  color: inherit
+  text-decoration: none !important
+
+// Black background color
+$black: #232323
+
+// Yellow color
+$yellow: #FFE66D
+
+// Blue color
+$blue: #2F3061
+
+.f-5
+  font-size: 48px
+
+.f-4
+  font-size: 28px
+
+.f-3
+  font-size: 24px
+
+.f-2
+  font-size: 20px
+
+.f-1
+  font-size: 8px
+
+@media only screen and (max-width: 992px)
+  .f-5
+    font-size: 40px
+
+  .f-4
+    font-size: 28px
+
+  .f-3
+    font-size: 20px
+
+  .f-2
+    font-size: 16px
+
+  .f-1
+    font-size: 0.5em
+
+header
+  width: 100%
+  height: 100vh
+
+  background-color: $black
+  color: $yellow
+
+// Yellow section of website has yellow background and blue font color
+.yellowSection
+  background-color: $yellow
+  color: $blue
+
+// Yellow section of website has blue background and yellow font color
+.blueSection
+  background-color: $blue
+  color: $yellow
+
+.title-font
+  font-family: "Avenir", sans-serif
+
+// Display flex in column form
+.dflex-col
+  display: flex
+  flex-direction: column
+
+  justify-content: center
+  align-content: center
+  align-items: center
+  text-align: center
+
+// Display flex in row form
+.dflex-row
+  display: flex
+  flex-direction: row
+
+  justify-content: center
+  align-content: center
+  align-items: center
+  align-self: center
+  text-align: center
+
+.dflex-left
+  @extend .dflex-row
+
+  justify-content: flex-start
+  text-align: left
+
+.dflex-right
+  @extend .dflex-row
+
+  justify-content: flex-end
+  text-align: right
+
+.name-line
+  max-width: 1000px
+  max-height: 120px
+
+  stroke: $yellow
+  stroke-width: 0.25mm
+  fill-rule: evenodd
+
+  fill: none
+  opacity: 0
+
+.yellow-line
+  @extend .name-line
+
+.blue-line
+  @extend .name-line
+  stroke: $blue
+
+nav
+  width: 100%
+  position: sticky
+  top: 0
+
+  background-color: $black
+  color: white
+
+  font-family: "Courier New", serif
+  z-index: 999
+
+  & .largeScreen
+    border-bottom: 3px solid white
+    height: 60px
+
+    & a
+      color: inherit
+      padding: 0 30px
+      margin: 0 10px
+      opacity: 0
+
+      font-family: "Courier New", sans-serif
+
+section
+  width: 100%
+  padding: 2em
+
+  @extend .dflex-col
+
+// Wrapper for sections
+.wrapper
+  width: 100%
+  height: 100%
+
+  max-width: 950px
+
+  .image-wrap
+    @extend .dflex-col
+
+    img
+      //width: 100%
+      height: 100%
+      max-width: 275px
+      max-height: 275px
+
+      // If small screen
+      @media only screen and (max-width: 992px)
+        width: 225px
+
+  .writing-wrap
+    @extend .dflex-col
+
+    .writing-header
+      @extend .dflex-row
+      width: 100%
+      margin-bottom: 0.75em
+
+      p
+        width: 100%
+        font-weight: 800
+        margin: 0
+
+      .writing-title
+        @extend .dflex-left
+        opacity: 0
+
+      .writing-date
+        @extend .dflex-right
+        opacity: 0
+
+    .writing
+      @extend .dflex-left
+      opacity: 0
+
+.break
+  max-width: 850px
+  height: 5px
+  margin: 50px 0
+  border-radius: 2em
+
+.bg-blue
+  background-color: $blue
+
+.bg-yellow
+  background-color: $yellow
+
+// Don't display small screen
+.smallScreen
+  display: none !important
+
+// Display large screen
+.largeScreen
+  display: flex !important
+
+// If small screen
+@media only screen and (max-width: 992px)
+
+  // Display small screen
+  .smallScreen
+    display: flex !important
+
+  // Display large screen
+  .largeScreen
+    display: none !important
+
+.socials
+  @extend .dflex-row
+  color: inherit
+
+  a:hover
+    color: inherit
+
+  a
+    margin: 0 2em
+    padding: 0 1em
+    color: inherit
+
+    i
+      @extend .dflex-col
+
+      height: 40px
+      width: 40px
+      opacity: 0
+
+.highlightAnimBlue
+  color: inherit
+  font-weight: bold
+  animation: 500ms highlighterYellow forwards
+
+.highlightAnimBlue:hover
+  animation: 500ms highlighterBlue forwards
+
+.highlightAnimYellow
+  color: inherit
+  font-weight: bold
+  animation: 500ms highlighterBlue forwards
+
+.highlightAnimYellow:hover
+  animation: 500ms highlighterYellow forwards
+
+@keyframes highlighterBlue
+  0%
+    background-color: $blue
+    color: $yellow
+  100%
+    background-color: $yellow
+    color: $blue
+
+@keyframes highlighterYellow
+  0%
+    background-color: $yellow
+    color: $blue
+  100%
+    background-color: $blue
+    color: $yellow
+
+.bar-wrap
+  width: 100%
+  height: 40px
+
+  background-color: $yellow
+  border-radius: 2em
+
+  padding: 5px 0
+
+.bars
+  width: 20%
+  height: 100%
+
+  background-color: $yellow
+
+  //border-radius: 2em
+  margin-left: 5px
+
+  &.fill
+    background-color: $yellow
+
+  &.first
+    border-top-left-radius: 2em
+    border-bottom-left-radius: 2em
+
+  &.final
+    border-top-right-radius: 2em
+    border-bottom-right-radius: 2em
+    margin-right: 5px

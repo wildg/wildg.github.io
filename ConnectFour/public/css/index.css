@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*  -------------------------------------------------- THEMES BAR --------------------------------------------------  */
+
+nav {
+    width: 100%;
+
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.theme {
+    width: 980px;
+    display: flex;
+
+    align-content: center;
+    align-self: center;
+    justify-content: space-evenly;
+}
+
+/*  For every button inside our themes:  */
+.theme button {
+    width: 200px;
+    background-color: blue;
+
+    font-size: 15px;
+    font-family: 'Spicy Rice', cursive;
+    color: white;
+
+    border-radius: 100px;
+    border-bottom: 5px solid darkblue;
+
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.theme button:hover {
+    text-shadow: red 2px 1px;
+    color:yellow;
+}
+
+/*  ------------------------------------------------- GENERAL BODY -------------------------------------------------  */
+
+#startScreen {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+
+    align-items: center;
+    justify-content: center;
+}
+
+/*  --------------------------------------------- "CONNECT FOUR" TITLE ---------------------------------------------  */
+
+header {
+    display: flex;
+    align-items: center;
+    height: 200px;
+
+    font-size: 5em;
+    font-family: 'Spicy Rice', cursive;
+    text-shadow: red 4px 1px;
+    color: yellow;
+}
+
+#headerBox {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+
+    background-color: blue;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 50px;
+    border-bottom: 10px solid darkblue;
+}
+
+/*  ---------------------------------------------- SECTION DIVISIONS -----------------------------------------------  */
+
+article div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    background-color: blue;
+
+    height: 70px;
+    width: 450px;
+
+    font-size: 17px;
+    font-family: 'Spicy Rice', cursive;
+    color: white;
+
+    border-bottom: 10px solid darkblue;
+    border-radius: 100px;
+
+    margin: 10px;
+}
+
+/*  ----------------------------------------------- USERNAME SECTION -----------------------------------------------  */
+
+#nameForm {
+    padding-top: 5px;
+}
+
+#unameInput {
+    text-align: center;
+
+    width: 200px;
+    height: 20px;
+
+    border-radius: 100px;
+
+    padding-left: 10px;
+    padding-right: 5px;
+
+    margin-right: 5px;
+}
+
+#unameButton {
+    min-width: 100px;
+    height: 25px;
+    background-color: white;
+
+    font-size: 12px;
+    font-family: 'Spicy Rice', cursive;
+    color: darkblue;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-radius: 100px;
+}
+
+/*  ---------------------------------------------- LOBBY CODE SECTION ----------------------------------------------  */
+
+#gameCode {
+    color: yellow;
+    text-shadow: red 2px 1px;
+    padding-top: 5px;
+}
+
+/*  ---------------------------------------------- LOBBY JOIN SECTION ----------------------------------------------  */
+
+#joinForm {
+    padding-top: 5px;
+}
+
+#joinInput {
+    width: 200px;
+    height: 20px;
+
+    text-align: center;
+
+    border-radius: 100px;
+
+    padding-left: 10px;
+    padding-right: 5px;
+
+    margin-right: 5px;
+}
+
+#joinGameButton {
+    min-width: 100px;
+    height: 25px;
+
+    background-color: white;
+
+    font-size: 12px;
+    font-family: 'Spicy Rice', cursive;
+    color: darkblue;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-radius: 100px;
+}
+
+/*  --------------------------------------------- LOBBY RANDOM SECTION ---------------------------------------------  */
+
+#randomGameForm {
+    padding-top: 5px;
+}
+
+#randomGameButton {
+    height: 25px;
+    min-width: 100px;
+
+    background-color: white;
+
+    font-size: 12px;
+    font-family: 'Spicy Rice', cursive;
+    color: darkblue;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-radius: 100px;
+}
+
+/*  -------------------------------------------------- GAME BOARD --------------------------------------------------  */
+
+#gameScreen {
+    display: none;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+#opponentName {
+    font-size: 20px;
+    font-family: 'Spicy Rice', cursive;
+    color: darkblue;
+
+    padding-top: 10px;
+}
+
+#turnOf {
+    font-size: 20px;
+    font-family: 'Spicy Rice', cursive;
+    color: darkblue;
+
+    padding-bottom: 10px;
+}
+
+#gameBorder {
+    background-color: blue;
+
+    padding: 10px;
+    border: solid black;
+}
+
+th {
+    background-color: white;
+
+    border-radius: 100%;
+    border: solid black;
+    width: 50px;
+    height: 50px;
+}
+
+tr {
+    background-color: white;
+}
+
+table {
+    border-spacing: 10px;
+}
+
+#endGameButton {
+    min-width: 100px;
+    height: 25px;
+    background-color: darkblue;
+
+    font-size: 12px;
+    font-family: 'Spicy Rice', cursive;
+    color: white;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-radius: 100px;
+}
+
+#endGameDiv {
+    display: none;
+    padding-top: 10px;
+}

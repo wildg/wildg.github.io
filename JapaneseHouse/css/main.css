@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: white;
+    color: #3C3C3C;
+}
+
+main {
+    background-color: #3C3C3C;
+    color: white
+}
+
+a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+/* Font Sizes */
+h1, .f-1 {
+    font-size: 64px;
+}
+
+h2, .f-2 {
+    font-size: 32px;
+}
+
+h3, .f-3 {
+    font-size: 24px;
+}
+
+h4, .f-4 {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 1200px) {
+    /* Font Sizes */
+    h1, .f-1 {
+        font-size: 42px !important;
+    }
+
+    h2, .f-2 {
+        font-size: 28px;
+    }
+
+    h3, .f-3 {
+        font-size: 20px;
+    }
+
+    h4, .f-4 {
+        font-size: 14px;
+    }
+}
+
+.screen-border {
+    width: 10px;
+    height: 10px;
+
+    position: fixed;
+    z-index: 999;
+
+    background-color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+    .screen-border {
+        width: 7px;
+        height: 7px;
+    }
+}
+
+.top-0 {
+    top: 0;
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.right-0 {
+    right: 0;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.header-col-wrap {
+    position: fixed;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    border: solid white 10px;
+
+    z-index: 999;
+}
+
+.header-top, .header-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+}
+
+.header-bottom {
+    justify-content: flex-end;
+}
+
+.header-top a {
+    margin-bottom: 10px;
+}
+
+.header-bottom a {
+    margin-top: 10px;
+}
+
+.vertical-writting-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-writting {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    line-height: 1em;
+}
+
+.header-indicator-wrap {
+    height: 100%;
+
+    position: fixed;
+    right: 0;
+
+    margin-right: 20px;
+
+    z-index: 999;
+}
+
+.header-indicator-wrap li {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-indicator {
+    width: 20px;
+    height: 20px;
+
+    color: white;
+
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+    border: 3px solid white;
+
+    cursor: pointer;
+}
+
+.header-indicator.current {
+    background-color: white
+}
+
+@media only screen and (max-width: 1200px) {
+    .header-col-wrap {
+        border: solid white 7px;
+    }
+
+    .header-top a {
+        margin-bottom: 7px;
+    }
+
+    .header-bottom a {
+        margin-top: 7px;
+    }
+
+    .header-indicator {
+        width: 15px;
+        height: 15px;
+
+        border: 2px solid white;
+    }
+}
+
+.button-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    height: 50px;
+    min-width: 120px;
+    margin: 0 10px;
+
+    letter-spacing: 2px;
+    color: white;
+    border: 3px white solid;
+
+    background: transparent;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+    padding: 0 1em;
+}
+
+button:hover {
+    color: #3C3C3C;
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    background: white;
+
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    top: 102%;
+    z-index: -1;
+    transition: top 0.15s ease-in-out;
+}
+
+button:hover:before {
+    top: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    button {
+        min-width: 100px;
+        height: 40px;
+    }
+}
+
+#chewingCottonWool,
+#goodAtFalling,
+#tour,
+#merch,
+#newsLetter {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-position: center;
+    background-size: cover;
+
+    overflow: hidden;
+}
+
+#goodAtFalling-floor,
+#goodAtFalling-mountain,
+#goodAtFalling-sky {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    bottom: 0;
+
+    background-position: 60% center;
+    background-size: cover;
+
+    background-image: url("../images/GoodAtFalling/Floor-Layer.png");
+    top: 75%;
+}
+
+#goodAtFalling-mountain {
+    background-image: url("../images/GoodAtFalling/Mountaints-Layer.png");
+    top: 30%;
+}
+
+#goodAtFalling-sky {
+    background-image: url("../images/GoodAtFalling/Clouds-Layer.png");
+    top: 0;
+}
+
+.billboard-lg-wrap {
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.billboard-text-wrap {
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    position: absolute;
+}
+
+#chewingCottonWool {
+    background-image: url("../images/ChewingCottonWool/cover.jpg");
+}
+
+#goodAtFalling {
+    background-image: url("../images/GoodAtFalling/cover.jpg");
+}
+
+#tour {
+    background-image: url("../images/Live/cover.jpg");
+}
+
+#merch {
+    background-image: url("../Group 15.png");
+}
+
+#newsLetter {
+    background-color: rgb(60, 60, 60);
+}

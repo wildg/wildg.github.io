@@ -1,0 +1,20 @@
+Username: Wild Guevara
+UCID: 300453456
+
+To run my program, one needs to have the latest express framework, as well as the appropriate socket.io extensions.
+Then, one needs to create a run configuration for "index.js", which will serve the main HTML page "index.html" on server
+3000, which can be found at:
+
+http://localhost:3000
+
+On one's browser of choice. I used Chrome to complete this assignment and referenced documentation and examples from:
+
+https://socket.io/
+
+All functionality should be working, (Cookies, Color Themes, Usernames, Game Play, Game Creation, and Multiple User
+Support). I should mention that if the same user trying to open up multiple pages of the game, only their latest page is
+the only one that's able to access the server. Finally, I wrote my code using Webstorm and it runs in that environment.
+I'm not sure if it will run in another environment as I tried running it through Visual Studio Code and a native
+terminal and I was unable to. I truly hope this is not a problem.
+
+Thank you!

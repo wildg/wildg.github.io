@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Connect Four - Main</title>
+    <link href="/css/index.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="startScreen">
+        <!--  Creating a header title  -->
+        <header>
+            <div id="headerBox">
+                <p>CONNECT<br>FOUR</p>
+            </div>
+        </header>
+
+        <!--  Inside our main article information  -->
+        <article>
+
+            <!--  nameSection will provide the user with information on their username.  -->
+            <div id="nameSection">
+
+                <p id="unameDisplay">
+                    Your
+                    <span style="color: yellow; text-shadow: red 2px 1px"> USERNAME </span>
+                    is
+                    <span id="myUname"></span>
+                </p>
+
+                <form id="nameForm" action="">
+
+                    <!--  This is where the user can input some new username.  -->
+                    <input autocomplete="off" id="unameInput"/>
+
+                    <!--  If the user clicks below they are attempting to change their username.  -->
+                    <button id="unameButton">
+                        Change Name
+                    </button>
+                </form>
+            </div>
+
+            <!--  codeSection will contain the unique identifier of the user's game.  -->
+            <div id="codeSection">
+                <p>
+                    To <span style="color: yellow; text-shadow: red 2px 1px"> HOST </span> a new game, give this to your
+                    opponent:
+                </p>
+
+                <!--  The game code needed to join a game will be displayed here.  -->
+                <label id="gameCode">
+                </label>
+            </div>
+
+            <!--  joinSection will allow the user to join some other user's game.  -->
+            <div id="joinSection">
+            <span>
+                To <span style="color: yellow; text-shadow: red 2px 1px"> JOIN </span> a new game, enter someone else's
+                game code:
+            </span>
+
+                <form id="joinForm" action="">
+
+                    <!--  This is where user can input some other user's code.  -->
+                    <input autocomplete="off" id="joinInput"/>
+
+                    <!--  If the user clicks below they are attempting to change join another lobby.  -->
+                    <button id="joinGameButton">
+                        Join Lobby
+                    </button>
+                </form>
+            </div>
+
+            <div id="randomSection">
+            <span>
+                To <span style="color: yellow; text-shadow: red 2px 1px"> RANDOMLY JOIN </span> a game, press the button
+                bellow:
+            </span>
+
+                <form id="randomGameForm" action="">
+                    <button id="randomGameButton">
+                        Random Game
+                    </button>
+                </form>
+
+            </div>
+        </article>
+    </div>
+
+    <div id="gameScreen">
+        <nav>
+            <div class="theme">
+
+                <button id="originalTheme" onclick="changeTheme('original')">
+                    Original
+                </button>
+
+                <button id="blackTheme" onclick="changeTheme('ugly')">
+                    Ugly
+                </button>
+
+                <button id="courageTheCowardlyDog" onclick="changeTheme('courage')">
+                    Courage The Cowardly Dog
+                </button>
+
+            </div>
+        </nav>
+
+        <p id="opponentName"></p>
+        <p id="turnOf"></p>
+        <table id="gameBorder">
+            <tr id="r0">
+                <th id="r0c0" onclick="columnClick(0)"></th>
+                <th id="r0c1" onclick="columnClick(1)"></th>
+                <th id="r0c2" onclick="columnClick(2)"></th>
+                <th id="r0c3" onclick="columnClick(3)"></th>
+                <th id="r0c4" onclick="columnClick(4)"></th>
+                <th id="r0c5" onclick="columnClick(5)"></th>
+                <th id="r0c6" onclick="columnClick(6)"></th>
+            </tr>
+            <tr id="r1">
+                <th id="r1c0" onclick="columnClick(0)"></th>
+                <th id="r1c1" onclick="columnClick(1)"></th>
+                <th id="r1c2" onclick="columnClick(2)"></th>
+                <th id="r1c3" onclick="columnClick(3)"></th>
+                <th id="r1c4" onclick="columnClick(4)"></th>
+                <th id="r1c5" onclick="columnClick(5)"></th>
+                <th id="r1c6" onclick="columnClick(6)"></th>
+            </tr>
+            <tr id="r2">
+                <th id="r2c0" onclick="columnClick(0)"></th>
+                <th id="r2c1" onclick="columnClick(1)"></th>
+                <th id="r2c2" onclick="columnClick(2)"></th>
+                <th id="r2c3" onclick="columnClick(3)"></th>
+                <th id="r2c4" onclick="columnClick(4)"></th>
+                <th id="r2c5" onclick="columnClick(5)"></th>
+                <th id="r2c6" onclick="columnClick(6)"></th>
+            </tr>
+            <tr id="r3">
+                <th id="r3c0" onclick="columnClick(0)"></th>
+                <th id="r3c1" onclick="columnClick(1)"></th>
+                <th id="r3c2" onclick="columnClick(2)"></th>
+                <th id="r3c3" onclick="columnClick(3)"></th>
+                <th id="r3c4" onclick="columnClick(4)"></th>
+                <th id="r3c5" onclick="columnClick(5)"></th>
+                <th id="r3c6" onclick="columnClick(6)"></th>
+            </tr>
+            <tr id="r4">
+                <th id="r4c0" onclick="columnClick(0)"></th>
+                <th id="r4c1" onclick="columnClick(1)"></th>
+                <th id="r4c2" onclick="columnClick(2)"></th>
+                <th id="r4c3" onclick="columnClick(3)"></th>
+                <th id="r4c4" onclick="columnClick(4)"></th>
+                <th id="r4c5" onclick="columnClick(5)"></th>
+                <th id="r4c6" onclick="columnClick(6)"></th>
+            </tr>
+            <tr id="r5">
+                <th id="r5c0" onclick="columnClick(0)"></th>
+                <th id="r5c1" onclick="columnClick(1)"></th>
+                <th id="r5c2" onclick="columnClick(2)"></th>
+                <th id="r5c3" onclick="columnClick(3)"></th>
+                <th id="r5c4" onclick="columnClick(4)"></th>
+                <th id="r5c5" onclick="columnClick(5)"></th>
+                <th id="r5c6" onclick="columnClick(6)"></th>
+            </tr>
+        </table>
+
+        <div id="endGameDiv">
+            <button id="endGameButton" onclick="gameOver()">Back</button>
+        </div>
+    </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script src="/js/client.js"></script>
+
+</html>
