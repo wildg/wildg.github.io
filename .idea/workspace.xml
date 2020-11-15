@@ -5,47 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32fe60f7-3bad-446a-a569-a52583a1759c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/name.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myCSS/general.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newJS.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newWebsite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wildg.github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wildg.github.io.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Design/PossibleWebsite.xd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/CSS/pasta.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/gnocchi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/gnocchi_herbSauce.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/gnocchi_redSauce.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/gnocchi_whiteSauce.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/images/cookedGnocchi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/images/cookedLinguine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/images/cookedPenne.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/images/cookedRavioli.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/images/freshGnocchi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/images/freshLinguine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/images/freshPenne.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/images/freshRavioli.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/images/sauceHerbs.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/images/sauceRed.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/images/sauceWhite.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/linguine.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/linguine_herbSauce.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/linguine_redSauce.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/linguine_whiteSauce.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/mainPastaSite.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/penne.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/penne_herbSauce.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/penne_redSauce.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/penne_whiteSauce.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/ravioli.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/ravioli_herbSauce.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/ravioli_redSauce.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pasta/ravioli_whiteSauce.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JapaneseHouse/images/ChewingCottonWool/cover copy 2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JapaneseHouse/images/ChewingCottonWool/cover copy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JapaneseHouse/images/ChewingCottonWool/cover.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JapaneseHouse/images/GoodAtFalling/Clouds-Layer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JapaneseHouse/images/GoodAtFalling/Mountaints-Layer.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/images/Vinyl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newWebsite.html" beforeDir="false" afterPath="$PROJECT_DIR$/newWebsite.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pdfs/ChimpanzeeImitationStudy.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pdfs/MusicStudy.pdf" beforeDir="false" />
     </list>
@@ -84,10 +52,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/NewYorkPoliceComplaints" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/NewYorkPoliceComplaints/src/mapVis" />
+      <recent name="$PROJECT_DIR$/NewYorkPoliceComplaints" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -110,6 +88,8 @@
       <workItem from="1605054532254" duration="566000" />
       <workItem from="1605072597372" duration="1347000" />
       <workItem from="1605152501092" duration="536000" />
+      <workItem from="1605310150874" duration="599000" />
+      <workItem from="1605477015263" duration="187000" />
     </task>
     <servers />
   </component>
