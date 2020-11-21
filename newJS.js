@@ -101,7 +101,7 @@ $(window).on("load", () => {
             delay: 75,
             keyframes: [
                 {translateY: 20, opacity: 0, duration: 0},
-                {translateY: 0, opacity: 1, duration: 700},
+                {translateY: 0, opacity: 1, duration: 800},
             ]
         });
         this.destroy();
@@ -114,7 +114,7 @@ $(window).on("load", () => {
             delay: 75,
             keyframes: [
                 {opacity: 0, duration: 0},
-                {opacity: 1, duration: 600},
+                {opacity: 1, duration: 1000},
             ]
         });
         this.destroy();
@@ -141,6 +141,6 @@ $(window).on("load", () => {
             duration: 500
         });
         this.destroy();
-    }, {offset: '90%'});
+    }, {offset: '95%'});
 
 });
