@@ -70,7 +70,20 @@ $(window).on("load", () => {
 
     $(".socials").waypoint( function() {
         anime({
-            targets: ".socials a i",
+            targets: this.element.querySelectorAll('a'),
+            easing: 'easeOutBack',
+            delay: anime.stagger(100),
+            keyframes: [
+                {translateY: 20, opacity: 0, duration: 0},
+                {translateY: 0, opacity: 1, duration: 500},
+            ]
+        });
+        this.destroy();
+    }, {offset: "85%"});
+
+    $(".technologies").waypoint( function() {
+        anime({
+            targets: this.element.querySelectorAll('p'),
             easing: 'easeOutBack',
             delay: anime.stagger(100),
             keyframes: [
@@ -100,8 +113,8 @@ $(window).on("load", () => {
             easing: 'easeOutBack',
             delay: 75,
             keyframes: [
-                {translateY: 20, opacity: 0, duration: 0},
-                {translateY: 0, opacity: 1, duration: 800},
+                {translateY: 40, opacity: 0, duration: 0},
+                {translateY: 0, opacity: 1, duration: 700},
             ]
         });
         this.destroy();
@@ -111,7 +124,7 @@ $(window).on("load", () => {
         anime({
             targets: this.element,
             easing: 'linear',
-            delay: 75,
+            delay: 100,
             keyframes: [
                 {opacity: 0, duration: 0},
                 {opacity: 1, duration: 1000},

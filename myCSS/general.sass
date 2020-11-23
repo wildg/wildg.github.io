@@ -35,7 +35,7 @@ $blue: #2F3061
   font-size: 20px
 
 .f-1
-  font-size: 8px
+  font-size: 16px
 
 @media only screen and (max-width: 992px)
   .f-5
@@ -51,7 +51,7 @@ $blue: #2F3061
     font-size: 16px
 
   .f-1
-    font-size: 0.5em
+    font-size: 12px
 
 header
   width: 100%
@@ -164,8 +164,8 @@ section
     @extend .dflex-col
 
     img
-      //width: 100%
-      height: 100%
+      width: 100%
+      //height: 100%
       max-width: 275px
       max-height: 275px
 
@@ -237,16 +237,53 @@ section
     color: inherit
 
   a
+    @extend .dflex-col
+
+    height: 40px
     margin: 0 2em
     padding: 0 1em
+
     color: inherit
 
-    i
-      @extend .dflex-col
+    opacity: 0
 
-      height: 40px
+    i
       width: 40px
-      opacity: 0
+
+.technologies
+  @extend .dflex-row
+  cursor: default
+
+  &.blueBack
+    p
+      background-color: $blue
+      color: $yellow
+
+  &.yellowBack
+    p
+      background-color: $yellow
+      color: $blue
+  p
+    @extend .dflex-col
+    @extend .f-1
+
+    height: 40px
+    margin: 0 1em
+    padding: 0 1em
+
+    opacity: 0
+
+    font-weight: bold
+    border-radius: 1em
+
+.languageWrap
+  height: 40px
+  border-radius: 40px
+
+  cursor: default
+
+  background-color: $blue
+  color: $yellow !important
 
 .highlightAnimBlue
   color: inherit
