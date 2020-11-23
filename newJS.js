@@ -98,10 +98,10 @@ $(window).on("load", () => {
         anime({
             targets: this.element,
             easing: 'easeOutBack',
-            delay: 75,
+            delay: 50,
             keyframes: [
-                {translateY: 40, opacity: 0, duration: 0},
-                {translateY: 0, opacity: 1, duration: 700},
+                {translateY: 20, opacity: 0, duration: 0},
+                {translateY: 0, opacity: 1, duration: 800},
             ]
         });
         this.destroy();
@@ -111,10 +111,10 @@ $(window).on("load", () => {
         anime({
             targets: this.element,
             easing: 'easeOutBack',
-            delay: 75,
+            delay: 50,
             keyframes: [
-                {translateY: 40, opacity: 0, duration: 0},
-                {translateY: 0, opacity: 1, duration: 700},
+                {translateY: 20, opacity: 0, duration: 0},
+                {translateY: 0, opacity: 1, duration: 800},
             ]
         });
         this.destroy();
