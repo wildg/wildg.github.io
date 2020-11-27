@@ -139,6 +139,18 @@
                 .style('fill', d => color(fertilityById[d.id]))
                 .on('mouseover',function(d) {
 
+                    if (input === 1 || input === 0) {
+                        input = 1;
+                        d3.selectAll('path')
+                            .style('opacity', 0.3)
+
+                        d3.selectAll('circle')
+                            .style('opacity', 0.3)
+
+                        d3.selectAll("#" + this.id)
+                            .style('opacity', 1)
+                    }
+
                     popupInfo.style('opacity', 1)
                         .style("left", () => {
                             var view = this.getBBox();
@@ -147,7 +159,7 @@
                         .style("top", () => {
                             // console.log(d);
                             var view = this.getBBox();
-                            return (view.y + view.height) + 'px';
+                            return (view.y + view.height + 50) + 'px';
                         })
                         .html(() => {
                             var fertilityDataString = "N/A";
@@ -166,7 +178,21 @@
                                 "<br> POPULATION ANNUAL GROWTH RATE (%) : " + populationGrowthRate +
                                 "<br> DEATHS AMOUNT CHILDREN UNDER 5 FROM MEASLES (%) : " + measlesEffect;
                         });
-                });
+                })
+                .on('mouseout', function(d){
+                    popupInfo.style('opacity', 0)
+                        .html();
+
+                    if (input === 1) {
+                        input = 0;
+
+                        d3.selectAll('path')
+                            .style('opacity', 1);
+
+                        d3.selectAll('circle')
+                            .style('opacity', 1);
+                    }
+                })
 
             scatterplot.selectAll("circle")
                 .data(who)
