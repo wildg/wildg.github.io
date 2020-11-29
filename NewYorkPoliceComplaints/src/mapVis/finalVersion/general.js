@@ -10,8 +10,6 @@ var projection = d3.geoAlbers()
     .translate([width / 2, height / 2])
     .scale(scale);
 
-var dataViewing = ['']
-
 // Generate projection
 var geoGenerator = d3.geoPath()
     .projection(projection);
@@ -21,7 +19,6 @@ var mostAffectedColors = ['#beaed4','#fdc086','#ffff99','#386cb0','#f0027f','#bf
 
 var mostFindingsValues = ["Substantiated", "Unsubstantiated", "Exonerated"];
 var mostFindingsColors = ['#ef8a62','#f7f7f7','#67a9cf']
-console.log(mostFindingsValues);
 
 var affectedColor = d3.scaleOrdinal()
     .domain(mostAffectedValues)
