@@ -87,8 +87,8 @@ function hello() {
         .attr('transform', function() {
             var par = this.parentNode.getBBox();
             var ans = 'translate(';
-            ans += par.width + 410 + ', ';
-            ans += par.height - 280 + ')';
+            ans += par.width + 300 + ', ';
+            ans += par.height - 60 + ')';
             return ans;
         })
 

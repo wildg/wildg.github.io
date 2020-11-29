@@ -22,11 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32fe60f7-3bad-446a-a569-a52583a1759c" name="Default Changelist" comment="">
+    <list default="true" id="32fe60f7-3bad-446a-a569-a52583a1759c" name="Default Changelist" comment="Small Data Vis Fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewYorkPoliceComplaints/src/mapVis/map.css" beforeDir="false" afterPath="$PROJECT_DIR$/NewYorkPoliceComplaints/src/mapVis/map.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCSS/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/myCSS/general.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCSS/general.sass" beforeDir="false" afterPath="$PROJECT_DIR$/myCSS/general.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewYorkPoliceComplaints/src/mapVis/finalVersion/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/NewYorkPoliceComplaints/src/mapVis/finalVersion/general.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,8 +115,16 @@
       <workItem from="1606604603668" duration="11043000" />
       <workItem from="1606617922282" duration="7579000" />
       <workItem from="1606634030233" duration="5008000" />
-      <workItem from="1606675513499" duration="384000" />
+      <workItem from="1606675513499" duration="941000" />
     </task>
+    <task id="LOCAL-00001" summary="Small Data Vis Fixes">
+      <created>1606676216532</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606676216532</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +141,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Small Data Vis Fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small Data Vis Fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="513" y="266" key="#File_Watchers" timestamp="1603336571828">
@@ -159,9 +169,10 @@
     </state>
     <state x="141" y="25" key="SettingsEditor/0.23.1280.726@0.23.1280.726" timestamp="1603339615717" />
     <state x="207" y="29" key="SettingsEditor/0.25.1440.805@0.25.1440.805" timestamp="1606085815301" />
-    <state x="320" y="165" key="Vcs.Push.Dialog.v2" timestamp="1605956914371">
-      <screen x="0" y="25" width="1440" height="806" />
+    <state x="320" y="165" key="Vcs.Push.Dialog.v2" timestamp="1606676224568">
+      <screen x="0" y="25" width="1440" height="805" />
     </state>
+    <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.25.1440.805@0.25.1440.805" timestamp="1606676224568" />
     <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.25.1440.806@0.25.1440.806" timestamp="1605956914370" />
     <state x="385" y="192" key="run.anything.popup" timestamp="1606084235724">
       <screen x="0" y="25" width="1440" height="805" />
