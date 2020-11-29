@@ -38,7 +38,101 @@ div.tooltip {
     align-self: center;
 }
 
+.dflex-row {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
 .billboard-lg {
     width: 100%;
     height: 100vh;
+}
+
+.legendChange {
+    position: absolute;
+
+    top: 60px;
+    left: 0px;
+
+    width: 450px;
+}
+
+.dataSelection {
+    background-color: transparent;
+    border-radius: 25px;
+    color: white;
+    border: solid white 3px;
+}
+
+.selectedData {
+    background-color: white;
+    color: rgb(30, 58, 104);
+}
+
+.demographicCircle {
+    width: 25px;
+    height: 25px;
+
+    color: white;
+
+    border: none;
+    border-radius: 1em;
+
+    margin-right: 5px;
+}
+
+#whiteDemographic {
+    background-color: #beaed4;
+}
+
+#blackDemographic {
+    background-color: #fdc086;
+}
+
+#hispanicDemographic {
+    background-color: #ffff99;
+}
+
+#unknownDemographic {
+    background-color: #386cb0;
+}
+
+#asianDemographic {
+    background-color: #f0027f;
+}
+
+#otherDemographic {
+    background-color: #bf5b17;
+}
+
+#WhiteX, #BlackX, #HispanicX, #UnknownX, #AsianX, #OtherX {
+    color: rgb(30, 58, 104);
+    opacity: 0;
+}
+
+#findingsFilter {
+    display: none;
+}
+
+#substantiatedComplaint {
+    background-color: #ef8a62;
+}
+
+#unsubstantiatedDemographic {
+    background-color: #f7f7f7;
+}
+
+#exoneratedDemographic {
+    background-color: #67a9cf;
+}
+
+#SubstantiatedX, #UnsubstantiatedX, #ExoneratedX {
+    color: rgb(30, 58, 104);
+    opacity: 0;
 }

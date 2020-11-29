@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Police Complaints</title>
+    <meta name="description" content="New York City police department citizen complaint data, visualized."/>
+    <link rel="icon" href="images/NYPD_Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  My stylesheet  -->
+    <link href="src/mapVis/map.css" rel="stylesheet" type="text/css">
+
+    <!--  Bootstrap  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+          crossorigin="anonymous">
+
+    <!--	JQuery	-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+    <!--    D3.JS   -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+
+    <!--    My JS -->
+    <script src="src/mapVis/finalVersion/info.js"></script>
+    <script src="src/mapVis/finalVersion/general.js"></script>
+    <script src="src/mapVis/finalVersion/mapVis.js"></script>
+</head>
+<body>
+
+<header class="dflex-col" style="
+    position: absolute;
+    background-color: #FFE330;
+    width: 450px;
+    height: 60px;">
+    <h2 style="color: rgb(30, 58, 104)">
+        NYPD Citizen Complaints
+    </h2>
+</header>
+
+<div class="dflex-col legendChange pt-5">
+    <div class="dflex-col pb-5">
+        <h4 style="color: white;">
+            Change Data Type
+        </h4>
+        <button id="race" class="dataSelection py-2 px-4 m-2 selectedData" onclick="changeData(this)">
+            Complaints By Race
+        </button>
+        <button id="finding" class="dataSelection py-2 px-4 m-2" onclick="changeData(this)">
+            Complaints By Finding
+        </button>
+    </div>
+
+    <div id="demographicFilter">
+        <h4 style="color: white">
+            Demographic Most Affected
+        </h4>
+        <div class="dflex-row py-2">
+            <button id="whiteDemographic" class="demographicCircle" onclick="changeDemographic('White')">
+                <span id="WhiteX">X</span>
+            </button>
+            <span style="color: #beaed4">
+                White
+            </span>
+        </div>
+        <div class="dflex-row py-2">
+            <button id="blackDemographic" class="demographicCircle" onclick="changeDemographic('Black')">
+                <span id="BlackX">X</span>
+            </button>
+            <span style="color: #fdc086">
+                Black
+            </span>
+        </div>
+        <div class="dflex-row py-2">
+            <button id="hispanicDemographic" class="demographicCircle" onclick="changeDemographic('Hispanic')">
+                <span id="HispanicX">X</span>
+            </button>
+            <span style="color: #ffff99">
+                Hispanic
+            </span>
+        </div>
+        <div class="dflex-row py-2">
+            <button id="unknownDemographic" class="demographicCircle dflex-col" onclick="changeDemographic('Unknown')">
+                <span id="UnknownX">X</span>
+            </button>
+            <span style="color: #386cb0">
+                Unknown
+            </span>
+        </div>
+        <div class="dflex-row py-2">
+            <button id="asianDemographic" class="demographicCircle" onclick="changeDemographic('Asian')">
+                <span id="AsianX">X</span>
+            </button>
+            <span style="color: #f0027f">
+                Asian
+            </span>
+        </div>
+        <div class="dflex-row py-2">
+            <button id="otherDemographic" class="demographicCircle" onclick="changeDemographic('Other')">
+                <span id="OtherX">X</span>
+            </button>
+            <span style="color: #bf5b17">
+                Other Race
+            </span>
+        </div>
+    </div>
+
+    <div id="findingsFilter">
+        <h4 style="color: white">
+            In Most Cases, Complaints Were
+        </h4>
+        <div class="dflex-row py-2">
+            <button id="substantiatedComplaint" class="demographicCircle" onclick="changeFindings('Substantiated')">
+                <span id="SubstantiatedX">X</span>
+            </button>
+            <span style="color: #ef8a62">
+                Substantiated
+            </span>
+        </div>
+        <div class="dflex-row py-2">
+            <button id="unsubstantiatedDemographic" class="demographicCircle" onclick="changeFindings('Unsubstantiated')">
+                <span id="UnsubstantiatedX">X</span>
+            </button>
+            <span style="color: #f7f7f7">
+                Unsubstantiated
+            </span>
+        </div>
+        <div class="dflex-row py-2">
+            <button id="exoneratedDemographic" class="demographicCircle" onclick="changeFindings('Exonerated')">
+                <span id="ExoneratedX">X</span>
+            </button>
+            <span style="color: #67a9cf">
+                Exonerated
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="dflex-col billboard-lg" id="content">
+    <svg class="map" width="1000px" height="600px">
+    </svg>
+</div>
+
+<script>
+    $.getJSON('./src/mapVis/PolicePrecincts.geojson', mapVis);
+</script>
+
+</body>
+</html>
