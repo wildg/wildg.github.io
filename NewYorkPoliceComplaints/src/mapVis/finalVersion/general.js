@@ -2,7 +2,7 @@
 var scale = 69000;
 
 // Width and height of map
-var width = scale * (-0.575);
+var width = scale * (-0.58);
 var height = scale * (0.1452);
 
 // Map projection based on scale
@@ -64,8 +64,8 @@ function hello() {
 
             popupInfo.html(toPrint)
                 .style("opacity", .8)
-                .style("left", d.clientX + "px")
-                .style("top", d.clientY + "px");
+                .style("left", d.pageX + "px")
+                .style("top", d.pageY + "px");
 
             d3.selectAll('g')
                 .style("opacity", 0.5);
@@ -87,8 +87,8 @@ function hello() {
         .attr('transform', function() {
             var par = this.parentNode.getBBox();
             var ans = 'translate(';
-            ans += par.width + 300 + ', ';
-            ans += par.height - 60 + ')';
+            ans += par.width + 60 + ', ';
+            ans += par.height - 40 + ')';
             return ans;
         })
 

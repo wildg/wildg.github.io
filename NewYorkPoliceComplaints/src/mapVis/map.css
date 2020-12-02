@@ -7,12 +7,46 @@
     color: #333;
 }
 
+a {
+    text-decoration: none !important;
+}
+
+span, .dataSelection {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
 body {
     background-color: rgb(30, 58, 104) !important;
 }
 
-#content .map path {
-    /*fill: lightgrey;*/
+.percentages {
+    color: rgb(30, 58, 104);
+    font-size: 24px;
+}
+
+p, h4 {
+    color: white;
+    padding: 0;
+    margin: 0 !important;
+}
+
+.title {
+    background-color: #FFE330;
+    z-index: 999;
+
+    margin: 1em;
+    padding: 15px 50px;
+}
+
+.opener {
+    background-image: url('../../images/NewYorkCity.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#mapSection .map path {
     stroke: white;
 }
 
@@ -36,6 +70,7 @@ div.tooltip {
     align-content: center;
     align-items: center;
     align-self: center;
+    text-align: center;
 }
 
 .dflex-row {
@@ -55,19 +90,27 @@ div.tooltip {
 }
 
 .legendChange {
-    position: absolute;
-
-    top: 60px;
-    left: 0px;
-
     width: 450px;
+}
+
+.mapVisPadding {
+    padding: 300px !important;
 }
 
 .dataSelection {
     background-color: transparent;
     border-radius: 25px;
-    color: white;
     border: solid white 3px;
+
+    color: white;
+    font-weight: 700;
+
+    padding: 10px 30px
+}
+
+.dataSelection:hover {
+    background-color: white;
+    color: rgb(30, 58, 104);
 }
 
 .selectedData {
@@ -85,6 +128,10 @@ div.tooltip {
     border-radius: 1em;
 
     margin-right: 5px;
+}
+
+#demographicFilter, #findingsFilter {
+    height: 270px;
 }
 
 #whiteDemographic {
@@ -112,6 +159,7 @@ div.tooltip {
 }
 
 #WhiteX, #BlackX, #HispanicX, #UnknownX, #AsianX, #OtherX {
+    font-weight: 800;
     color: rgb(30, 58, 104);
     opacity: 0;
 }

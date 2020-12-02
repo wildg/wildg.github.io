@@ -22,6 +22,11 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
 
     <!--    D3.JS   -->
     <script src="https://d3js.org/d3.v6.min.js"></script>
@@ -31,119 +36,280 @@
     <script src="src/mapVis/finalVersion/general.js"></script>
     <script src="src/mapVis/finalVersion/mapVis.js"></script>
 </head>
+
 <body>
 
-<header class="dflex-col" style="
-    position: absolute;
-    background-color: #FFE330;
-    width: 450px;
-    height: 60px;">
-    <h2 style="color: rgb(30, 58, 104)">
-        NYPD Citizen Complaints
-    </h2>
-</header>
-
-<div class="dflex-col legendChange pt-5">
-    <div class="dflex-col pb-5">
-        <h4 style="color: white;">
-            Change Data Type
-        </h4>
-        <button id="race" class="dataSelection py-2 px-4 m-2 selectedData" onclick="changeData(this)">
-            Complaints By Race
-        </button>
-        <button id="finding" class="dataSelection py-2 px-4 m-2" onclick="changeData(this)">
-            Complaints By Finding
-        </button>
+<div class="dflex-col billboard-lg opener">
+    <div class="dflex-col py-5 px-3">
+        <div class="title mb-3">
+            <p style="color: rgb(30, 58, 104); font-size: 64px;">
+                In 2019
+            </p>
+        </div>
+        <span class="mt-4" style="font-size: 32px;">
+            There were
+            <span class="font-weight-bold" style="font-size: 32px;">
+                1,640 complaints
+            </span> of police misconduct in NYC.
+            <br>
+            These are those people's stories.
+        </span>
     </div>
 
-    <div id="demographicFilter">
-        <h4 style="color: white">
-            Demographic Most Affected
-        </h4>
-        <div class="dflex-row py-2">
-            <button id="whiteDemographic" class="demographicCircle" onclick="changeDemographic('White')">
-                <span id="WhiteX">X</span>
-            </button>
-            <span style="color: #beaed4">
-                White
-            </span>
-        </div>
-        <div class="dflex-row py-2">
-            <button id="blackDemographic" class="demographicCircle" onclick="changeDemographic('Black')">
-                <span id="BlackX">X</span>
-            </button>
-            <span style="color: #fdc086">
-                Black
-            </span>
-        </div>
-        <div class="dflex-row py-2">
-            <button id="hispanicDemographic" class="demographicCircle" onclick="changeDemographic('Hispanic')">
-                <span id="HispanicX">X</span>
-            </button>
-            <span style="color: #ffff99">
-                Hispanic
-            </span>
-        </div>
-        <div class="dflex-row py-2">
-            <button id="unknownDemographic" class="demographicCircle dflex-col" onclick="changeDemographic('Unknown')">
-                <span id="UnknownX">X</span>
-            </button>
-            <span style="color: #386cb0">
-                Unknown
-            </span>
-        </div>
-        <div class="dflex-row py-2">
-            <button id="asianDemographic" class="demographicCircle" onclick="changeDemographic('Asian')">
-                <span id="AsianX">X</span>
-            </button>
-            <span style="color: #f0027f">
-                Asian
-            </span>
-        </div>
-        <div class="dflex-row py-2">
-            <button id="otherDemographic" class="demographicCircle" onclick="changeDemographic('Other')">
-                <span id="OtherX">X</span>
-            </button>
-            <span style="color: #bf5b17">
-                Other Race
-            </span>
-        </div>
-    </div>
-
-    <div id="findingsFilter">
-        <h4 style="color: white">
-            In Most Cases, Complaints Were
-        </h4>
-        <div class="dflex-row py-2">
-            <button id="substantiatedComplaint" class="demographicCircle" onclick="changeFindings('Substantiated')">
-                <span id="SubstantiatedX">X</span>
-            </button>
-            <span style="color: #ef8a62">
-                Substantiated
-            </span>
-        </div>
-        <div class="dflex-row py-2">
-            <button id="unsubstantiatedDemographic" class="demographicCircle" onclick="changeFindings('Unsubstantiated')">
-                <span id="UnsubstantiatedX">X</span>
-            </button>
-            <span style="color: #f7f7f7">
-                Unsubstantiated
-            </span>
-        </div>
-        <div class="dflex-row py-2">
-            <button id="exoneratedDemographic" class="demographicCircle" onclick="changeFindings('Exonerated')">
-                <span id="ExoneratedX">X</span>
-            </button>
-            <span style="color: #67a9cf">
-                Exonerated
-            </span>
-        </div>
+    <div class="dflex-row">
+        <a class="dataSelection m-2" href="#backgroundSection">
+            Background
+        </a>
+        <a class="dataSelection m-2" href="#mapSection">
+            Map
+        </a>
+        <a class="dataSelection m-2">
+            Sankey
+        </a>
     </div>
 </div>
 
-<div class="dflex-col billboard-lg" id="content">
-    <svg class="map" width="1000px" height="600px">
-    </svg>
+<div class="dflex-col pt-4 pb-2" id="backgroundSection">
+    <div class="title dflex-col">
+        <p style="color: rgb(30, 58, 104); font-size: 42px">
+            Our Data
+        </p>
+    </div>
+
+    <div class="dflex-col m-5">
+        <span style="font-size: 22px; max-width: 980px">
+            Having witnessed decades of abuse from police officers on those they are sworn to protect, we
+            sought out to visualize the voices of those that felt abused by the justice system.
+        </span>
+    </div>
+
+    <div class="row px-4 w-100">
+        <div class="col-md-4 dflex-col p-3">
+            <div class="w-100 h-100 p-4" style="background-color: #fdc086">
+                <p class="percentages">
+                    Black Percentage
+                    <br>
+                    38.0%
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 dflex-col p-3">
+            <div class="w-100 h-100 p-4" style="background-color: #beaed4">
+                <p class="percentages">
+                    White Percentage
+                    <br>
+                    19.8%
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 dflex-col p-3">
+            <div class="w-100 h-100 p-4" style="background-color: #ffff99">
+                <p class="percentages">
+                    Hispanic Percentage
+                    <br>
+                    18.6%
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row px-4 w-100">
+        <div class="col-md-4 dflex-col p-3">
+            <div class="w-100 h-100 p-4" style="background-color: #386cb0">
+                <p class="percentages">
+                    Unknown Percentage
+                    <br>
+                    14.8%
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 dflex-col p-3">
+            <div class="w-100 h-100 p-4" style="background-color: #bf5b17">
+                <p class="percentages">
+                    Other Race Percentage
+                    <br>
+                    5.1%
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 dflex-col p-3">
+            <div class="w-100 h-100 p-4" style="background-color: #f0027f">
+                <p class="percentages">
+                    Asian Percentage
+                    <br>
+                    3.7%
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="dflex-col m-5">
+        <span style="font-size: 22px; max-width: 980px">
+            We also found that substantiated ...
+        </span>
+    </div>
+
+    <div class="row px-4 w-100">
+        <div class="col-md-4 dflex-col p-3">
+            <div class="w-100 h-100 p-4" style="background-color: #ef8a62">
+                <p class="percentages">
+                    Substantiated Percentage
+                    <br>
+                    37.4%
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 dflex-col p-3">
+            <div class="w-100 h-100 p-4" style="background-color: #f7f7f7">
+                <p class="percentages">
+                    Unsubstantiated Percentage
+                    <br>
+                    31.4%
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 dflex-col p-3">
+            <div class="w-100 h-100 p-4" style="background-color: #67a9cf">
+                <p class="percentages">
+                    Exonerated Percentage
+                    <br>
+                    31.2%
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="dflex-col m-5">
+        <span style="font-size: 22px; max-width: 980px">
+            If you are as interested as we are in seeing equality reform throughout America and the world,
+            we suggest donating to the following resources:
+        </span>
+    </div>
+
+    <div class="dflex-row mb-5">
+        <button class="dataSelection m-2">
+            Donation #1
+        </button>
+        <button class="dataSelection m-2">
+            Donation #2
+        </button>
+        <button class="dataSelection m-2">
+            Donation #3
+        </button>
+    </div>
+</div>
+
+<div id="mapSection" class="dflex-col py-2">
+    <div class="title dflex-col">
+        <p style="color: rgb(30, 58, 104); font-size: 42px">
+            New York City Map by Precinct
+        </p>
+    </div>
+    <div class="row p-4" style="max-width: 960px">
+        <div class="col-md-4 dflex-col">
+            <div class="legendChange">
+                <div class="dflex-col pb-5">
+                    <h4 class="mb-2">
+                        Change Data Type
+                    </h4>
+                    <button id="race" class="dataSelection m-2 selectedData" onclick="changeData(this)">
+                        Complaints By Race
+                    </button>
+                    <button id="finding" class="dataSelection m-2" onclick="changeData(this)">
+                        Complaints By Finding
+                    </button>
+                </div>
+
+                <div id="demographicFilter">
+                    <h4 class="mb-2">
+                        Demographic Most Affected
+                    </h4>
+                    <div class="dflex-row py-2">
+                        <button id="whiteDemographic" class="demographicCircle" onclick="changeDemographic('White')">
+                            <span id="WhiteX">X</span>
+                        </button>
+                        <span style="color: #beaed4">
+                            White
+                        </span>
+                    </div>
+                    <div class="dflex-row py-2">
+                        <button id="blackDemographic" class="demographicCircle" onclick="changeDemographic('Black')">
+                            <span id="BlackX">X</span>
+                        </button>
+                        <span style="color: #fdc086">
+                            Black
+                        </span>
+                    </div>
+                    <div class="dflex-row py-2">
+                        <button id="hispanicDemographic" class="demographicCircle" onclick="changeDemographic('Hispanic')">
+                            <span id="HispanicX">X</span>
+                        </button>
+                        <span style="color: #ffff99">
+                            Hispanic
+                        </span>
+                    </div>
+                    <div class="dflex-row py-2">
+                        <button id="unknownDemographic" class="demographicCircle dflex-col" onclick="changeDemographic('Unknown')">
+                            <span id="UnknownX">X</span>
+                        </button>
+                        <span style="color: #386cb0">
+                            Unknown
+                        </span>
+                    </div>
+                    <div class="dflex-row py-2">
+                        <button id="asianDemographic" class="demographicCircle" onclick="changeDemographic('Asian')">
+                            <span id="AsianX">X</span>
+                        </button>
+                        <span style="color: #f0027f">
+                            Asian
+                        </span>
+                    </div>
+                    <div class="dflex-row py-2">
+                        <button id="otherDemographic" class="demographicCircle" onclick="changeDemographic('Other')">
+                            <span id="OtherX">X</span>
+                        </button>
+                        <span style="color: #bf5b17">
+                            Other Race
+                        </span>
+                    </div>
+                </div>
+
+                <div id="findingsFilter">
+                    <h4 class="mb-2">
+                        In Most Cases, Complaints Were
+                    </h4>
+                    <div class="dflex-row py-2">
+                        <button id="substantiatedComplaint" class="demographicCircle" onclick="changeFindings('Substantiated')">
+                            <span id="SubstantiatedX">X</span>
+                        </button>
+                        <span style="color: #ef8a62">
+                            Substantiated
+                        </span>
+                    </div>
+                    <div class="dflex-row py-2">
+                        <button id="unsubstantiatedDemographic" class="demographicCircle" onclick="changeFindings('Unsubstantiated')">
+                            <span id="UnsubstantiatedX">X</span>
+                        </button>
+                        <span style="color: #f7f7f7">
+                            Unsubstantiated
+                        </span>
+                    </div>
+                    <div class="dflex-row py-2">
+                        <button id="exoneratedDemographic" class="demographicCircle" onclick="changeFindings('Exonerated')">
+                            <span id="ExoneratedX">X</span>
+                        </button>
+                        <span style="color: #67a9cf">
+                            Exonerated
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 dflex-col">
+            <svg class="map" width="700px" height="600px">
+            </svg>
+        </div>
+    </div>
 </div>
 
 <script>

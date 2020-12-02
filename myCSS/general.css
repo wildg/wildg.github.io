@@ -86,7 +86,7 @@ header {
   text-align: center;
 }
 
-.dflex-row, .technologies, .socials, .wrapper .writing-wrap .writing, .wrapper .writing-wrap .writing-header .writing-title, .wrapper .writing-wrap .writing-header, .dflex-right, .wrapper .writing-wrap .writing-header .writing-date {
+.dflex-row, .technologies, .socials, .wrapper .writing-wrap .writing-header, .dflex-right, .wrapper .writing-wrap .writing-header .writing-date, .dflex-left, .wrapper .writing-wrap .writing, .wrapper .writing-wrap .writing-header .writing-title {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -96,7 +96,7 @@ header {
   text-align: center;
 }
 
-.dflex-row, .technologies, .socials, .wrapper .writing-wrap .writing, .wrapper .writing-wrap .writing-header .writing-title, .wrapper .writing-wrap .writing-header, .dflex-right, .wrapper .writing-wrap .writing-header .writing-date {
+.dflex-left, .wrapper .writing-wrap .writing, .wrapper .writing-wrap .writing-header .writing-title {
   justify-content: flex-start;
   text-align: left;
 }
