@@ -25,7 +25,6 @@
     <list default="true" id="32fe60f7-3bad-446a-a569-a52583a1759c" name="Default Changelist" comment="Small Data Vis Fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewYorkPoliceComplaints/mapFinal.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewYorkPoliceComplaints/mapFinal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewYorkPoliceComplaints/src/mapVis/map.css" beforeDir="false" afterPath="$PROJECT_DIR$/NewYorkPoliceComplaints/src/mapVis/map.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +123,7 @@
       <workItem from="1606887549156" duration="170000" />
       <workItem from="1606941554725" duration="4021000" />
       <workItem from="1606951895990" duration="16130000" />
+      <workItem from="1607021687813" duration="913000" />
     </task>
     <task id="LOCAL-00001" summary="Small Data Vis Fixes">
       <created>1606676216532</created>
