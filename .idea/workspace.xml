@@ -25,11 +25,7 @@
     <list default="true" id="32fe60f7-3bad-446a-a569-a52583a1759c" name="Default Changelist" comment="Small Data Vis Fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewYorkPoliceComplaints/mapFinal.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewYorkPoliceComplaints/mapFinal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewYorkPoliceComplaints/src/mapVis/finalVersion/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/NewYorkPoliceComplaints/src/mapVis/finalVersion/general.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewYorkPoliceComplaints/src/mapVis/map.css" beforeDir="false" afterPath="$PROJECT_DIR$/NewYorkPoliceComplaints/src/mapVis/map.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCSS/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/myCSS/general.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCSS/general.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/myCSS/general.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCSS/general.sass" beforeDir="false" afterPath="$PROJECT_DIR$/myCSS/general.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +122,8 @@
       <workItem from="1606855038329" duration="5290000" />
       <workItem from="1606860469857" duration="12140000" />
       <workItem from="1606887549156" duration="170000" />
-      <workItem from="1606941554725" duration="2304000" />
+      <workItem from="1606941554725" duration="4021000" />
+      <workItem from="1606951895990" duration="16130000" />
     </task>
     <task id="LOCAL-00001" summary="Small Data Vis Fixes">
       <created>1606676216532</created>
@@ -166,6 +163,10 @@
       <screen x="0" y="25" width="1440" height="805" />
     </state>
     <state x="184" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.805@0.25.1440.805" timestamp="1606085846732" />
+    <state x="444" y="232" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606975520047">
+      <screen x="0" y="25" width="1440" height="802" />
+    </state>
+    <state x="444" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.802@0.25.1440.802" timestamp="1606975520047" />
     <state x="378" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605477390626">
       <screen x="0" y="23" width="1280" height="726" />
     </state>

@@ -63,7 +63,7 @@
         <a class="dataSelection m-2" href="#mapSection">
             Map
         </a>
-        <a class="dataSelection m-2">
+        <a class="dataSelection m-2" href="#sankeySection">
             Sankey
         </a>
     </div>
@@ -78,8 +78,17 @@
 
     <div class="dflex-col m-5">
         <span style="font-size: 22px; max-width: 980px">
-            Having witnessed decades of abuse from police officers on those they are sworn to protect, we
-            sought out to visualize the voices of those that felt abused by the justice system.
+            Having witnessed decades of abuse from police officers on those they are sworn to protect, we sought out to
+            visualize the voices of those that felt abused by the justice system. To keep the officers accountable New
+            York created the Civilian Complaint Review Board (CCRB), which receives thousands of complaints each year
+            and is tasked with investigating each one. This organization has
+            <span style="font-size: 22px; font-weight: 800">
+                limited power
+            </span>, being unable to enforce requests made to police departments for relevant data on cases, as well as
+            having no power over the disciplinary measures that are taken when officers are found guilty of abuse. We
+            used the information available for the year of 2019, where in all cases, the officer in question has
+            previously been found of some misconduct and continues to serve in the NYPD. The percentages below
+            represent the distribution of ethnicities that filed formal complaints to the CCRB.
         </span>
     </div>
 
@@ -145,7 +154,22 @@
 
     <div class="dflex-col m-5">
         <span style="font-size: 22px; max-width: 980px">
-            We also found that substantiated ...
+            Cases that are
+            <span style="font-size: 22px; font-weight: 800">
+                unsubstantiated
+            </span>
+            are the result of incomplete investigations, which is usually due to relevant data being withheld by the
+            NYPD, where as
+            <span style="font-size: 22px; font-weight: 800">
+                exonerated
+            </span>
+            cases find the officer in question innocent of the described allegations. When an officer is found guilty
+            of misconduct, the claims are
+            <span style="font-size: 22px; font-weight: 800">
+                substantiated
+            </span>
+            , and the CCRB suggests a punishment that is rarely upheld. Below, the percentages illustrate the amount of
+            instances for each finding.
         </span>
     </div>
 
@@ -187,15 +211,15 @@
     </div>
 
     <div class="dflex-row mb-5">
-        <button class="dataSelection m-2">
+        <a class="dataSelection m-2" target="_blank">
             Donation #1
-        </button>
-        <button class="dataSelection m-2">
+        </a>
+        <a class="dataSelection m-2" target="_blank">
             Donation #2
-        </button>
-        <button class="dataSelection m-2">
+        </a>
+        <a class="dataSelection m-2" target="_blank">
             Donation #3
-        </button>
+        </a>
     </div>
 </div>
 
@@ -205,6 +229,15 @@
             New York City Map by Precinct
         </p>
     </div>
+
+    <div class="dflex-col m-5">
+        <span style="font-size: 22px; max-width: 980px">
+            The following is a map of New York City, which has been subdivided into the different areas that each
+            precinct covers. The size of the circles correspond to the amount of complaints in each precinct, and the
+            data can be filtered by the circles on the left, as well as changed.
+        </span>
+    </div>
+
     <div class="row p-4" style="max-width: 960px">
         <div class="col-md-4 dflex-col">
             <div class="legendChange">
@@ -310,6 +343,25 @@
             </svg>
         </div>
     </div>
+</div>
+
+<div id="sankeySection" class="dflex-col py-2">
+    <div class="title dflex-col">
+        <p style="color: rgb(30, 58, 104); font-size: 42px">
+            Citizen Complaints Sankey
+        </p>
+    </div>
+
+    <div class="dflex-col m-5">
+        <span style="font-size: 22px; max-width: 980px">
+            The sankey diagram shows the story of how complaints originate for each precinct. On the left, there is
+            the precinct number, which can be changed using the scrolling bar on top of the graph. The middle column
+            shows how the officer that was complained about came into contact with the complainant. The farthest right
+            column shows the actual complaint that was made.
+        </span>
+    </div>
+
+    <iframe width="1400" height="4500" src="https://editor.p5js.org/murtaza/embed/KYt2qvIjB"></iframe>
 </div>
 
 <script>
