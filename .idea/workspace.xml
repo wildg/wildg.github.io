@@ -24,7 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="32fe60f7-3bad-446a-a569-a52583a1759c" name="Default Changelist" comment="Small Data Vis Fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewYorkPoliceComplaints/mapFinal.html" beforeDir="false" afterPath="$PROJECT_DIR$/NewYorkPoliceComplaints/mapFinal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewYorkPoliceComplaints/src/mapVis/finalVersion/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/NewYorkPoliceComplaints/src/mapVis/finalVersion/general.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +123,9 @@
       <workItem from="1606887549156" duration="170000" />
       <workItem from="1606941554725" duration="4021000" />
       <workItem from="1606951895990" duration="16130000" />
-      <workItem from="1607021687813" duration="913000" />
+      <workItem from="1607021687813" duration="1516000" />
+      <workItem from="1607060108292" duration="1221000" />
+      <workItem from="1607285854752" duration="129000" />
     </task>
     <task id="LOCAL-00001" summary="Small Data Vis Fixes">
       <created>1606676216532</created>
@@ -167,6 +169,10 @@
       <screen x="0" y="25" width="1440" height="802" />
     </state>
     <state x="444" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.802@0.25.1440.802" timestamp="1606975520047" />
+    <state x="408" y="165" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607285971172">
+      <screen x="0" y="25" width="1440" height="801" />
+    </state>
+    <state x="408" y="165" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.25.1440.801@0.25.1440.801" timestamp="1607285971172" />
     <state x="378" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605477390626">
       <screen x="0" y="23" width="1280" height="726" />
     </state>
