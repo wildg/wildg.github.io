@@ -22,10 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32fe60f7-3bad-446a-a569-a52583a1759c" name="Default Changelist" comment="Small Data Vis Fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewYorkPoliceComplaints/src/mapVis/finalVersion/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/NewYorkPoliceComplaints/src/mapVis/finalVersion/general.js" afterDir="false" />
-    </list>
+    <list default="true" id="32fe60f7-3bad-446a-a569-a52583a1759c" name="Default Changelist" comment="Small Data Vis Fixes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,6 +123,14 @@
       <workItem from="1607021687813" duration="1516000" />
       <workItem from="1607060108292" duration="1221000" />
       <workItem from="1607285854752" duration="129000" />
+      <workItem from="1607286038358" duration="1208000" />
+      <workItem from="1607291164462" duration="40000" />
+      <workItem from="1607996819088" duration="210000" />
+      <workItem from="1608084293448" duration="1397000" />
+      <workItem from="1608227944397" duration="1126000" />
+      <workItem from="1608414057853" duration="32000" />
+      <workItem from="1608414274917" duration="835000" />
+      <workItem from="1608420128363" duration="2024000" />
     </task>
     <task id="LOCAL-00001" summary="Small Data Vis Fixes">
       <created>1606676216532</created>
@@ -155,55 +160,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Small Data Vis Fixes" />
     <option name="LAST_COMMIT_MESSAGE" value="Small Data Vis Fixes" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="513" y="266" key="#File_Watchers" timestamp="1603336571828">
-      <screen x="0" y="23" width="1280" height="726" />
-    </state>
-    <state x="513" y="266" key="#File_Watchers/0.23.1280.726@0.23.1280.726" timestamp="1603336571828" />
-    <state x="184" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606085846732">
-      <screen x="0" y="25" width="1440" height="805" />
-    </state>
-    <state x="184" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.805@0.25.1440.805" timestamp="1606085846732" />
-    <state x="444" y="232" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606975520047">
-      <screen x="0" y="25" width="1440" height="802" />
-    </state>
-    <state x="444" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.802@0.25.1440.802" timestamp="1606975520047" />
-    <state x="408" y="165" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1607285971172">
-      <screen x="0" y="25" width="1440" height="801" />
-    </state>
-    <state x="408" y="165" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.25.1440.801@0.25.1440.801" timestamp="1607285971172" />
-    <state x="378" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605477390626">
-      <screen x="0" y="23" width="1280" height="726" />
-    </state>
-    <state x="378" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.726@0.23.1280.726" timestamp="1605477390626" />
-    <state x="327" y="189" key="EditFileWatcherDialog" timestamp="1606085670533">
-      <screen x="0" y="25" width="1440" height="805" />
-    </state>
-    <state x="291" y="171" key="EditFileWatcherDialog/0.23.1280.726@0.23.1280.726" timestamp="1603336011561" />
-    <state x="327" y="189" key="EditFileWatcherDialog/0.25.1440.805@0.25.1440.805" timestamp="1606085670533" />
-    <state x="522" y="134" key="RollbackChangesDialog" timestamp="1606858320774">
-      <screen x="0" y="25" width="1440" height="805" />
-    </state>
-    <state x="522" y="134" key="RollbackChangesDialog/0.25.1440.805@0.25.1440.805" timestamp="1606858320774" />
-    <state x="207" y="29" key="SettingsEditor" timestamp="1606085815301">
-      <screen x="0" y="25" width="1440" height="805" />
-    </state>
-    <state x="141" y="25" key="SettingsEditor/0.23.1280.726@0.23.1280.726" timestamp="1603339615717" />
-    <state x="207" y="29" key="SettingsEditor/0.25.1440.805@0.25.1440.805" timestamp="1606085815301" />
-    <state x="320" y="165" key="Vcs.Push.Dialog.v2" timestamp="1606676224568">
-      <screen x="0" y="25" width="1440" height="805" />
-    </state>
-    <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.25.1440.805@0.25.1440.805" timestamp="1606676224568" />
-    <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.25.1440.806@0.25.1440.806" timestamp="1605956914370" />
-    <state x="385" y="192" key="run.anything.popup" timestamp="1606084235724">
-      <screen x="0" y="25" width="1440" height="805" />
-    </state>
-    <state x="385" y="192" key="run.anything.popup/0.25.1440.805@0.25.1440.805" timestamp="1606084235724" />
-    <state x="343" y="80" width="754" height="750" key="search.everywhere.popup" timestamp="1606516973826">
-      <screen x="0" y="25" width="1440" height="805" />
-    </state>
-    <state x="305" y="73" width="670" height="676" key="search.everywhere.popup/0.23.1280.726@0.23.1280.726" timestamp="1603652495474" />
-    <state x="343" y="80" width="754" height="750" key="search.everywhere.popup/0.25.1440.805@0.25.1440.805" timestamp="1606516973826" />
   </component>
 </project>

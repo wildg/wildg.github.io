@@ -70,8 +70,6 @@
 
         return arr;
     }
-
-    console.log(items)
 </script>
 
 <input value="0" type="range" name="rangeInput" min="0" max="70" onchange="update(this.value);" style="width: 500px">
@@ -87,14 +85,11 @@
             data.addColumn('number', 'Weight');
             data.addRows(items[i]);
 
-            // Set chart options
-            var options = {
-                width: 980,
-            };
             var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
                 '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
 
             var options = {
+                width: 980,
                 height: 400,
                 sankey: {
                     node: {

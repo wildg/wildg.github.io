@@ -1,0 +1,498 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Futura", serif;
+  background-color: #050b1e;
+}
+
+/* ----------------------- COLORS ----------------------- */
+.yellow, .card-top {
+  color: #fdd5ac !important;
+}
+
+.yellow:hover, .card-top:hover {
+  color: #fdd5ac !important;
+}
+
+.bg-yellow {
+  background-color: #fdd5ac !important;
+}
+
+.blue {
+  color: #050b1e !important;
+}
+
+.blue:hover {
+  color: #050b1e !important;
+}
+
+.bg-blue {
+  background-color: #050b1e !important;
+}
+
+.champagne {
+  color: #fdd5ac !important;
+}
+
+.champagne:hover {
+  color: #fdd5ac !important;
+}
+
+.bg-champagne {
+  background-color: #fdd5ac !important;
+}
+
+.white, .card-bottom {
+  color: white !important;
+}
+
+.white:hover, .card-bottom:hover {
+  color: white !important;
+}
+
+.bg-white {
+  background-color: white !important;
+}
+
+.black {
+  color: black !important;
+}
+
+.bg-black {
+  background-color: black !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+/* ----------------------- FONTS ----------------------- */
+.f-0, .card-bottom, .f-1, .card-top, .f-2, .f-3, .f-4, .f-5 {
+  font-size: 16px;
+}
+
+.f-1, .card-top {
+  font-size: 22px;
+}
+
+.f-2 {
+  font-size: 28px;
+}
+
+.f-3 {
+  font-size: 36px;
+}
+
+.f-4 {
+  font-size: 48px;
+}
+
+.f-5 {
+  font-size: 64px;
+}
+
+/* ----------------------- SIZES ----------------------- */
+#services-urbanDesign-background, #services-architecturalDesign-background, #services-interiorDesign-background, #doreen-active, #syed-active {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.max-w {
+  max-width: 1200px;
+}
+
+.w-33 {
+  width: 33.33%;
+}
+
+.w-66 {
+  width: 66.66%;
+}
+
+/* ----------------------- ORIENTATIONS ----------------------- */
+.dflex-col, .card-long, .card-full-lg, .card, .dflex-row, .dflex-left, .dflex-right, .dflex-bottom, .card-bottom, .dflex-top, .card-bottom-img, .card-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+
+.dflex-top, .card-bottom-img, .card-top {
+  justify-content: flex-start;
+}
+
+.dflex-bottom, .card-bottom {
+  justify-content: flex-end;
+}
+
+.dflex-row, .dflex-left, .dflex-right {
+  flex-direction: row;
+}
+
+.dflex-right {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.dflex-left {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+/* ----------------------- HEADER ----------------------- */
+.header-space {
+  height: 60px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #fdd5ac;
+  z-index: 999;
+  padding: 0 15px;
+}
+header a {
+  margin: 0 15px;
+}
+
+/* ----------------------- FOOTER ----------------------- */
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #050b1e;
+  padding: 0 15px;
+}
+footer a {
+  margin: 0 15px;
+}
+
+/* ----------------------- LINKS ----------------------- */
+a {
+  color: inherit !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+a.text {
+  position: relative;
+  text-decoration: none;
+  color: #050b1e;
+}
+
+a.text:hover {
+  color: #050b1e;
+}
+
+a.text:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  background-color: #050b1e;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+a.text:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+a.text.blue {
+  color: #1B164E;
+}
+
+a.text.yellow:before, a.text.card-top:before {
+  color: #fdd5ac;
+  background-color: #fdd5ac;
+}
+
+a.text.champagne:before {
+  color: #fdd5ac;
+  background-color: #fdd5ac;
+}
+
+/* ----------------------- BILLBOARDS ----------------------- */
+.billboard-lg {
+  width: 100% !important;
+  height: calc(100vh - 60px) !important;
+}
+
+.billboard {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+/* ----------------------- BORDERS ----------------------- */
+.yellow-border {
+  border: solid #fdd5ac 3px;
+}
+
+.yellow-border-lg {
+  border: solid #fdd5ac 5px;
+}
+
+.blue-border {
+  border: solid #050b1e 3px;
+}
+
+.blue-border-lg {
+  border: solid #050b1e 5px;
+}
+
+.white-border {
+  border: solid white 3px;
+}
+
+.white-border-lg {
+  border: solid white 5px;
+}
+
+.champagne-border, .inner-border, .inner-border-lg, .outer-border, .outer-border-lg {
+  border: solid #fdd5ac 3px;
+}
+
+.champagne-border-lg, .inner-border-lg, .outer-border-lg {
+  border: solid #fdd5ac 5px;
+}
+
+.card-img {
+  width: 330px;
+  height: 480px;
+  position: relative;
+}
+
+.card {
+  width: 350px;
+  height: 500px;
+  position: relative;
+  border: none;
+}
+
+.card-full-lg {
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: relative;
+}
+
+.card-long {
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+.card-long .inner-content-lg {
+  width: calc(100% - 70px);
+  overflow: visible;
+  background-color: #fdd5ac;
+}
+
+.card-long:hover .inner-content-lg {
+  height: 410px;
+  width: calc(100% - 40px);
+  top: 20px;
+  left: 20px;
+}
+
+.outer-border, .outer-border-lg {
+  width: calc(100% - 15px);
+  height: calc(100% - 15px);
+  top: 0;
+  left: 0;
+  position: absolute;
+  transition: ease-in-out 0.3s;
+}
+
+.outer-border-lg {
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+}
+
+.inner-border, .inner-border-lg {
+  width: calc(100% - 15px);
+  height: calc(100% - 15px);
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  transition: ease-in-out 0.3s;
+}
+
+.inner-border-lg {
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+}
+
+.inner-content, .inner-content-lg {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: calc(100% - 36px);
+  height: calc(100% - 36px);
+  padding: 30px;
+  transition: ease-in-out 0.3s;
+  overflow: hidden;
+}
+
+.inner-content-lg {
+  top: 35px;
+  left: 35px;
+  width: calc(100% - 70px);
+  height: calc(100% - 70px);
+}
+
+.card-full-lg:hover .outer-border-lg {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.card-full-lg:hover .inner-border-lg {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.card-long:hover .outer-border, .card-long:hover .outer-border-lg {
+  margin-top: 7.5px;
+  margin-left: 7.5px;
+}
+
+.card-long:hover .inner-border, .card-long:hover .inner-border-lg {
+  margin-right: 7.5px;
+  margin-bottom: 7.5px;
+}
+
+.card-long:hover .outer-border-lg {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.card-long:hover .inner-border-lg {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.card:hover .outer-border, .card:hover .outer-border-lg {
+  margin-top: 7.5px;
+  margin-left: 7.5px;
+}
+
+.card:hover .inner-border, .card:hover .inner-border-lg {
+  margin-bottom: 7.5px;
+  margin-right: 7.5px;
+}
+
+.card:hover .inner-content, .card:hover .inner-content-lg {
+  height: calc(100% - 21px);
+  width: calc(100% - 21px);
+  left: 11px;
+  top: 10px;
+}
+
+.card:hover .card-bottom-img {
+  margin-bottom: 60px;
+}
+
+.bottom-border {
+  width: 100%;
+  height: 3px;
+}
+
+/* ----------------------- BUTTONS ----------------------- */
+button {
+  width: 300px;
+  height: 50px;
+  transition: ease-in-out 0.3s;
+  background-color: transparent;
+  border-radius: 3em;
+}
+button.champagne {
+  border: solid #fdd5ac 3px;
+}
+button.champagne:hover {
+  color: #050b1e !important;
+  background-color: #fdd5ac;
+}
+button.blue {
+  border: solid #050b1e 3px;
+}
+button.blue:hover {
+  color: #fdd5ac !important;
+  background-color: #050b1e;
+}
+
+/* ----------------------- CARDS ----------------------- */
+.card-top {
+  height: 40%;
+}
+
+.card-bottom {
+  height: 60%;
+}
+
+.card-bottom-img {
+  height: calc(60% + 20px);
+  position: relative;
+  transition: ease-in-out 0.3s;
+}
+
+.card-bottom-img img {
+  position: absolute;
+  top: 50px;
+  transition: ease-in-out 0.3s;
+}
+
+/* ----------------------- IMAGES ----------------------- */
+.bg-img, #services-urbanDesign-background, #services-architecturalDesign-background, #services-interiorDesign-background, #doreen-active, #syed-active, .card-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ----------------------- SPECIFIC ----------------------- */
+#syed-active-text {
+  display: none;
+}
+
+#doreen-active {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Doreen All Views/Seminar Room 02.jpg");
+}
+
+#syed-active {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Syed Resi Visuals/dining 2 (1) edit hdr_R2.jpg");
+}
+
+#services-architecturalDesign, #services-interiorDesign {
+  display: none;
+}
+
+#services-urbanDesign-background, #services-architecturalDesign-background, #services-interiorDesign-background {
+  position: absolute;
+  opacity: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/RC Visuals/Bedroom 2_Final 01 edit.jpg");
+}
+
+#services-architecturalDesign-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/RC Visuals/Foyer_Final_02 edit1.jpg");
+  opacity: 0;
+}
+
+#services-interiorDesign-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/RC Visuals/Master Bedroom_desat1.jpg");
+  opacity: 0;
+}
+
+/*# sourceMappingURL=new.css.map */

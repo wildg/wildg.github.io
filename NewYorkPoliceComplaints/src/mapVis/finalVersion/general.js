@@ -63,12 +63,12 @@ function hello() {
             var toPrint = precinctDataToHtml(precinctNumber);
 
             popupInfo.html(toPrint)
-                .style("opacity", 0.8)
+                .style("opacity", 1)
                 .style("left", d.pageX + "px")
                 .style("top", d.pageY + "px");
 
             d3.selectAll('g')
-                .style("opacity", 0.3);
+                .style("opacity", 0.2);
 
             d3.select(this)
                 .style("opacity", 1);
