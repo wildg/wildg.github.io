@@ -28,70 +28,96 @@
     <script src="js/animation.anime.min.js"></script>
 
     <!--	Font families	-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
-          rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/cgl1qhy.css">
 
     <!--    Stylesheets -->
-    <link rel="stylesheet" href="css/Restarting.css">
+    <link rel="stylesheet" href="css/thissucks.css">
+    <link rel="stylesheet" href="css/index.css">
 
     <!--	Scripts	-->
-<!--    <script defer src="js/general.js"></script>-->
+    <script defer src="js/index.js"></script>
+    <script defer src="js/general.js"></script>
 </head>
 <body>
 
 <header>
-    <div class="screen-large">
-        <div class="dflex-row h-100">
-            <div class="dflex-left w-25 blue">
-                <a class="dflex-col" href="">
-                    <b class="p-0 m-0 f-2" style="line-height: 30px">beam</b>
-                    <span style="font-size: 12px">Creative Design</span>
+    <div class="screen-lg dflex-left use-full">
+        <div class="h-100 dflex-col">
+            <a class="blue">
+                <p class="title">
+                    beam
+                </p>
+                <p class="title-under">
+                    Creative Design
+                </p>
+            </a>
+        </div>
+        <div class="w-100 h-100 dflex-right">
+            <a class="text-underline f-0">
+                About
+            </a>
+            <a class="text-underline f-0">
+                Philosophy
+            </a>
+            <a class="text-underline f-0">
+                Projects
+            </a>
+            <a class="text-underline f-0">
+                Services
+            </a>
+            <a class="text-underline f-0">
+                Research
+            </a>
+            <a class="text-underline f-0">
+                Contact
+            </a>
+        </div>
+    </div>
+    <div class="screen-sm dflex-col m-0 p-0 use-full">
+        <div class="w-100 dflex-left">
+            <div class="w-25 dflex-left p-md">
+                <a class="burger-wrap" onclick="dropdown(this)">
+                    <div class="bun-1"></div>
+                    <div class="bun-2"></div>
                 </a>
             </div>
-            <div class="dflex-right w-100">
-                <a class="text-underline f-0" href="">
-                    About
-                </a>
-                <a class="text-underline f-0" href="">
-                    Philosophy
-                </a>
-                <a class="text-underline f-0" href="OldProjects.html">
-                    Projects
-                </a>
-                <a class="text-underline f-0" href="">
-                    Services
-                </a>
-                <a class="text-underline f-0" href="">
-                    Research
-                </a>
-                <a class="text-underline f-0" href="">
-                    Contact
+            <div class="w-50 dflex-col">
+                <a class="blue">
+                    <p class="title">
+                        beam
+                    </p>
+                    <p class="title-under">
+                        Creative Design
+                    </p>
                 </a>
             </div>
         </div>
-    </div>
-
-    <div class="screen-small h-100">
-        <div class="dflex-left w-100 h-100">
-            <div class="w-25 h-100 dflex-left m-0 p-0" style="background-color: orange">
-                <a id="hamburger" style="width: 60px; height: 60px; background-color: teal">
-                    <div id="bun-1"></div>
-                    <div id="bun-2"></div>
-                </a>
-            </div>
-            <div class="dflex-col w-50">
-                <a class="dflex-col" href="">
-                    <b class="p-0 m-0 f-2" style="line-height: 28px">beam</b>
-                    <span style="font-size: 10px">Creative Design</span>
-                </a>
-            </div>
+        <div class="drop-down dflex-col">
+            <a class="text-underline f-1">
+                About
+            </a>
+            <a class="text-underline f-1">
+                Philosophy
+            </a>
+            <a class="text-underline f-1">
+                Projects
+            </a>
+            <a class="text-underline f-1">
+                Services
+            </a>
+            <a class="text-underline f-1">
+                Research
+            </a>
+            <a class="text-underline f-1">
+                Contact
+            </a>
         </div>
     </div>
 </header>
 
 <div class="scroll-container">
-    <div id="top-carousel" class="carousel slide carousel-fade billboard-lg" data-bs-ride="carousel">
+
+    <section id="top-carousel" class="carousel slide carousel-fade billboard-lg" data-bs-ride="carousel">
         <ol class="carousel-indicators">
             <li data-bs-target="#top-carousel" data-bs-slide-to="0" class="active"></li>
             <li data-bs-target="#top-carousel" data-bs-slide-to="1"></li>
@@ -99,8 +125,8 @@
         </ol>
         <div class="carousel-inner use-full">
             <div id="top-carousel-slide1" class="carousel-item active">
-                <section class="dflex-left use-full">
-                    <div class="f-4 white">
+                <div class="dflex-left use-full">
+                    <div class="f-5 white">
                         Innovative
                         <div id="top-carousel-slide1-text" class="champagne f-bold">
                             Architectural
@@ -109,15 +135,17 @@
                         </div>
                     </div>
                     <a class="text-arrow champagne bottom-picture-title">
-                        <span class="txt f-1">Doreen Head Office</span>
-                        <img class="arrow f-1" src="images/icons/r-arrow-champagne.png">
+                        <span class="text f-1">
+                            Doreen Executive Office
+                            <img class="arrow f-1" src="images/icons/r-arrow-champagne.png">
+                        </span>
                     </a>
-                </section>
+                </div>
             </div>
 
             <div id="top-carousel-slide2" class="carousel-item">
                 <section class="dflex-left use-full">
-                    <div class="f-4 white">
+                    <div class="f-5 white">
                         Innovative
                         <div id="top-carousel-slide2-text" class="champagne f-bold">
                             Urban
@@ -126,15 +154,17 @@
                         </div>
                     </div>
                     <a class="text-arrow champagne bottom-picture-title">
-                        <span class="txt f-1">Kitez Hotel</span>
-                        <img class="arrow f-1" src="images/icons/r-arrow-champagne.png">
+                        <span class="text f-1">
+                            Kitez Hotel
+                            <img class="arrow f-1" src="images/icons/r-arrow-champagne.png">
+                        </span>
                     </a>
                 </section>
             </div>
 
             <div id="top-carousel-slide3" class="carousel-item">
                 <section class="dflex-left use-full">
-                    <div class="f-4 white">
+                    <div class="f-5 white">
                         Innovative
                         <div id="top-carousel-slide3-text" class="champagne f-bold">
                             Interior
@@ -143,158 +173,232 @@
                         </div>
                     </div>
                     <a class="text-arrow champagne bottom-picture-title">
-                        <span class="txt f-1">Ritz Carlton</span>
-                        <img class="arrow f-1" src="images/icons/r-arrow-champagne.png">
+                        <span class="text f-1">
+                            Ritz Carlton Residence Penthouse
+                            <img class="arrow f-1" src="images/icons/r-arrow-champagne.png">
+                        </span>
                     </a>
                 </section>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#top-carousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <a class="carousel-control-prev" href="#top-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
         </a>
-        <a class="carousel-control-next" href="#top-carousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <a class="carousel-control-next" href="#top-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
         </a>
-    </div>
+    </section>
 
-    <div id="card-1-img" class="billboard-lg position-relative">
-        <div id="card-1">
-            <div id="card-1-inner">
-                <p id="card-1-text">
-                    Urban design, architecture, and interior solutions to vitalise communities while shaping a sustainable
-                    future
-                </p>
-                <a id="card-1-button" class="button">
-                    About
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div id="card-2-img" class="billboard-lg position-relative">
-        <div id="card-2">
-            <div id="card-2-inner">
-                <p id="card-2-text">
-                    Constructing tailor made solutions that respect context, culture, and environment
-                </p>
-                <a id="card-2-button" class="button">
-                    Philosophy
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div id="card-3-img" class="billboard-lg position-relative">
-        <div id="card-3">
-            <div id="card-3-inner">
-                <p id="card-3-text">
-                    With over 30 years of experience, our team provides our clients with the best possible designs
-                </p>
-                <a id="card-3-button" class="button">
-                    Projects
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="billboard-lg dflex-row">
-        <div class="w-33 h-100 dflex-col">
-            <span class="white f-2 mb-3">
-                <b>What We Offer</b>
-            </span>
-            <a class="text-arrow champagne my-3" onclick="changeServices('architecture')">
-                <span class="txt f-1">Architectural Design</span>
-                <img class="arrow f-1" src="images/icons/r-arrow-champagne.png">
-            </a>
-            <a class="text-arrow champagne my-3" onclick="changeServices('urban')">
-                <span class="txt f-1">Urban Design</span>
-                <img class="arrow f-1" src="images/icons/r-arrow-champagne.png">
-            </a>
-            <a class="text-arrow champagne f-1 my-3 dflex-col" onclick="changeServices('interior')">
-                <span class="txt f-1">Interior Design</span>
-                <img class="arrow f-1" src="images/icons/r-arrow-champagne.png">
+    <section id="card-img1" class="billboard-lg p-carousel dflex-left">
+        <div class="f-5 white">
+            Three
+            <br>
+            <p class="champagne text-slide p-title f-bold">
+                Decades
+                <br>
+                Experience
+            </p>
+            <a class="button champagne m-0">
+                About
             </a>
         </div>
-        <div id="services" class="w-66 h-100">
-            <section id="services-architecture">
-                <b class="services-title">
-                    Architectural Design
-                </b>
-                <span class="services-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor turpis sit amet mi commodo
-                    posuere. Nam quis arcu risus. Sed ac magna congue, commodo eros et, facilisis metus. Praesent tempus
-                    tellus et nunc imperdiet vestibulum.
-                </span>
-                <a class="button champagne">
-                    Learn More
-                </a>
-            </section>
-            <section id="services-urban">
-                <b class="services-title">
-                    Urban Design
-                </b>
-                <span class="services-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor turpis sit amet mi commodo
-                    posuere. Nam quis arcu risus. Sed ac magna congue, commodo eros et, facilisis metus. Praesent tempus
-                    tellus et nunc imperdiet vestibulum.
-                </span>
-                <a class="button champagne">
-                    Learn More
-                </a>
-            </section>
-            <section id="services-interior">
-                <b class="services-title">
-                    Interior Design
-                </b>
-                <span class="services-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor turpis sit amet mi commodo
-                    posuere. Nam quis arcu risus. Sed ac magna congue, commodo eros et, facilisis metus. Praesent tempus
-                    tellus et nunc imperdiet vestibulum.
-                </span>
-                <a class="button champagne">
-                    Learn More
-                </a>
-            </section>
-        </div>
-    </div>
+    </section>
 
-    <div id="project-carousel" class="carousel slide carousel-fade billboard-lg" data-bs-ride="carousel">
-        <div class="carousel-inner use-full">
-            <div id="project-carousel-slide1" class="carousel-item active">
-                <section class="dflex-col use-full">
-                    <a id="project-carousel-slide1-text" class="text-arrow champagne">
-                        <span class="txt f-4">Doreen Head Office</span>
-                        <img class="arrow f-4" src="images/icons/r-arrow-champagne.png">
+    <section id="card-img2" class="billboard-lg p-carousel dflex-left">
+        <div class="f-5 white">
+            Constructing
+            <br>
+            <p class="champagne text-slide p-title f-bold">
+                Tailored
+                <br>
+                Solutions
+            </p>
+            <a class="button champagne m-0">
+                Philosophy
+            </a>
+        </div>
+    </section>
+
+    <section id="card-img3" class="billboard-lg p-carousel dflex-left">
+        <div class="f-5 white">
+            Vitalizing
+            <br>
+            <p class="champagne text-slide p-title f-bold">
+                Sustainable
+                <br>
+                Designs
+            </p>
+            <a class="button champagne m-0">
+                Projects
+            </a>
+        </div>
+    </section>
+
+    <section class="billboard-lg">
+        <div class="screen-lg dflex-row use-full">
+            <div class="dflex-col w-33 h-100">
+                <p class="f-4 p-title white f-bold">
+                    Services
+                </p>
+                <a class="text-arrow champagne" onclick="changeServices('architecture')">
+                    <p class="text f-2">
+                        Architectural Design
+                        <img class="arrow f-2" src="images/icons/r-arrow-champagne.png">
+                    </p>
+                </a>
+                <a class="text-arrow champagne" onclick="changeServices('urban')">
+                    <p class="text f-2">
+                        Urban Design
+                        <img class="arrow f-2" src="images/icons/r-arrow-champagne.png">
+                    </p>
+                </a>
+                <a class="text-arrow champagne" onclick="changeServices('interior')">
+                    <p class="text f-2">
+                        Interior Design
+                        <img class="arrow f-2" src="images/icons/r-arrow-champagne.png">
+                    </p>
+                </a>
+            </div>
+            <div id="services" class="w-66 h-100">
+                <div id="services-architecture">
+                    <p class="services-title p-subtitle f-bold">
+                        Architectural Design
+                    </p>
+                    <p class="services-description p-innerText">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor turpis sit amet mi commodo
+                        posuere. Nam quis arcu risus. Sed ac magna congue, commodo eros et, facilisis metus. Praesent tempus
+                        tellus et nunc imperdiet vestibulum.
+                    </p>
+                    <a class="button champagne m-button">
+                        Learn More
+                    </a>
+                </div>
+                <section id="services-urban">
+                    <p class="services-title p-subtitle f-bold">
+                        Urban Design
+                    </p>
+                    <p class="services-description p-innerText">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor turpis sit amet mi commodo
+                        posuere. Nam quis arcu risus. Sed ac magna congue, commodo eros et, facilisis metus. Praesent tempus
+                        tellus et nunc imperdiet vestibulum.
+                    </p>
+                    <a class="button champagne m-button">
+                        Learn More
                     </a>
                 </section>
-            </div>
-            <div id="project-carousel-slide2" class="carousel-item">
-                <section class="dflex-col use-full">
-                    <a id="project-carousel-slide2-text" class="text-arrow champagne">
-                        <span class="txt f-4">Kitez Hotel</span>
-                        <img class="arrow f-4" src="images/icons/r-arrow-champagne.png">
-                    </a>
-                </section>
-            </div>
-            <div id="project-carousel-slide3" class="carousel-item dflex-col">
-                <section class="dflex-col use-full">
-                    <a id="project-carousel-slide3-text" class="text-arrow champagne">
-                        <span class="txt f-4">Ritz Carlton</span>
-                        <img class="arrow f-4" src="images/icons/r-arrow-champagne.png">
+                <section id="services-interior">
+                    <p class="services-title p-subtitle f-bold">
+                        Interior Design
+                    </p>
+                    <p class="services-description p-innerText">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor turpis sit amet mi commodo
+                        posuere. Nam quis arcu risus. Sed ac magna congue, commodo eros et, facilisis metus. Praesent tempus
+                        tellus et nunc imperdiet vestibulum.
+                    </p>
+                    <a class="button champagne m-button">
+                        Learn More
                     </a>
                 </section>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#project-carousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next" href="#project-carousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </a>
-    </div>
+
+        <div class="screen-sm dflex-left position-relative overflow-hidden use-full">
+            <div id="services-selection-sm">
+                <p class="f-4 white f-bold p-title">
+                    Services
+                </p>
+                <a class="text-arrow champagne" onclick="changeServicesSmall('architecture')">
+                    <p class="text f-2">
+                        Architectural Design
+                        <img class="arrow f-2" src="images/icons/r-arrow-champagne.png">
+                    </p>
+                </a>
+                <a class="text-arrow champagne" onclick="changeServicesSmall('urban')">
+                    <p class="text f-2">
+                        Urban Design
+                        <img class="arrow f-2" src="images/icons/r-arrow-champagne.png">
+                    </p>
+                </a>
+                <a class="text-arrow champagne" onclick="changeServicesSmall('interior')">
+                    <p class="text f-2">
+                        Interior Design
+                        <img class="arrow f-2" src="images/icons/r-arrow-champagne.png">
+                    </p>
+                </a>
+            </div>
+            <div id="services-sm">
+                <div id="services-architecture-sm">
+                    <div class="header-space"></div>
+                    <div class="use-full position-relative dflex-col">
+                        <a class="text-arrow services-back" onclick="servicesBack(this.parentElement.parentElement)">
+                            <p class="text f-1">
+                                <img class="arrow f-1 left" src="images/icons/l-arrow-champagne.png">
+                                Back
+                            </p>
+                        </a>
+                        <p class="services-title p-subtitle f-bold">
+                            Architectural Design
+                        </p>
+                        <p class="services-description p-innerText">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor turpis sit amet mi commodo
+                            posuere. Nam quis arcu risus. Sed ac magna congue, commodo eros et, facilisis metus. Praesent tempus
+                            tellus et nunc imperdiet vestibulum.
+                        </p>
+                        <a class="button champagne m-button">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div id="services-urban-sm">
+                    <div class="header-space"></div>
+                    <div class="use-full position-relative dflex-col">
+                        <a class="text-arrow services-back" onclick="servicesBack(this.parentElement.parentElement)">
+                            <p class="text f-1">
+                                <img class="arrow f-1 left" src="images/icons/l-arrow-champagne.png">
+                                Back
+                            </p>
+                        </a>
+                        <p class="services-title p-subtitle f-bold">
+                            Urban Design
+                        </p>
+                        <p class="services-description p-innerText">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor turpis sit amet mi commodo
+                            posuere. Nam quis arcu risus. Sed ac magna congue, commodo eros et, facilisis metus. Praesent tempus
+                            tellus et nunc imperdiet vestibulum.
+                        </p>
+                        <a class="button champagne m-button">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div id="services-interior-sm">
+                    <div class="header-space"></div>
+                    <div class="use-full position-relative dflex-col">
+                        <a class="text-arrow services-back" onclick="servicesBack(this.parentElement.parentElement)">
+                            <p class="text f-1">
+                                <img class="arrow f-1 left" src="images/icons/l-arrow-champagne.png">
+                                Back
+                            </p>
+                        </a>
+                        <p class="services-title p-subtitle f-bold">
+                            Interior Design
+                        </p>
+                        <p class="services-description p-innerText">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor turpis sit amet mi commodo
+                            posuere. Nam quis arcu risus. Sed ac magna congue, commodo eros et, facilisis metus. Praesent tempus
+                            tellus et nunc imperdiet vestibulum.
+                        </p>
+                        <a class="button champagne m-button">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <div class="screen-large dflex-left">
+        <div class="screen-lg dflex-left use-full">
             <div class="w-50 dflex-left champagne">
                 <a class="text-underline f-0" href="">
                     Terms
@@ -311,172 +415,45 @@
             </div>
             <div class="w-50 dflex-right">
                 <a href="">
-                    <img id="instagram" src="images/icons/Instagram.png" alt="Instagram">
+                    <img class="socials" id="instagram" src="images/icons/Instagram.png" alt="Instagram">
                 </a>
                 <a href="">
-                    <img id="linkedin" src="images/icons/LinkedIn.png" alt="LinkedIn">
+                    <img class="socials" src="images/icons/LinkedIn.png" alt="LinkedIn">
                 </a>
                 <a href="">
-                    <img id="twitter" src="images/icons/Twitter.png" alt="Twitter">
+                    <img class="socials" src="images/icons/Twitter.png" alt="Twitter">
+                </a>
+            </div>
+        </div>
+        <div class="screen-sm dflex-col use-full">
+            <div class="dflex-left champagne w-100">
+                <a class="text-underline f-0" href="">
+                    Terms
+                </a>
+                <a class="text-underline f-0" href="">
+                    Privacy
+                </a>
+                <a class="text-underline f-0" href="">
+                    Careers
+                </a>
+                <a class="text-underline f-0" href="">
+                    Contact
+                </a>
+            </div>
+            <div class="dflex-left w-100">
+                <a href="">
+                    <img class="socials" src="images/icons/Instagram.png" alt="Instagram">
+                </a>
+                <a href="">
+                    <img class="socials" src="images/icons/LinkedIn.png" alt="LinkedIn">
+                </a>
+                <a href="">
+                    <img class="socials" src="images/icons/Twitter.png" alt="Twitter">
                 </a>
             </div>
         </div>
     </footer>
 </div>
 
-<script>
-    /*  CAROUSELS:  */
-    const topCarousel = document.querySelector('#top-carousel');
-    topCarousel.addEventListener('slide.bs.carousel', (d) => {
-        const activeID = '#' + topCarousel.querySelector('.carousel-inner .active').id + '-text';
-        anime({
-            targets: activeID,
-            duration: 300,
-            easing: 'easeOutSine',
-            opacity: '0',
-            translateY: [0, 30],
-        });
-
-        const targetID = '#' + d.relatedTarget.id + '-text';
-        anime({
-            targets: targetID,
-            delay: 200,
-            duration: 300,
-            easing: 'easeInSine',
-            opacity: '1',
-            translateY: [-30, 0],
-        });
-    });
-
-    const projectsCarousel = document.querySelector('#project-carousel');
-    projectsCarousel.addEventListener('slide.bs.carousel', (d) => {
-        const activeID = '#' + projectsCarousel.querySelector('.active').id + '-text';
-        anime({
-            targets: activeID,
-            duration: 300,
-            easing: 'easeOutSine',
-            opacity: '0',
-            translateY: [0, 30],
-        });
-
-        const targetID = '#' + d.relatedTarget.id + '-text';
-        anime({
-            targets: targetID,
-            delay: 200,
-            duration: 300,
-            easing: 'easeInSine',
-            opacity: '1',
-            translateY: [-30, 0],
-        });
-    });
-
-    /*  SERVICES:   */
-    let activeService = 'architecture'
-    const servicesObj = document.querySelector('#services');
-
-    function changeServices(chosenService) {
-
-        // If the service is not currently displayed
-        if (activeService !== chosenService) {
-
-            // Get active object items
-            const activeObj = servicesObj.querySelector('#services-' + activeService),
-                activeTitleObj = activeObj.querySelector('.services-title'),
-                activeDescriptionObj = activeObj.querySelector('.services-description'),
-                activeButtonObj = activeObj.querySelector('.button');
-            activeObj.style.zIndex = '1';
-
-            // Get chosen object items
-            const chosenObj = servicesObj.querySelector('#services-' + chosenService),
-                chosenTitleObj = chosenObj.querySelector('.services-title'),
-                chosenDescriptionObj = chosenObj.querySelector('.services-description'),
-                chosenButtonObj = chosenObj.querySelector('.button');
-            chosenObj.style.zIndex = '2';
-
-            var tl = anime.timeline().add({
-                targets: activeButtonObj,
-                easing: 'easeInOutSine',
-                opacity: [1, 0],
-                translateY: [0, -10],
-                duration: 100
-            }, 0).add({
-                targets: activeDescriptionObj,
-                easing: 'linear',
-                opacity: [1, 0],
-                duration: 300
-            }, 300).add({
-                targets: activeTitleObj,
-                easing: 'linear',
-                opacity: [1, 0],
-                duration: 300
-            }, 500).add({
-                targets: activeObj,
-                easing: 'easeInOutSine',
-                opacity: [1, 0],
-                duration: 500
-            }, 800).add({
-                targets: chosenObj,
-                easing: 'easeInOutSine',
-                opacity: [0, 1],
-                duration: 500
-            }, 800).add({
-                targets: chosenTitleObj,
-                easing: 'linear',
-                opacity: [0, 1],
-                duration: 300
-            }, 1100).add({
-                targets: chosenDescriptionObj,
-                easing: 'linear',
-                opacity: [0, 1],
-                duration: 300
-            }, 1300).add({
-                targets: chosenButtonObj,
-                easing: 'easeInOutSine',
-                opacity: [0, 1],
-                translateY: [-10, 0],
-                duration: 200
-            }, 1500)
-
-            // Change active service
-            activeService = chosenService;
-        }
-    }
-
-    /*  SCROLLMAGIC */
-    let controller = new ScrollMagic.Controller();
-
-    function cardAnim(cardTarget) {
-        return anime.timeline().add({
-            targets: cardTarget + '-inner',
-            height: [0, '100%'],
-            easing: 'easeInOutSine',
-            delay: 100,
-            duration: 800
-        }).add({
-            targets: cardTarget + '-text',
-            opacity: [0, 1],
-            easing: 'linear',
-            duration: 200
-        }, 1000).add({
-            targets: cardTarget + '-button',
-            opacity: [0, 1],
-            translateY: [-10, 0],
-            easing: 'easeInOutSine',
-            duration: 200
-        }, 1000)
-    }
-
-    // Add scroll anim for 3 cards
-    for (let i = 1; i <= 3; i++) {
-        let anim = cardAnim('#card-' + i);
-        new ScrollMagic.Scene({
-            triggerElement: "#card-" + i,
-            triggerHook: 1,
-        })
-        .setAnime(anim)
-        .reverse(false)
-        .addTo(controller);
-    }
-</script>
 </body>
 </html>

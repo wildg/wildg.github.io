@@ -1,0 +1,69 @@
+// Import the general file
+@import 'general'
+
+#completed, #ongoing
+  padding-bottom: 0
+  padding-top: 0
+
+  @media screen and (max-width: 768px)
+    padding: 50px
+
+/* ----------------------- PROJECT CAROUSEL ----------------------- */
+.carousel
+  .carousel-control-prev
+    display: none
+
+  .carousel-control-prev, .carousel-control-next
+    background-color: $blue
+    width: 50px
+
+  .carousel-inner
+    padding: 0 50px
+
+.projectCards
+  @extend .dflex-left
+  @extend .bg-img
+  @extend .champagne
+  width: 50%
+  height: 90%
+
+  border: solid $champagne 5px
+  transition: all 0.3s
+
+  @media screen and (max-width: 768px)
+    flex: 0 0 auto
+    scroll-snap-align: center
+    width: 75%
+    height: 95%
+
+  &:hover
+    transform: scale(1.03) !important
+
+.projectCardsHeight
+  height: 60% !important
+
+.horizontalScrollWrap
+  flex-wrap: nowrap
+  overflow-x: auto
+  width: 100vw !important
+  scroll-snap-type: x mandatory
+
+  &::-webkit-scrollbar
+    width: 0
+
+.projectCardsGutter
+  flex: 0 0 auto
+  width: 50px
+  height: 100%
+
+.ritzCarlton
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/RitzCarlton/Bedroom1.jpg')
+
+.kitezHotel
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/KitezHotel/LobbyLights.jpg')
+
+.doreenHeadOffice
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/Doreen/BoardRoom.jpg')
+
+.luxuryPenthouse
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/SyedResidence/DiningRoom.jpg')

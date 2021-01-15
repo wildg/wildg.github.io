@@ -1,0 +1,122 @@
+// Import the general file
+@import 'general'
+
+/* ----------------------- TOP CAROUSEL ----------------------- */
+#top-carousel-slide1, #top-carousel-slide2, #top-carousel-slide3
+  @extend .p-carousel
+  @extend .bg-img
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../images/Doreen/CEOOffice.jpg')
+
+#top-carousel-slide2
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../images/KitezHotel/LobbyWall.jpg')
+
+#top-carousel-slide3
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../images/RitzCarlton/DiningRoom.jpg')
+
+#top-carousel-slide1-text, #project-carousel-slide1-text
+  opacity: 1
+
+#top-carousel-slide2-text, #top-carousel-slide3-text, #project-carousel-slide2-text, #project-carousel-slide3-text
+  opacity: 0
+
+#project-carousel-slide1, #project-carousel-slide2, #project-carousel-slide3
+  @extend .bg-img
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../images/Doreen/ChairmanRoom.jpg')
+
+#project-carousel-slide2
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../images/KitezHotel/LobbyWall.jpg')
+
+#project-carousel-slide3
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../images/RitzCarlton/Bedroom1.jpg')
+
+/* ----------------------- CARDS ----------------------- */
+#card-img1, #card-img2, #card-img3
+  @extend .bg-img
+
+  .text-slide
+    opacity: 0
+
+  .button
+    opacity: 0
+    z-index: 2
+
+#card-img1
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../images/Doreen/GalleryStaircase.jpg')
+  background-position: center 80%
+
+#card-img2
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../images/RitzCarlton/Bedroom1.jpg')
+  background-position: center 80%
+
+#card-img3
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../images/SyedResidence/Foyer.jpg')
+  background-position: 70% 70%
+
+/* ----------------------- SERVICES ----------------------- */
+#services
+  position: relative
+
+#services-selection-sm
+  @extend .use-full
+  @extend .dflex-col
+  position: absolute
+  top: 0
+  right: 0
+
+#services-sm
+  position: absolute
+  top: 0
+  left: 100%
+
+  width: 100vw
+  height: 100vh
+  overflow: hidden
+
+#services-architecture, #services-architecture-sm,
+#services-urban, #services-urban-sm,
+#services-interior, #services-interior-sm
+  @extend .use-full
+  @extend .dflex-col
+  @extend .bg-img
+  @extend .p-lg
+  opacity: 0
+  z-index: 1
+
+  position: absolute
+  top: 0
+  left: 0
+
+#services-architecture
+  opacity: 1
+  z-index: 2
+
+#services-urban, #services-interior
+
+  .services-title
+    opacity: 0
+
+  .services-description
+    opacity: 0
+
+#services-architecture, #services-architecture-sm
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../images/Doreen/Atrium.jpg')
+
+#services-urban, #services-urban-sm
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../images/KitezHotel/LobbyWide.jpg')
+
+#services-interior, #services-interior-sm
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../images/Doreen/OpenOffice.jpg')
+
+.services-back
+  @extend .champagne
+  position: absolute
+  top: 0
+  left: 0
+
+.services-title
+  @extend .white
+  @extend .f-4
+
+.services-description
+  @extend .white
+  @extend .f-2

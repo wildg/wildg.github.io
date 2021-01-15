@@ -27,10 +27,10 @@ section, p {
   background-color: #050b1e;
 }
 
-.champagne, footer a {
+.champagne, .projectCards, footer a {
   color: #FAD6A5;
 }
-.champagne:hover, footer a:hover {
+.champagne:hover, .projectCards:hover, footer a:hover {
   color: #FAD6A5;
 }
 
@@ -298,7 +298,7 @@ section, p {
 }
 
 /* ----------------------- ORIENTATIONS ----------------------- */
-.dflex-col, header .screen-sm .drop-down, .button, .dflex-row, a.text-arrow .text, .dflex-left, .dflex-right, .dflex-bottom, .dflex-top {
+.dflex-col, header .screen-sm .drop-down, .button, .dflex-row, a.text-arrow .text, .dflex-left, .projectCards, .dflex-right, .dflex-bottom, .dflex-top {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -316,7 +316,7 @@ section, p {
   justify-content: flex-end;
 }
 
-.dflex-row, a.text-arrow .text, .dflex-left, .dflex-right {
+.dflex-row, a.text-arrow .text, .dflex-left, .projectCards, .dflex-right {
   flex-direction: row;
 }
 
@@ -325,7 +325,7 @@ section, p {
   text-align: right;
 }
 
-.dflex-left {
+.dflex-left, .projectCards {
   justify-content: flex-start !important;
   text-align: left !important;
 }
@@ -399,7 +399,7 @@ a.text-underline:hover:before {
   visibility: visible;
   width: 100%;
 }
-a.text-underline.champagne:before, footer a.text-underline:before {
+a.text-underline.champagne:before, a.text-underline.projectCards:before, footer a.text-underline:before {
   background-color: #FAD6A5;
 }
 
@@ -455,10 +455,10 @@ a.text-underline.champagne:before, footer a.text-underline:before {
   background-color: transparent;
   border-radius: 3em;
 }
-.button.champagne, footer a.button {
+.button.champagne, .button.projectCards, footer a.button {
   border: solid #FAD6A5 3px;
 }
-.button.champagne:hover, footer a.button:hover {
+.button.champagne:hover, .button.projectCards:hover, footer a.button:hover {
   color: #050b1e;
   background-color: #FAD6A5;
 }
@@ -477,7 +477,7 @@ a.text-underline.champagne:before, footer a.text-underline:before {
 }
 
 /* ----------------------- IMAGES ----------------------- */
-.bg-img, .bg-img-left, .bg-img-bottom, .bg-img-right, .bg-img-top {
+.bg-img, .projectCards, .bg-img-left, .bg-img-bottom, .bg-img-right, .bg-img-top {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -642,4 +642,80 @@ footer .socials {
   }
 }
 
-/*# sourceMappingURL=general.css.map */
+#completed, #ongoing {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+@media screen and (max-width: 768px) {
+  #completed, #ongoing {
+    padding: 50px;
+  }
+}
+
+/* ----------------------- PROJECT CAROUSEL ----------------------- */
+.carousel .carousel-control-prev {
+  display: none;
+}
+.carousel .carousel-control-prev, .carousel .carousel-control-next {
+  background-color: #050b1e;
+  width: 50px;
+}
+.carousel .carousel-inner {
+  padding: 0 50px;
+}
+
+.projectCards {
+  width: 50%;
+  height: 90%;
+  border: solid #FAD6A5 5px;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .projectCards {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    width: 75%;
+    height: 95%;
+  }
+}
+.projectCards:hover {
+  transform: scale(1.03) !important;
+}
+
+.projectCardsHeight {
+  height: 60% !important;
+}
+
+.horizontalScrollWrap {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100vw !important;
+  scroll-snap-type: x mandatory;
+}
+.horizontalScrollWrap::-webkit-scrollbar {
+  width: 0;
+}
+
+.projectCardsGutter {
+  flex: 0 0 auto;
+  width: 50px;
+  height: 100%;
+}
+
+.ritzCarlton {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/RitzCarlton/Bedroom1.jpg");
+}
+
+.kitezHotel {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/KitezHotel/LobbyLights.jpg");
+}
+
+.doreenHeadOffice {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/Doreen/BoardRoom.jpg");
+}
+
+.luxuryPenthouse {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/SyedResidence/DiningRoom.jpg");
+}
+
+/*# sourceMappingURL=projects.css.map */

@@ -27,10 +27,10 @@ section, p {
   background-color: #050b1e;
 }
 
-.champagne, footer a {
+.champagne, .services-back, footer a {
   color: #FAD6A5;
 }
-.champagne:hover, footer a:hover {
+.champagne:hover, .services-back:hover, footer a:hover {
   color: #FAD6A5;
 }
 
@@ -38,10 +38,10 @@ section, p {
   background-color: #FAD6A5;
 }
 
-.white {
+.white, .services-description, .services-title {
   color: white;
 }
-.white:hover {
+.white:hover, .services-description:hover, .services-title:hover {
   color: white;
 }
 
@@ -83,11 +83,11 @@ section, p {
   }
 }
 
-.f-2 {
+.f-2, .services-description {
   font-size: 26px;
 }
 @media screen and (max-width: 768px) {
-  .f-2 {
+  .f-2, .services-description {
     font-size: 20px;
   }
 }
@@ -101,11 +101,11 @@ section, p {
   }
 }
 
-.f-4 {
+.f-4, .services-title {
   font-size: 38px;
 }
 @media screen and (max-width: 768px) {
-  .f-4 {
+  .f-4, .services-title {
     font-size: 32px;
   }
 }
@@ -124,7 +124,9 @@ section, p {
 }
 
 /* ----------------------- SIZES ----------------------- */
-.use-full, .carousel-item {
+.use-full, #services-architecture, #services-architecture-sm,
+#services-urban, #services-urban-sm,
+#services-interior, #services-interior-sm, #services-selection-sm, .carousel-item {
   width: 100% !important;
   height: 100% !important;
 }
@@ -152,11 +154,11 @@ section, p {
   }
 }
 
-.p-carousel {
+.p-carousel, #top-carousel-slide1, #top-carousel-slide2, #top-carousel-slide3 {
   padding: 80px;
 }
 @media screen and (max-width: 768px) {
-  .p-carousel {
+  .p-carousel, #top-carousel-slide1, #top-carousel-slide2, #top-carousel-slide3 {
     padding: 40px;
   }
 }
@@ -197,11 +199,15 @@ section, p {
   }
 }
 
-.p-lg {
+.p-lg, #services-architecture, #services-architecture-sm,
+#services-urban, #services-urban-sm,
+#services-interior, #services-interior-sm {
   padding: 2em !important;
 }
 @media screen and (max-width: 768px) {
-  .p-lg {
+  .p-lg, #services-architecture, #services-architecture-sm,
+#services-urban, #services-urban-sm,
+#services-interior, #services-interior-sm {
     padding: 1em !important;
   }
 }
@@ -298,7 +304,9 @@ section, p {
 }
 
 /* ----------------------- ORIENTATIONS ----------------------- */
-.dflex-col, header .screen-sm .drop-down, .button, .dflex-row, a.text-arrow .text, .dflex-left, .dflex-right, .dflex-bottom, .dflex-top {
+.dflex-col, #services-architecture, #services-architecture-sm,
+#services-urban, #services-urban-sm,
+#services-interior, #services-interior-sm, #services-selection-sm, header .screen-sm .drop-down, .button, .dflex-row, a.text-arrow .text, .dflex-left, .dflex-right, .dflex-bottom, .dflex-top {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -350,10 +358,10 @@ a.text-arrow .arrow {
 a.text-arrow:hover .arrow {
   opacity: 1;
 }
-a.text-arrow:hover .arrow.f-4 {
+a.text-arrow:hover .arrow.f-4, a.text-arrow:hover .arrow.services-title {
   margin-left: 20px;
 }
-a.text-arrow:hover .arrow.f-4.left {
+a.text-arrow:hover .arrow.f-4.left, a.text-arrow:hover .arrow.left.services-title {
   margin-left: 0;
   margin-right: 20px;
 }
@@ -364,10 +372,10 @@ a.text-arrow:hover .arrow.f-3.left, a.text-arrow:hover header .arrow.left.title,
   margin-left: 0;
   margin-right: 15px;
 }
-a.text-arrow:hover .arrow.f-2 {
+a.text-arrow:hover .arrow.f-2, a.text-arrow:hover .arrow.services-description {
   margin-left: 10px;
 }
-a.text-arrow:hover .arrow.f-2.left {
+a.text-arrow:hover .arrow.f-2.left, a.text-arrow:hover .arrow.left.services-description {
   margin-left: 0;
   margin-right: 10px;
 }
@@ -399,19 +407,19 @@ a.text-underline:hover:before {
   visibility: visible;
   width: 100%;
 }
-a.text-underline.champagne:before, footer a.text-underline:before {
+a.text-underline.champagne:before, a.text-underline.services-back:before, footer a.text-underline:before {
   background-color: #FAD6A5;
 }
 
 .arrow {
   opacity: 0;
 }
-.arrow.f-4 {
+.arrow.f-4, .arrow.services-title {
   width: 38px;
   margin-left: -38px;
 }
 @media screen and (max-width: 768px) {
-  .arrow.f-4 {
+  .arrow.f-4, .arrow.services-title {
     width: 32px;
     margin-left: -32px;
   }
@@ -426,12 +434,12 @@ a.text-underline.champagne:before, footer a.text-underline:before {
     margin-left: -26px;
   }
 }
-.arrow.f-2 {
+.arrow.f-2, .arrow.services-description {
   width: 26px;
   margin-left: -26px;
 }
 @media screen and (max-width: 768px) {
-  .arrow.f-2 {
+  .arrow.f-2, .arrow.services-description {
     width: 20px;
     margin-left: -20px;
   }
@@ -455,10 +463,10 @@ a.text-underline.champagne:before, footer a.text-underline:before {
   background-color: transparent;
   border-radius: 3em;
 }
-.button.champagne, footer a.button {
+.button.champagne, .button.services-back, footer a.button {
   border: solid #FAD6A5 3px;
 }
-.button.champagne:hover, footer a.button:hover {
+.button.champagne:hover, .button.services-back:hover, footer a.button:hover {
   color: #050b1e;
   background-color: #FAD6A5;
 }
@@ -477,7 +485,9 @@ a.text-underline.champagne:before, footer a.text-underline:before {
 }
 
 /* ----------------------- IMAGES ----------------------- */
-.bg-img, .bg-img-left, .bg-img-bottom, .bg-img-right, .bg-img-top {
+.bg-img, #services-architecture, #services-architecture-sm,
+#services-urban, #services-urban-sm,
+#services-interior, #services-interior-sm, #card-img1, #card-img2, #card-img3, #project-carousel-slide1, #project-carousel-slide2, #project-carousel-slide3, #top-carousel-slide1, #top-carousel-slide2, #top-carousel-slide3, .bg-img-left, .bg-img-bottom, .bg-img-right, .bg-img-top {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -642,4 +652,121 @@ footer .socials {
   }
 }
 
-/*# sourceMappingURL=general.css.map */
+/* ----------------------- TOP CAROUSEL ----------------------- */
+#top-carousel-slide1, #top-carousel-slide2, #top-carousel-slide3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Doreen/CEOOffice.jpg");
+}
+
+#top-carousel-slide2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/KitezHotel/LobbyWall.jpg");
+}
+
+#top-carousel-slide3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/RitzCarlton/DiningRoom.jpg");
+}
+
+#top-carousel-slide1-text, #project-carousel-slide1-text {
+  opacity: 1;
+}
+
+#top-carousel-slide2-text, #top-carousel-slide3-text, #project-carousel-slide2-text, #project-carousel-slide3-text {
+  opacity: 0;
+}
+
+#project-carousel-slide1, #project-carousel-slide2, #project-carousel-slide3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/Doreen/ChairmanRoom.jpg");
+}
+
+#project-carousel-slide2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/KitezHotel/LobbyWall.jpg");
+}
+
+#project-carousel-slide3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/RitzCarlton/Bedroom1.jpg");
+}
+
+/* ----------------------- CARDS ----------------------- */
+#card-img1 .text-slide, #card-img2 .text-slide, #card-img3 .text-slide {
+  opacity: 0;
+}
+#card-img1 .button, #card-img2 .button, #card-img3 .button {
+  opacity: 0;
+  z-index: 2;
+}
+
+#card-img1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Doreen/GalleryStaircase.jpg");
+  background-position: center 80%;
+}
+
+#card-img2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/RitzCarlton/Bedroom1.jpg");
+  background-position: center 80%;
+}
+
+#card-img3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/SyedResidence/Foyer.jpg");
+  background-position: 70% 70%;
+}
+
+/* ----------------------- SERVICES ----------------------- */
+#services {
+  position: relative;
+}
+
+#services-selection-sm {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#services-sm {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#services-architecture, #services-architecture-sm,
+#services-urban, #services-urban-sm,
+#services-interior, #services-interior-sm {
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#services-architecture {
+  opacity: 1;
+  z-index: 2;
+}
+
+#services-urban .services-title, #services-interior .services-title {
+  opacity: 0;
+}
+#services-urban .services-description, #services-interior .services-description {
+  opacity: 0;
+}
+
+#services-architecture, #services-architecture-sm {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Doreen/Atrium.jpg");
+}
+
+#services-urban, #services-urban-sm {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/KitezHotel/LobbyWide.jpg");
+}
+
+#services-interior, #services-interior-sm {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Doreen/OpenOffice.jpg");
+}
+
+.services-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=index.css.map */
