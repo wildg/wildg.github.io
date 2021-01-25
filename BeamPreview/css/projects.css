@@ -92,11 +92,11 @@ section, p {
   }
 }
 
-.f-3, header .title {
+.f-3, .projectCards-text, header .title {
   font-size: 32px;
 }
 @media screen and (max-width: 768px) {
-  .f-3, header .title {
+  .f-3, .projectCards-text, header .title {
     font-size: 26px;
   }
 }
@@ -119,12 +119,12 @@ section, p {
   }
 }
 
-.f-bold, header .title {
+.f-bold, .projectCards-text, header .title {
   font-weight: bold;
 }
 
 /* ----------------------- SIZES ----------------------- */
-.use-full, .carousel-item {
+.use-full, .horizontalScrollWrap, .carousel-item {
   width: 100% !important;
   height: 100% !important;
 }
@@ -152,11 +152,11 @@ section, p {
   }
 }
 
-.p-carousel {
+.p-carousel, #completed, #ongoing, .top-billboard {
   padding: 80px;
 }
 @media screen and (max-width: 768px) {
-  .p-carousel {
+  .p-carousel, #completed, #ongoing, .top-billboard {
     padding: 40px;
   }
 }
@@ -197,11 +197,11 @@ section, p {
   }
 }
 
-.p-lg {
+.p-lg, .projectCards {
   padding: 2em !important;
 }
 @media screen and (max-width: 768px) {
-  .p-lg {
+  .p-lg, .projectCards {
     padding: 1em !important;
   }
 }
@@ -234,12 +234,35 @@ section, p {
   }
 }
 
-.m-button {
-  margin-top: 20px !important;
+.m-title {
+  margin-bottom: 20px !important;
+}
+@media screen and (max-width: 768px) {
+  .m-title {
+    margin-bottom: 10px !important;
+  }
 }
 
-.m-text {
-  margin: 150px;
+.m-subtitle {
+  margin-bottom: 15px !important;
+}
+@media screen and (max-width: 768px) {
+  .m-subtitle {
+    margin-bottom: 7.5px !important;
+  }
+}
+
+.m-innerText {
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  .m-innerText {
+    margin-bottom: 7.5px;
+  }
+}
+
+.m-button {
+  margin-top: 20px !important;
 }
 
 .m-lg {
@@ -298,7 +321,7 @@ section, p {
 }
 
 /* ----------------------- ORIENTATIONS ----------------------- */
-.dflex-col, header .screen-sm .drop-down, .button, .dflex-row, a.text-arrow .text, .dflex-left, .projectCards, .dflex-right, .dflex-bottom, .dflex-top {
+.dflex-col, #completed, #ongoing, header .screen-sm .drop-down, .button, .dflex-row, a.text-arrow .text, a.text-arrow .projectCards-text, .dflex-left, .projectCards-text, .projectCards, .horizontalScrollWrap, .top-billboard, .dflex-right, .dflex-bottom, .dflex-top {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -316,7 +339,7 @@ section, p {
   justify-content: flex-end;
 }
 
-.dflex-row, a.text-arrow .text, .dflex-left, .projectCards, .dflex-right {
+.dflex-row, a.text-arrow .text, a.text-arrow .projectCards-text, .dflex-left, .projectCards-text, .projectCards, .horizontalScrollWrap, .top-billboard, .dflex-right {
   flex-direction: row;
 }
 
@@ -325,7 +348,7 @@ section, p {
   text-align: right;
 }
 
-.dflex-left, .projectCards {
+.dflex-left, .projectCards-text, .projectCards, .horizontalScrollWrap, .top-billboard {
   justify-content: flex-start !important;
   text-align: left !important;
 }
@@ -340,7 +363,7 @@ a.text-arrow {
   padding: 10px;
   margin: 10px;
 }
-a.text-arrow .text {
+a.text-arrow .text, a.text-arrow .projectCards-text {
   transition: ease-in-out 0.2s;
 }
 a.text-arrow .arrow {
@@ -357,10 +380,10 @@ a.text-arrow:hover .arrow.f-4.left {
   margin-left: 0;
   margin-right: 20px;
 }
-a.text-arrow:hover .arrow.f-3, a.text-arrow:hover header .arrow.title, header a.text-arrow:hover .arrow.title {
+a.text-arrow:hover .arrow.f-3, a.text-arrow:hover .arrow.projectCards-text, a.text-arrow:hover header .arrow.title, header a.text-arrow:hover .arrow.title {
   margin-left: 15px;
 }
-a.text-arrow:hover .arrow.f-3.left, a.text-arrow:hover header .arrow.left.title, header a.text-arrow:hover .arrow.left.title {
+a.text-arrow:hover .arrow.f-3.left, a.text-arrow:hover .arrow.left.projectCards-text, a.text-arrow:hover header .arrow.left.title, header a.text-arrow:hover .arrow.left.title {
   margin-left: 0;
   margin-right: 15px;
 }
@@ -416,12 +439,12 @@ a.text-underline.champagne:before, a.text-underline.projectCards:before, footer 
     margin-left: -32px;
   }
 }
-.arrow.f-3, header .arrow.title {
+.arrow.f-3, .arrow.projectCards-text, header .arrow.title {
   width: 32px;
   margin-left: -32px;
 }
 @media screen and (max-width: 768px) {
-  .arrow.f-3, header .arrow.title {
+  .arrow.f-3, .arrow.projectCards-text, header .arrow.title {
     width: 26px;
     margin-left: -26px;
   }
@@ -477,7 +500,7 @@ a.text-underline.champagne:before, a.text-underline.projectCards:before, footer 
 }
 
 /* ----------------------- IMAGES ----------------------- */
-.bg-img, .projectCards, .bg-img-left, .bg-img-bottom, .bg-img-right, .bg-img-top {
+.bg-img, .projectCards, .top-billboard, .bg-img-left, .bg-img-bottom, .bg-img-right, .bg-img-top {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -501,7 +524,7 @@ a.text-underline.champagne:before, a.text-underline.projectCards:before, footer 
 
 /* ----------------------- HEADER ----------------------- */
 .header-space {
-  height: 90px !important;
+  height: 75px !important;
 }
 @media screen and (max-width: 768px) {
   .header-space {
@@ -601,7 +624,7 @@ footer .socials {
 }
 
 /* ----------------------- BILLBOARDS ----------------------- */
-.billboard-lg {
+.billboard-lg, #completed, #ongoing, .top-billboard {
   width: 100% !important;
   height: 100vh !important;
   scroll-snap-align: center;
@@ -664,6 +687,24 @@ footer .socials {
   padding: 0 50px;
 }
 
+/* ----------------------- PROJECT HORIZONTAL ----------------------- */
+.horizontalScrollWrap {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100vw !important;
+  scroll-snap-type: x mandatory;
+}
+.horizontalScrollWrap::-webkit-scrollbar {
+  width: 0;
+}
+
+.projectCardsGutter {
+  flex: 0 0 auto;
+  width: 50px;
+  height: 100%;
+}
+
+/* ----------------------- PROJECT CARDS ----------------------- */
 .projectCards {
   width: 50%;
   height: 90%;
@@ -686,24 +727,19 @@ footer .socials {
   height: 60% !important;
 }
 
-.horizontalScrollWrap {
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  width: 100vw !important;
-  scroll-snap-type: x mandatory;
-}
-.horizontalScrollWrap::-webkit-scrollbar {
-  width: 0;
+/* ----------------------- IMAGES ----------------------- */
+.top-billboard {
+  background-image: url("../images/KitezHotel/Lobby.jpg");
 }
 
-.projectCardsGutter {
-  flex: 0 0 auto;
-  width: 50px;
-  height: 100%;
+/* Ongoing Project Images */
+.starResidence {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/StarResidences/Building.jpg");
 }
 
+/* Completed Project Images */
 .ritzCarlton {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/RitzCarlton/Bedroom1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/RitzCarlton/Bedroom1.jpg");
 }
 
 .kitezHotel {
@@ -711,11 +747,11 @@ footer .socials {
 }
 
 .doreenHeadOffice {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/Doreen/BoardRoom.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Doreen/BoardRoom.jpg");
 }
 
 .luxuryPenthouse {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/SyedResidence/DiningRoom.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/SyedResidence/DiningRoom.jpg");
 }
 
 /*# sourceMappingURL=projects.css.map */

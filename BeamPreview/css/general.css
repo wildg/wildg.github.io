@@ -152,11 +152,11 @@ section, p {
   }
 }
 
-.p-carousel {
+.p-carousel, .top-billboard {
   padding: 80px;
 }
 @media screen and (max-width: 768px) {
-  .p-carousel {
+  .p-carousel, .top-billboard {
     padding: 40px;
   }
 }
@@ -234,12 +234,35 @@ section, p {
   }
 }
 
-.m-button {
-  margin-top: 20px !important;
+.m-title {
+  margin-bottom: 20px !important;
+}
+@media screen and (max-width: 768px) {
+  .m-title {
+    margin-bottom: 10px !important;
+  }
 }
 
-.m-text {
-  margin: 150px;
+.m-subtitle {
+  margin-bottom: 15px !important;
+}
+@media screen and (max-width: 768px) {
+  .m-subtitle {
+    margin-bottom: 7.5px !important;
+  }
+}
+
+.m-innerText {
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  .m-innerText {
+    margin-bottom: 7.5px;
+  }
+}
+
+.m-button {
+  margin-top: 20px !important;
 }
 
 .m-lg {
@@ -298,7 +321,7 @@ section, p {
 }
 
 /* ----------------------- ORIENTATIONS ----------------------- */
-.dflex-col, header .screen-sm .drop-down, .button, .dflex-row, a.text-arrow .text, .dflex-left, .dflex-right, .dflex-bottom, .dflex-top {
+.dflex-col, header .screen-sm .drop-down, .button, .dflex-row, a.text-arrow .text, .dflex-left, .top-billboard, .dflex-right, .dflex-bottom, .dflex-top {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -316,7 +339,7 @@ section, p {
   justify-content: flex-end;
 }
 
-.dflex-row, a.text-arrow .text, .dflex-left, .dflex-right {
+.dflex-row, a.text-arrow .text, .dflex-left, .top-billboard, .dflex-right {
   flex-direction: row;
 }
 
@@ -325,7 +348,7 @@ section, p {
   text-align: right;
 }
 
-.dflex-left {
+.dflex-left, .top-billboard {
   justify-content: flex-start !important;
   text-align: left !important;
 }
@@ -477,7 +500,7 @@ a.text-underline.champagne:before, footer a.text-underline:before {
 }
 
 /* ----------------------- IMAGES ----------------------- */
-.bg-img, .bg-img-left, .bg-img-bottom, .bg-img-right, .bg-img-top {
+.bg-img, .top-billboard, .bg-img-left, .bg-img-bottom, .bg-img-right, .bg-img-top {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -501,7 +524,7 @@ a.text-underline.champagne:before, footer a.text-underline:before {
 
 /* ----------------------- HEADER ----------------------- */
 .header-space {
-  height: 90px !important;
+  height: 75px !important;
 }
 @media screen and (max-width: 768px) {
   .header-space {
@@ -601,7 +624,7 @@ footer .socials {
 }
 
 /* ----------------------- BILLBOARDS ----------------------- */
-.billboard-lg {
+.billboard-lg, .top-billboard {
   width: 100% !important;
   height: 100vh !important;
   scroll-snap-align: center;

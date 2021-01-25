@@ -8,31 +8,31 @@ $break-lg: 992px
 $break-xl: 1200px
 
 .dashboard
-  width: 100%
+  @extend .p-md
+  @extend .w-max
 
-  //border: 5px solid $champagne
-  //border-radius: 3em
+.dashboard-item
+  @extend .p-md
+  @extend .champagne
+  @extend .dflex-col
 
-  .dashboard-item
-    @extend .p-md
-    @extend .champagne
-    @extend .dflex-col
+  img
+    margin-right: 0
+    margin-bottom: 10px
+    width: 50px
 
-    img
-      margin-bottom: 10px
-      width: 50px
+    @media screen and (max-width: 768px)
+      margin-right: 10px
+      margin-bottom: 0
+      width: 30px
 
-      @media screen and (max-width: 768px)
-        margin-right: 10px
-        margin-bottom: 0
-        width: 30px
-
-    &.screen-sm
-      @extend .dflex-left
+  @media screen and (max-width: 768px)
+    flex-direction: row
+    justify-content: flex-start !important
+    text-align: left !important
 
 .gallery-wrap
   @extend .dflex-top
-  scroll-margin-block: 30px 0
 
   .gallery
     width: calc(100% + 30px)
@@ -42,24 +42,29 @@ $break-xl: 1200px
     padding: 0
 
   .img-lg
-    padding: 15px
-    height: 400px
+    @extend .scroll-snap-center
+    @extend .p-md
+    //height: 400px
+    height: 60vh
 
   .img-md
-    padding: 15px
-    height: 400px
+    @extend .scroll-snap-center
+    @extend .p-md
+    //height: 400px
+    height: 60vh
 
     @media screen and (max-width: $break-xl)
-      height: 200px
+      //height: 200px
+      height: 30vh
 
     @media screen and (max-width: $break-xs)
-      height: 400px
+      //height: 400px
+      height: 60vh
 
   img
     @extend .use-full
     border: 5px solid $champagne
     object-fit: cover
-    margin-bottom: 20px !important
     transition: all 0.3s ease-in-out
 
     &:hover

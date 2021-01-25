@@ -27,10 +27,10 @@ section, p {
   background-color: #050b1e;
 }
 
-.champagne, .services-back, footer a {
+.champagne, .philosophy-title, footer a {
   color: #FAD6A5;
 }
-.champagne:hover, .services-back:hover, footer a:hover {
+.champagne:hover, .philosophy-title:hover, footer a:hover {
   color: #FAD6A5;
 }
 
@@ -38,10 +38,10 @@ section, p {
   background-color: #FAD6A5;
 }
 
-.white, .services-description, .services-title {
+.white, .philosophy-description {
   color: white;
 }
-.white:hover, .services-description:hover, .services-title:hover {
+.white:hover, .philosophy-description:hover {
   color: white;
 }
 
@@ -83,11 +83,11 @@ section, p {
   }
 }
 
-.f-2, .services-description {
+.f-2, .philosophy-description {
   font-size: 26px;
 }
 @media screen and (max-width: 768px) {
-  .f-2, .services-description {
+  .f-2, .philosophy-description {
     font-size: 20px;
   }
 }
@@ -101,11 +101,11 @@ section, p {
   }
 }
 
-.f-4, .services-title {
+.f-4, .philosophy-title {
   font-size: 38px;
 }
 @media screen and (max-width: 768px) {
-  .f-4, .services-title {
+  .f-4, .philosophy-title {
     font-size: 32px;
   }
 }
@@ -119,14 +119,12 @@ section, p {
   }
 }
 
-.f-bold, header .title {
+.f-bold, .philosophy-title, header .title {
   font-weight: bold;
 }
 
 /* ----------------------- SIZES ----------------------- */
-.use-full, #services-architecture, #services-architecture-sm,
-#services-urban, #services-urban-sm,
-#services-interior, #services-interior-sm, #services-selection-sm, .carousel-item {
+.use-full, #philosophies-wrap, .carousel-item {
   width: 100% !important;
   height: 100% !important;
 }
@@ -154,11 +152,11 @@ section, p {
   }
 }
 
-.p-carousel, #top-carousel-slide1, #top-carousel-slide2, #top-carousel-slide3, .top-billboard {
+.p-carousel, .top-billboard {
   padding: 80px;
 }
 @media screen and (max-width: 768px) {
-  .p-carousel, #top-carousel-slide1, #top-carousel-slide2, #top-carousel-slide3, .top-billboard {
+  .p-carousel, .top-billboard {
     padding: 40px;
   }
 }
@@ -199,24 +197,20 @@ section, p {
   }
 }
 
-.p-lg, #services-architecture, #services-architecture-sm,
-#services-urban, #services-urban-sm,
-#services-interior, #services-interior-sm {
+.p-lg {
   padding: 2em !important;
 }
 @media screen and (max-width: 768px) {
-  .p-lg, #services-architecture, #services-architecture-sm,
-#services-urban, #services-urban-sm,
-#services-interior, #services-interior-sm {
+  .p-lg {
     padding: 1em !important;
   }
 }
 
-.p-md {
+.p-md, .philosophy-description {
   padding: 1em;
 }
 @media screen and (max-width: 768px) {
-  .p-md {
+  .p-md, .philosophy-description {
     padding: 0.5em;
   }
 }
@@ -327,9 +321,7 @@ section, p {
 }
 
 /* ----------------------- ORIENTATIONS ----------------------- */
-.dflex-col, #services-architecture, #services-architecture-sm,
-#services-urban, #services-urban-sm,
-#services-interior, #services-interior-sm, #services-selection-sm, header .screen-sm .drop-down, .button, .dflex-row, a.text-arrow .text, .dflex-left, .top-billboard, .dflex-right, .dflex-bottom, .dflex-top {
+.dflex-col, #philosophies-creativity, #philosophies-consistency, #philosophies-commitment, header .screen-sm .drop-down, .button, .dflex-row, a.text-arrow .text, .dflex-left, #philosophies-wrap, .top-billboard, .dflex-right, .dflex-bottom, .dflex-top, .philosophy-writing {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -339,7 +331,7 @@ section, p {
   text-align: center;
 }
 
-.dflex-top {
+.dflex-top, .philosophy-writing {
   justify-content: flex-start;
 }
 
@@ -347,7 +339,7 @@ section, p {
   justify-content: flex-end;
 }
 
-.dflex-row, a.text-arrow .text, .dflex-left, .top-billboard, .dflex-right {
+.dflex-row, a.text-arrow .text, .dflex-left, #philosophies-wrap, .top-billboard, .dflex-right {
   flex-direction: row;
 }
 
@@ -356,7 +348,7 @@ section, p {
   text-align: right;
 }
 
-.dflex-left, .top-billboard {
+.dflex-left, #philosophies-wrap, .top-billboard {
   justify-content: flex-start !important;
   text-align: left !important;
 }
@@ -381,10 +373,10 @@ a.text-arrow .arrow {
 a.text-arrow:hover .arrow {
   opacity: 1;
 }
-a.text-arrow:hover .arrow.f-4, a.text-arrow:hover .arrow.services-title {
+a.text-arrow:hover .arrow.f-4, a.text-arrow:hover .arrow.philosophy-title {
   margin-left: 20px;
 }
-a.text-arrow:hover .arrow.f-4.left, a.text-arrow:hover .arrow.left.services-title {
+a.text-arrow:hover .arrow.f-4.left, a.text-arrow:hover .arrow.left.philosophy-title {
   margin-left: 0;
   margin-right: 20px;
 }
@@ -395,10 +387,10 @@ a.text-arrow:hover .arrow.f-3.left, a.text-arrow:hover header .arrow.left.title,
   margin-left: 0;
   margin-right: 15px;
 }
-a.text-arrow:hover .arrow.f-2, a.text-arrow:hover .arrow.services-description {
+a.text-arrow:hover .arrow.f-2, a.text-arrow:hover .arrow.philosophy-description {
   margin-left: 10px;
 }
-a.text-arrow:hover .arrow.f-2.left, a.text-arrow:hover .arrow.left.services-description {
+a.text-arrow:hover .arrow.f-2.left, a.text-arrow:hover .arrow.left.philosophy-description {
   margin-left: 0;
   margin-right: 10px;
 }
@@ -430,19 +422,19 @@ a.text-underline:hover:before {
   visibility: visible;
   width: 100%;
 }
-a.text-underline.champagne:before, a.text-underline.services-back:before, footer a.text-underline:before {
+a.text-underline.champagne:before, a.text-underline.philosophy-title:before, footer a.text-underline:before {
   background-color: #FAD6A5;
 }
 
 .arrow {
   opacity: 0;
 }
-.arrow.f-4, .arrow.services-title {
+.arrow.f-4, .arrow.philosophy-title {
   width: 38px;
   margin-left: -38px;
 }
 @media screen and (max-width: 768px) {
-  .arrow.f-4, .arrow.services-title {
+  .arrow.f-4, .arrow.philosophy-title {
     width: 32px;
     margin-left: -32px;
   }
@@ -457,12 +449,12 @@ a.text-underline.champagne:before, a.text-underline.services-back:before, footer
     margin-left: -26px;
   }
 }
-.arrow.f-2, .arrow.services-description {
+.arrow.f-2, .arrow.philosophy-description {
   width: 26px;
   margin-left: -26px;
 }
 @media screen and (max-width: 768px) {
-  .arrow.f-2, .arrow.services-description {
+  .arrow.f-2, .arrow.philosophy-description {
     width: 20px;
     margin-left: -20px;
   }
@@ -486,10 +478,10 @@ a.text-underline.champagne:before, a.text-underline.services-back:before, footer
   background-color: transparent;
   border-radius: 3em;
 }
-.button.champagne, .button.services-back, footer a.button {
+.button.champagne, .button.philosophy-title, footer a.button {
   border: solid #FAD6A5 3px;
 }
-.button.champagne:hover, .button.services-back:hover, footer a.button:hover {
+.button.champagne:hover, .button.philosophy-title:hover, footer a.button:hover {
   color: #050b1e;
   background-color: #FAD6A5;
 }
@@ -508,9 +500,7 @@ a.text-underline.champagne:before, a.text-underline.services-back:before, footer
 }
 
 /* ----------------------- IMAGES ----------------------- */
-.bg-img, #services-architecture, #services-architecture-sm,
-#services-urban, #services-urban-sm,
-#services-interior, #services-interior-sm, #card-img1, #card-img2, #card-img3, #project-carousel-slide1, #project-carousel-slide2, #project-carousel-slide3, #top-carousel-slide1, #top-carousel-slide2, #top-carousel-slide3, .top-billboard, .bg-img-left, .bg-img-bottom, .bg-img-right, .bg-img-top {
+.bg-img, #philosophies-creativity, #philosophies-consistency, #philosophies-commitment, .top-billboard, .bg-img-left, .bg-img-bottom, .bg-img-right, .bg-img-top {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -675,121 +665,72 @@ footer .socials {
   }
 }
 
-/* ----------------------- TOP CAROUSEL ----------------------- */
-#top-carousel-slide1, #top-carousel-slide2, #top-carousel-slide3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Doreen/CEOOffice.jpg");
+.top-billboard {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/Doreen/MDRoom.jpg");
 }
 
-#top-carousel-slide2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/KitezHotel/LobbyWall.jpg");
+@media screen and (max-width: 767px) {
+  #philosophies-wrap {
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    text-align: center !important;
+  }
 }
 
-#top-carousel-slide3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/RitzCarlton/DiningRoom.jpg");
+#philosophies-creativity, #philosophies-consistency, #philosophies-commitment {
+  width: 33.33%;
+  height: 100%;
+  transition: ease-in-out 0.3s;
 }
-
-#top-carousel-slide1-text, #project-carousel-slide1-text {
+#philosophies-creativity:hover, #philosophies-consistency:hover, #philosophies-commitment:hover {
+  width: 60%;
+  height: 100%;
+}
+#philosophies-creativity:hover .philosophy-title, #philosophies-consistency:hover .philosophy-title, #philosophies-commitment:hover .philosophy-title {
+  transition: 0.3s ease-in 0.2s;
+  margin-bottom: 35px;
+}
+#philosophies-creativity:hover .philosophy-description, #philosophies-consistency:hover .philosophy-description, #philosophies-commitment:hover .philosophy-description {
+  transition: 0.3s ease-in 0.2s;
+  margin-top: 35px;
   opacity: 1;
 }
-
-#top-carousel-slide2-text, #top-carousel-slide3-text, #project-carousel-slide2-text, #project-carousel-slide3-text {
-  opacity: 0;
+@media screen and (max-width: 767px) {
+  #philosophies-creativity, #philosophies-consistency, #philosophies-commitment {
+    width: 100%;
+    height: 33.33%;
+  }
+  #philosophies-creativity:hover, #philosophies-consistency:hover, #philosophies-commitment:hover {
+    width: 100%;
+    height: 60%;
+  }
 }
 
-#project-carousel-slide1, #project-carousel-slide2, #project-carousel-slide3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/Doreen/ChairmanRoom.jpg");
+#philosophies-creativity {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/KitezHotel/Vertical/Lobby_Vertical.jpg");
 }
 
-#project-carousel-slide2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/KitezHotel/LobbyWall.jpg");
+#philosophies-consistency {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/Doreen/Vertical/Reception2_Vertical.jpg");
 }
 
-#project-carousel-slide3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/RitzCarlton/Bedroom1.jpg");
+#philosophies-commitment {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/KitezHotel/Outside.jpg");
 }
 
-/* ----------------------- CARDS ----------------------- */
-#card-img1 .text-slide, #card-img2 .text-slide, #card-img3 .text-slide {
-  opacity: 0;
-}
-#card-img1 .button, #card-img2 .button, #card-img3 .button {
-  opacity: 0;
-  z-index: 2;
-}
-
-#card-img1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Doreen/GalleryStaircase.jpg");
-  background-position: center 80%;
-}
-
-#card-img2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/RitzCarlton/Bedroom1.jpg");
-  background-position: center 80%;
-}
-
-#card-img3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/SyedResidence/Foyer.jpg");
-  background-position: 70% 70%;
-}
-
-/* ----------------------- SERVICES ----------------------- */
-#services {
+.philosophy-writing {
+  width: 100%;
   position: relative;
 }
 
-#services-selection-sm {
-  position: absolute;
-  top: 0;
-  right: 0;
+.philosophy-title {
+  transition: ease-out 0.1s;
 }
 
-#services-sm {
+.philosophy-description {
   position: absolute;
-  top: 0;
-  left: 100%;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-#services-architecture, #services-architecture-sm,
-#services-urban, #services-urban-sm,
-#services-interior, #services-interior-sm {
   opacity: 0;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
+  transition: ease-out 0.1s;
 }
 
-#services-architecture {
-  opacity: 1;
-  z-index: 2;
-}
-
-#services-urban .services-title, #services-interior .services-title {
-  opacity: 0;
-}
-#services-urban .services-description, #services-interior .services-description {
-  opacity: 0;
-}
-
-#services-architecture, #services-architecture-sm {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Doreen/Atrium.jpg");
-}
-
-#services-urban, #services-urban-sm {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/KitezHotel/LobbyWide.jpg");
-}
-
-#services-interior, #services-interior-sm {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Doreen/OpenOffice.jpg");
-}
-
-.services-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=philosophy.css.map */

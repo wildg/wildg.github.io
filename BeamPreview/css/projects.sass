@@ -2,6 +2,9 @@
 @import 'general'
 
 #completed, #ongoing
+  @extend .p-carousel
+  @extend .dflex-col
+  @extend .billboard-lg
   padding-bottom: 0
   padding-top: 0
 
@@ -20,10 +23,29 @@
   .carousel-inner
     padding: 0 50px
 
+/* ----------------------- PROJECT HORIZONTAL ----------------------- */
+.horizontalScrollWrap
+  @extend .dflex-left
+  @extend .use-full
+  flex-wrap: nowrap
+  overflow-x: auto
+  width: 100vw !important
+  scroll-snap-type: x mandatory
+
+  &::-webkit-scrollbar
+    width: 0
+
+.projectCardsGutter
+  flex: 0 0 auto
+  width: 50px
+  height: 100%
+
+/* ----------------------- PROJECT CARDS ----------------------- */
 .projectCards
   @extend .dflex-left
   @extend .bg-img
   @extend .champagne
+  @extend .p-lg
   width: 50%
   height: 90%
 
@@ -39,31 +61,32 @@
   &:hover
     transform: scale(1.03) !important
 
+.projectCards-text
+  @extend .dflex-left
+  @extend .f-3
+  @extend .f-bold
+  @extend .text
+
 .projectCardsHeight
   height: 60% !important
 
-.horizontalScrollWrap
-  flex-wrap: nowrap
-  overflow-x: auto
-  width: 100vw !important
-  scroll-snap-type: x mandatory
+/* ----------------------- IMAGES ----------------------- */
+.top-billboard
+  background-image: url('../images/KitezHotel/Lobby.jpg')
 
-  &::-webkit-scrollbar
-    width: 0
+/* Ongoing Project Images */
+.starResidence
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/StarResidences/Building.jpg')
 
-.projectCardsGutter
-  flex: 0 0 auto
-  width: 50px
-  height: 100%
-
+/* Completed Project Images */
 .ritzCarlton
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/RitzCarlton/Bedroom1.jpg')
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../images/RitzCarlton/Bedroom1.jpg')
 
 .kitezHotel
   background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/KitezHotel/LobbyLights.jpg')
 
 .doreenHeadOffice
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/Doreen/BoardRoom.jpg')
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../images/Doreen/BoardRoom.jpg')
 
 .luxuryPenthouse
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/SyedResidence/DiningRoom.jpg')
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../images/SyedResidence/DiningRoom.jpg')

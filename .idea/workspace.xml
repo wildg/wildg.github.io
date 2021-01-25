@@ -23,17 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32fe60f7-3bad-446a-a569-a52583a1759c" name="Default Changelist" comment="Small Data Vis Fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Callysto1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ConnectFour copy 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/UnicoPower copy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/UnicoPower.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/name.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCSS/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/myCSS/general.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCSS/general.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/myCSS/general.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCSS/general.sass" beforeDir="false" afterPath="$PROJECT_DIR$/myCSS/general.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +143,9 @@
       <workItem from="1608414274917" duration="835000" />
       <workItem from="1608420128363" duration="2024000" />
       <workItem from="1610484630438" duration="5000" />
-      <workItem from="1611297723127" duration="4414000" />
+      <workItem from="1611297723127" duration="4706000" />
+      <workItem from="1611345494702" duration="598000" />
+      <workItem from="1611354182960" duration="74000" />
     </task>
     <task id="LOCAL-00001" summary="Small Data Vis Fixes">
       <created>1606676216532</created>
