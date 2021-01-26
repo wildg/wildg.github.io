@@ -1,0 +1,70 @@
+// Import the general file
+@import 'general'
+
+.top-billboard
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/Doreen/MDRoom.jpg')
+
+#philosophies-wrap
+  @extend .use-full
+  @extend .dflex-left
+
+  @media screen and (max-width: 767px)
+    flex-direction: column !important
+    justify-content: flex-start !important
+    text-align: center !important
+
+#philosophies-creativity, #philosophies-consistency, #philosophies-commitment
+  @extend .dflex-col
+  @extend .bg-img
+  width: 33.33%
+  height: 100%
+  transition: ease-in-out 0.3s
+
+  &:hover
+    width: 60%
+    height: 100%
+
+    .philosophy-title
+      transition: 0.3s ease-in 0.2s
+      margin-bottom: 35px
+
+    .philosophy-description
+      transition: 0.3s ease-in 0.2s
+      margin-top: 35px
+      opacity: 1
+
+  @media screen and (max-width: 767px)
+    width: 100%
+    height: 33.33%
+
+    &:hover
+      width: 100%
+      height: 60%
+
+#philosophies-creativity
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('../images/KitezHotel/Vertical/Lobby_Vertical.jpg')
+
+#philosophies-consistency
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('../images/Doreen/Vertical/Reception2_Vertical.jpg')
+
+#philosophies-commitment
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('../images/KitezHotel/Outside.jpg')
+
+.philosophy-writing
+  @extend .dflex-top
+  width: 100%
+  position: relative
+
+.philosophy-title
+  @extend .f-4
+  @extend .champagne
+  @extend .f-bold
+  transition: ease-out 0.1s
+
+.philosophy-description
+  @extend .f-2
+  @extend .white
+  @extend .p-md
+  position: absolute
+  opacity: 0
+  transition: ease-out 0.1s

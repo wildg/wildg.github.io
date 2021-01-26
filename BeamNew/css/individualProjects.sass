@@ -1,0 +1,71 @@
+// Import the general file
+@import 'general'
+
+$break-xs: 576px
+$break-sm: 576px
+$break-md: 768px
+$break-lg: 992px
+$break-xl: 1200px
+
+.dashboard
+  @extend .p-md
+  @extend .w-max
+
+.dashboard-item
+  @extend .p-md
+  @extend .champagne
+  @extend .dflex-col
+
+  img
+    margin-right: 0
+    margin-bottom: 10px
+    width: 50px
+
+    @media screen and (max-width: 768px)
+      margin-right: 10px
+      margin-bottom: 0
+      width: 30px
+
+  @media screen and (max-width: 768px)
+    flex-direction: row
+    justify-content: flex-start !important
+    text-align: left !important
+
+.gallery-wrap
+  @extend .dflex-top
+
+  .gallery
+    width: calc(100% + 30px)
+
+  .row, .col-12, .col-md-2, .col-md-4, .col-md-6
+    margin: 0
+    padding: 0
+
+  .img-lg
+    @extend .scroll-snap-center
+    @extend .p-md
+    //height: 400px
+    height: 60vh
+
+  .img-md
+    @extend .scroll-snap-center
+    @extend .p-md
+    //height: 400px
+    height: 60vh
+
+    @media screen and (max-width: $break-xl)
+      //height: 200px
+      height: 30vh
+
+    @media screen and (max-width: $break-xs)
+      //height: 400px
+      height: 60vh
+
+  img
+    @extend .use-full
+    border: 5px solid $champagne
+    object-fit: cover
+    transition: all 0.3s ease-in-out
+
+    &:hover
+      transform: scale(1.03) !important
