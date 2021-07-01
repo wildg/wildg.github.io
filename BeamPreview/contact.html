@@ -10,9 +10,6 @@
     <!--	Bootstrap	-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-            crossorigin="anonymous"></script>
 
     <!--	AnimeJS	-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
@@ -23,9 +20,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
             integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
             crossorigin="anonymous"></script>
-
-    <!--	ScrollMagic + AnimeJS	-->
-    <script src="js/animation.anime.min.js"></script>
 
     <!--	Font families	-->
     <link rel="stylesheet" href="https://use.typekit.net/cgl1qhy.css">
@@ -39,9 +33,45 @@
 <body>
 
 <header>
-    <div class="screen-lg dflex-left use-full">
-        <div class="h-100 dflex-col">
-            <a class="blue" href="index.html">
+    <div class="screen-lg use-full">
+        <a class="dflex-col ml-0" href="index.html">
+            <p class="title">
+                beam
+            </p>
+            <p class="title-under">
+                Creative Design
+            </p>
+        </a>
+        <div class="w-100 dflex-right">
+            <a class="text-underline" href="about.html">
+                About
+            </a>
+            <a class="text-underline" href="philosophy.html">
+                Philosophy
+            </a>
+            <a class="text-underline" href="portfolio.html">
+                Portfolio
+            </a>
+            <a class="text-underline" href="services.html">
+                Services
+            </a>
+            <a class="text-underline" href="research.html">
+                Research
+            </a>
+            <a class="text-underline mr-0" href="contact.html">
+                Contact
+            </a>
+        </div>
+    </div>
+    <div class="screen-sm dflex-col use-full">
+        <div class="w-100 dflex-left">
+            <div class="w-25 dflex-left">
+                <a class="burger-wrap" onclick="dropdown(this)">
+                    <div class="bun-1"></div>
+                    <div class="bun-2"></div>
+                </a>
+            </div>
+            <a class="w-50 dflex-col" href="index.html">
                 <p class="title">
                     beam
                 </p>
@@ -50,63 +80,23 @@
                 </p>
             </a>
         </div>
-        <div class="w-100 h-100 dflex-right">
-            <a class="text-underline f-0" href="about.html">
-                About
-            </a>
-            <a class="text-underline f-0" href="philosophy.html">
-                Philosophy
-            </a>
-            <a class="text-underline f-0" href="projects.html">
-                Projects
-            </a>
-            <a class="text-underline f-0" href="services.html">
-                Services
-            </a>
-            <a class="text-underline f-0" href="research.html">
-                Research
-            </a>
-            <a class="text-underline f-0" href="contact.html">
-                Contact
-            </a>
-        </div>
-    </div>
-    <div class="screen-sm dflex-col m-0 p-0 use-full">
-        <div class="w-100 dflex-left">
-            <div class="w-25 dflex-left p-md">
-                <a class="burger-wrap" onclick="dropdown(this)">
-                    <div class="bun-1"></div>
-                    <div class="bun-2"></div>
-                </a>
-            </div>
-            <div class="w-50 dflex-col">
-                <a class="blue" href="index.html">
-                    <p class="title">
-                        beam
-                    </p>
-                    <p class="title-under">
-                        Creative Design
-                    </p>
-                </a>
-            </div>
-        </div>
         <div class="drop-down dflex-col">
-            <a class="text-underline f-0" href="about.html">
+            <a class="text-underline" href="about.html">
                 About
             </a>
-            <a class="text-underline f-0" href="philosophy.html">
+            <a class="text-underline" href="philosophy.html">
                 Philosophy
             </a>
-            <a class="text-underline f-0" href="projects.html">
-                Projects
+            <a class="text-underline" href="portfolio.html">
+                Portfolio
             </a>
-            <a class="text-underline f-0" href="services.html">
+            <a class="text-underline" href="services.html">
                 Services
             </a>
-            <a class="text-underline f-0" href="research.html">
+            <a class="text-underline" href="research.html">
                 Research
             </a>
-            <a class="text-underline f-0" href="contact.html">
+            <a class="text-underline" href="contact.html">
                 Contact
             </a>
         </div>
@@ -114,99 +104,83 @@
 </header>
 
 <div class="scroll-container">
-    <section class="top-billboard" style="background-image: url('images/RitzCarlton/Bedroom1.jpg')">
-        <div class="f-5 white">
-            Get
-            <br>
-            In
-            <p class="champagne p-title f-bold">
-                Touch
-            </p>
-        </div>
-    </section>
-
     <section class="billboard-lg p-carousel dflex-col">
-        <div class="w-max dflex-col p-header">
-            <div class="dflex-left w-100 m-subtitle">
+        <div class="w-max dflex-col">
+            <div class="header-space"></div>
+            <div class="dflex-left w-100 p-subtitle">
                 <p class="f-2 champagne f-bold h-100 screen-lg" style="width: 160px">
                     Name:
                 </p>
                 <input class="inputText f-2" name="name" type="text" placeholder="Name" required>
             </div>
-            <div class="dflex-left w-100 m-subtitle">
+            <div class="dflex-left w-100 p-subtitle">
                 <p class="f-2 champagne f-bold h-100 screen-lg" style="width: 160px">
                     Email:
                 </p>
                 <input class="inputText f-2" name="email" type="email" placeholder="Email" required>
             </div>
-            <div class="dflex-left w-100 m-subtitle">
+            <div class="dflex-left w-100 p-subtitle">
                 <p class="f-2 champagne f-bold h-100 screen-lg" style="width: 160px">
                     Subject:
                 </p>
-                <input class="inputText f-2" name="email" type="email" placeholder="Subject" required>
+                <input class="inputText f-2" name="subject" type="text" placeholder="Subject" required>
             </div>
-            <div class="dflex-left w-100 m-title">
+            <div class="dflex-left w-100 p-subtitle">
                 <p class="f-2 champagne f-bold h-100 screen-lg" style="width: 160px; height: 30vh !important;">
                     Message:
                 </p>
                 <textarea class="inputText f-2" name="message" type="text" placeholder="Message" required style="min-height: 30vh"></textarea>
             </div>
-            <a class="button champagne m-button">Send</a>
+            <input class="button champagne m-button" type="submit" value="Send">
         </div>
     </section>
 
     <footer>
-        <div class="screen-lg dflex-left use-full">
-            <div class="w-50 dflex-left champagne">
-                <a class="text-underline f-0" href="terms.html">
+        <div class="screen-lg use-full">
+            <div class="w-50 dflex-left">
+                <a class="text-underline ml-0" href="terms.html">
                     Terms
                 </a>
-                <a class="text-underline f-0" href="privacy.html">
+                <a class="text-underline" href="privacy.html">
                     Privacy
                 </a>
-                <a class="text-underline f-0" href="careers.html">
+                <a class="text-underline" href="careers.html">
                     Careers
                 </a>
-                <a class="text-underline f-0" href="contact.html">
+                <a class="text-underline" href="contact.html">
                     Contact
                 </a>
             </div>
             <div class="w-50 dflex-right">
-                <a href="">
+                <a href="https://www.instagram.com/beamcreativedesign/" target="_blank">
                     <img class="socials" id="instagram" src="images/icons/Instagram.png" alt="Instagram">
                 </a>
-                <a href="">
+                <a href="" target="_blank">
                     <img class="socials" src="images/icons/LinkedIn.png" alt="LinkedIn">
-                </a>
-                <a href="">
-                    <img class="socials" src="images/icons/Twitter.png" alt="Twitter">
                 </a>
             </div>
         </div>
         <div class="screen-sm dflex-col use-full">
-            <div class="dflex-left champagne w-100">
-                <a class="text-underline f-0" href="terms.html">
+            <div class="dflex-left w-100">
+                <a class="text-underline ml-0" href="terms.html">
                     Terms
                 </a>
-                <a class="text-underline f-0" href="privacy.html">
+                <a class="text-underline" href="privacy.html">
                     Privacy
                 </a>
-                <a class="text-underline f-0" href="careers.html">
+                <a class="text-underline" href="careers.html">
                     Careers
                 </a>
-                <a class="text-underline f-0" href="contact.html">
+                <a class="text-underline" href="contact.html">
                     Contact
                 </a>
             </div>
             <div class="dflex-left w-100">
-                <a href="">
-                    <img class="socials" src="images/icons/Instagram.png" alt="Instagram">
+                <a class="ml-0" href="https://www.instagram.com/beamcreativedesign/" target="_blank">
+                    <img class="socials" src="images/icons/Instagram.png" target="_blank" alt="Instagram">
                 </a>
-                <a href="">
-                    <img class="socials" src="images/icons/LinkedIn.png" alt="LinkedIn">
-                </a>
-                <a href="">
-                    <img class="socials" src="images/icons/Twitter.png" alt="Twitter">
+                <a href="" target="_blank">
+                    <img class="socials" src="images/icons/LinkedIn.png" target="_blank" alt="LinkedIn">
                 </a>
             </div>
         </div>

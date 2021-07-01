@@ -1,1 +1,9 @@
-{"version":3,"sourceRoot":"","sources":["doreenHeadOffice.sass"],"names":[],"mappings":"AAAA;EACE","file":"doreenHeadOffice.css"}
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACb,gBAAgB,EAAE,qCAAqC;CAAG",
+    "sources": [
+        "doreenHeadOffice.sass"
+    ],
+    "names": [],
+    "file": "doreenHeadOffice.css"
+}

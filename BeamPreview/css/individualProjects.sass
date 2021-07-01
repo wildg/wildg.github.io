@@ -7,11 +7,14 @@ $break-md: 768px
 $break-lg: 992px
 $break-xl: 1200px
 
+#project-title, #project-description
+  opacity: 0
+
 .dashboard
-  @extend .p-md
   @extend .w-max
 
 .dashboard-item
+  opacity: 0
   @extend .p-md
   @extend .champagne
   @extend .dflex-col
@@ -34,31 +37,22 @@ $break-xl: 1200px
 .gallery-wrap
   @extend .dflex-top
 
-  .gallery
-    width: calc(100% + 30px)
-
   .row, .col-12, .col-md-2, .col-md-4, .col-md-6
     margin: 0
     padding: 0
 
-  .img-lg
+  .img-lg, .img-md
     @extend .scroll-snap-center
-    @extend .p-md
-    //height: 400px
-    height: 60vh
+    @extend .p-sm
+    height: 70vh
 
   .img-md
-    @extend .scroll-snap-center
-    @extend .p-md
-    //height: 400px
-    height: 60vh
-
     @media screen and (max-width: $break-xl)
-      //height: 200px
-      height: 30vh
+      scroll-snap-align: none !important
+      height: 35vh
 
     @media screen and (max-width: $break-xs)
-      //height: 400px
+      scroll-snap-align: center !important
       height: 60vh
 
   img

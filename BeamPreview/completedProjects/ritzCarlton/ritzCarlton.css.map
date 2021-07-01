@@ -1,1 +1,9 @@
-{"version":3,"sourceRoot":"","sources":["ritzCarlton.sass"],"names":[],"mappings":"AAAA;AACA;EACE","file":"ritzCarlton.css"}
+{
+    "version": 3,
+    "mappings": "AAAA,4DAA4D;AAC5D,AAAA,cAAc,CAAC;EACb,gBAAgB,EAAE,yCAAyC;CAAG",
+    "sources": [
+        "ritzCarlton.sass"
+    ],
+    "names": [],
+    "file": "ritzCarlton.css"
+}

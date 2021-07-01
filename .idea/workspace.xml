@@ -24,6 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="32fe60f7-3bad-446a-a569-a52583a1759c" name="Default Changelist" comment="Small Data Vis Fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -146,6 +147,11 @@
       <workItem from="1611297723127" duration="4706000" />
       <workItem from="1611345494702" duration="598000" />
       <workItem from="1611354182960" duration="74000" />
+      <workItem from="1614630526309" duration="1376000" />
+      <workItem from="1615172927159" duration="844000" />
+      <workItem from="1615320473028" duration="1771000" />
+      <workItem from="1616552031257" duration="474000" />
+      <workItem from="1616982959229" duration="614000" />
     </task>
     <task id="LOCAL-00001" summary="Small Data Vis Fixes">
       <created>1606676216532</created>

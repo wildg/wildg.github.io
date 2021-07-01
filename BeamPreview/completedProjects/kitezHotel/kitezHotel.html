@@ -33,13 +33,50 @@
 
     <!--	Scripts	-->
     <script defer src="../../js/general.js"></script>
+    <script defer src="../../js/individualProjects.js"></script>
 </head>
 <body>
 
 <header>
-    <div class="screen-lg dflex-left use-full">
-        <div class="h-100 dflex-col">
-            <a class="blue" href="../../index.html">
+    <div class="screen-lg use-full">
+        <a class="dflex-col ml-0" href="../../index.html">
+            <p class="title">
+                beam
+            </p>
+            <p class="title-under">
+                Creative Design
+            </p>
+        </a>
+        <div class="w-100 dflex-right">
+            <a class="text-underline" href="../../about.html">
+                About
+            </a>
+            <a class="text-underline" href="../../philosophy.html">
+                Philosophy
+            </a>
+            <a class="text-underline" href="../../portfolio.html">
+                Portfolio
+            </a>
+            <a class="text-underline" href="../../services.html">
+                Services
+            </a>
+            <a class="text-underline" href="../../research.html">
+                Research
+            </a>
+            <a class="text-underline mr-0" href="../../contact.html">
+                Contact
+            </a>
+        </div>
+    </div>
+    <div class="screen-sm dflex-col use-full">
+        <div class="w-100 dflex-left">
+            <div class="w-25 dflex-left">
+                <a class="burger-wrap" onclick="dropdown(this)">
+                    <div class="bun-1"></div>
+                    <div class="bun-2"></div>
+                </a>
+            </div>
+            <a class="w-50 dflex-col" href="../../index.html">
                 <p class="title">
                     beam
                 </p>
@@ -48,63 +85,23 @@
                 </p>
             </a>
         </div>
-        <div class="w-100 h-100 dflex-right">
-            <a class="text-underline f-0" href="../../about.html">
-                About
-            </a>
-            <a class="text-underline f-0" href="../../philosophy.html">
-                Philosophy
-            </a>
-            <a class="text-underline f-0" href="../../projects.html">
-                Projects
-            </a>
-            <a class="text-underline f-0" href="../../services.html">
-                Services
-            </a>
-            <a class="text-underline f-0" href="../../research.html">
-                Research
-            </a>
-            <a class="text-underline f-0" href="../../contact.html">
-                Contact
-            </a>
-        </div>
-    </div>
-    <div class="screen-sm dflex-col m-0 p-0 use-full">
-        <div class="w-100 dflex-left">
-            <div class="w-25 dflex-left p-md">
-                <a class="burger-wrap" onclick="dropdown(this)">
-                    <div class="bun-1"></div>
-                    <div class="bun-2"></div>
-                </a>
-            </div>
-            <div class="w-50 dflex-col">
-                <a class="blue" href="../../index.html">
-                    <p class="title">
-                        beam
-                    </p>
-                    <p class="title-under">
-                        Creative Design
-                    </p>
-                </a>
-            </div>
-        </div>
         <div class="drop-down dflex-col">
-            <a class="text-underline f-0" href="../../about.html">
+            <a class="text-underline" href="../../about.html">
                 About
             </a>
-            <a class="text-underline f-0" href="../../philosophy.html">
+            <a class="text-underline" href="../../philosophy.html">
                 Philosophy
             </a>
-            <a class="text-underline f-0" href="../../projects.html">
-                Projects
+            <a class="text-underline" href="../../portfolio.html">
+                Portfolio
             </a>
-            <a class="text-underline f-0" href="../../services.html">
+            <a class="text-underline" href="../../services.html">
                 Services
             </a>
-            <a class="text-underline f-0" href="../../research.html">
+            <a class="text-underline" href="../../research.html">
                 Research
             </a>
-            <a class="text-underline f-0" href="../../contact.html">
+            <a class="text-underline" href="../../contact.html">
                 Contact
             </a>
         </div>
@@ -123,18 +120,14 @@
     <section class="billboard-lg p-carousel dflex-col">
         <div class="dflex-left w-max p-header">
             <div>
-                <p class="f-4 champagne f-bold p-subtitle">
-                    Lorem Ipsum Dolor Sit Amet
+                <p id="project-title" class="f-4 champagne f-bold p-subtitle">
+                    Kitez Hotel Description
                 </p>
-                <p class="f-2 white p-innerText screen-lg">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum risus ac ex malesuada
-                    placerat. Nunc scelerisque augue nulla, non maximus orci varius fringilla. Pellentesque sed elit
-                    accumsan, volutpat libero ut, faucibus.
-                </p>
-                <p class="f-1 white p-innerText screen-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum risus ac ex malesuada
-                    placerat. Nunc scelerisque augue nulla, non maximus orci varius fringilla. Pellentesque sed elit
-                    accumsan, volutpat libero ut, faucibus.
+                <p id="project-description" class="f-2 white p-subtitle">
+                    Architecture renovation and interior design of this boutique design hostel located at the famous 
+                    Petaling Street of Kuala Lumpur. Our design services included architectural renovation; interior 
+                    design; FF&E design and procurement; arts and props selection, procurement and installation; and, 
+                    supervision of construction and installation.
                 </p>
             </div>
         </div>
@@ -152,7 +145,7 @@
                 <p class="f-1">
                     <b>Completion</b>
                     <br>
-                    June 2020
+                    2019
                 </p>
             </div>
             <div class="col-md-4 dashboard-item">
@@ -160,7 +153,7 @@
                 <p class="f-1">
                     <b>Organization</b>
                     <br>
-                    Private Business
+                    PNS Hospitality Sdn Bhd
                 </p>
             </div>
         </div>
@@ -200,57 +193,51 @@
     </section>
 
     <footer>
-        <div class="screen-lg dflex-left use-full">
-            <div class="w-50 dflex-left champagne">
-                <a class="text-underline f-0" href="terms.html">
+        <div class="screen-lg use-full">
+            <div class="w-50 dflex-left">
+                <a class="text-underline ml-0" href="../../terms.html">
                     Terms
                 </a>
-                <a class="text-underline f-0" href="privacy.html">
+                <a class="text-underline" href="../../privacy.html">
                     Privacy
                 </a>
-                <a class="text-underline f-0" href="careers.html">
+                <a class="text-underline" href="../../careers.html">
                     Careers
                 </a>
-                <a class="text-underline f-0" href="contact.html">
+                <a class="text-underline" href="../../contact.html">
                     Contact
                 </a>
             </div>
             <div class="w-50 dflex-right">
-                <a href="">
-                    <img class="socials" src="../../images/icons/Instagram.png" alt="Instagram">
+                <a href="https://www.instagram.com/beamcreativedesign/" target="_blank">
+                    <img class="socials" id="instagram" src="../../images/icons/Instagram.png" alt="Instagram">
                 </a>
-                <a href="">
+                <a href="" target="_blank">
                     <img class="socials" src="../../images/icons/LinkedIn.png" alt="LinkedIn">
-                </a>
-                <a href="">
-                    <img class="socials" src="../../images/icons/Twitter.png" alt="Twitter">
                 </a>
             </div>
         </div>
         <div class="screen-sm dflex-col use-full">
-            <div class="dflex-left champagne w-100">
-                <a class="text-underline f-0" href="terms.html">
+            <div class="dflex-left w-100">
+                <a class="text-underline ml-0" href="../../terms.html">
                     Terms
                 </a>
-                <a class="text-underline f-0" href="privacy.html">
+                <a class="text-underline" href="../../privacy.html">
                     Privacy
                 </a>
-                <a class="text-underline f-0" href="careers.html">
+                <a class="text-underline" href="../../careers.html">
                     Careers
                 </a>
-                <a class="text-underline f-0" href="contact.html">
+                <a class="text-underline" href="../../contact.html">
                     Contact
                 </a>
             </div>
             <div class="dflex-left w-100">
-                <a href="">
-                    <img class="socials" src="../../images/icons/Instagram.png" alt="Instagram">
+                <a class="ml-0" href="https://www.instagram.com/beamcreativedesign/" target="_blank">
+                    <img class="socials" src="../../images/icons/Instagram.png" target="_blank" alt="Instagram">
                 </a>
-                <a href="">
-                    <img class="socials" src="../../images/icons/LinkedIn.png" alt="LinkedIn">
-                </a>
-                <a href="">
-                    <img class="socials" src="../../images/icons/Twitter.png" alt="Twitter">
+                <a href="" target="_blank">
+                    <img class="socials" src="../../images/icons/LinkedIn.png" target="_blank" alt="LinkedIn">
                 </a>
             </div>
         </div>
