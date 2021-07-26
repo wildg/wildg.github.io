@@ -1,0 +1,10 @@
+.careers-text-lg-screen {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .careers-text-lg-screen {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=careers.css.map */

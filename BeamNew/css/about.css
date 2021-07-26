@@ -1,0 +1,19 @@
+#about-title {
+  margin-top: 350px;
+}
+@media screen and (max-width: 768px) {
+  #about-title {
+    margin-top: 0px;
+  }
+}
+
+.about-text-lg-screen {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .about-text-lg-screen {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

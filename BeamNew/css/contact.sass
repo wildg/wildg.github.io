@@ -6,7 +6,33 @@
   max-height: 30vh
 
   border: none
-  border-bottom: 3px solid $champagne
+  border-bottom: 3px solid $blue
 
   background-color: transparent
-  color: white
+  color: $blue
+
+.contact-map
+  height: 49%
+  margin-bottom: 0
+  padding-bottom: 0
+
+  @media screen and (max-width: 768px)
+    height: 50%
+    margin-bottom: 20px
+
+.contact-items
+  @extend .champagne
+  @extend .dflex-col
+
+  img
+    margin-right: 10px
+    margin-bottom: 10px
+    width: 50px
+
+    @media screen and (max-width: 768px)
+      margin-bottom: 0
+      width: 30px
+
+  flex-direction: row
+  justify-content: flex-start !important
+  text-align: left !important

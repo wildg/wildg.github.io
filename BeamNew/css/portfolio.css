@@ -16,10 +16,10 @@ section, p {
 }
 
 /* ----------------------- COLORS ----------------------- */
-.blue, header .screen-sm .drop-down a, header .screen-lg a {
+.blue, header a {
   color: #12283B;
 }
-.blue:hover, header .screen-sm .drop-down a:hover, header .screen-lg a:hover {
+.blue:hover, header a:hover {
   color: #12283B;
 }
 
@@ -27,10 +27,10 @@ section, p {
   background-color: #12283B;
 }
 
-.champagne, .projectCards, footer a {
+.champagne, .projectCards, .bottom-picture-title, footer a {
   color: #FAD6A5;
 }
-.champagne:hover, .projectCards:hover, footer a:hover {
+.champagne:hover, .projectCards:hover, .bottom-picture-title:hover, footer a:hover {
   color: #FAD6A5;
 }
 
@@ -65,11 +65,11 @@ section, p {
 }
 
 /* ----------------------- FONTS ----------------------- */
-.f-0 {
+.f-0, footer a, header a {
   font-size: 18px;
 }
 @media screen and (max-width: 768px) {
-  .f-0 {
+  .f-0, footer a, header a {
     font-size: 16px;
   }
 }
@@ -88,7 +88,7 @@ section, p {
 }
 @media screen and (max-width: 768px) {
   .f-2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -119,6 +119,15 @@ section, p {
   }
 }
 
+.f-6 {
+  font-size: 64px;
+}
+@media screen and (max-width: 768px) {
+  .f-6 {
+    font-size: 58px;
+  }
+}
+
 .f-bold, .projectCards-text, header .title {
   font-weight: bold;
 }
@@ -131,7 +140,7 @@ section, p {
 
 .w-max {
   width: 100%;
-  max-width: 1200px;
+  max-width: 980px;
 }
 
 .w-33 {
@@ -144,7 +153,7 @@ section, p {
 
 /* ----------------------- PADDING ----------------------- */
 .p-header {
-  padding-top: 70px !important;
+  padding-top: 75px !important;
 }
 @media screen and (max-width: 768px) {
   .p-header {
@@ -152,21 +161,21 @@ section, p {
   }
 }
 
-.p-carousel, #completed, #ongoing, .top-billboard {
+.p-carousel, .top-billboard {
   padding: 80px;
 }
 @media screen and (max-width: 768px) {
-  .p-carousel, #completed, #ongoing, .top-billboard {
+  .p-carousel, .top-billboard {
     padding: 40px;
   }
 }
 
-.px-carousel {
-  padding: 0 100px;
+.px-carousel, footer, header {
+  padding: 0 80px;
 }
 @media screen and (max-width: 768px) {
-  .px-carousel {
-    padding: 50px;
+  .px-carousel, footer, header {
+    padding: 0 40px;
   }
 }
 
@@ -184,15 +193,6 @@ section, p {
 }
 @media screen and (max-width: 768px) {
   .p-subtitle {
-    padding-bottom: 7.5px;
-  }
-}
-
-.p-innerText {
-  padding-bottom: 15px;
-}
-@media screen and (max-width: 768px) {
-  .p-innerText {
     padding-bottom: 7.5px;
   }
 }
@@ -225,80 +225,16 @@ section, p {
 }
 
 /* ----------------------- MARGIN ----------------------- */
-.m-carousel {
-  margin: 100px;
-}
-@media screen and (max-width: 768px) {
-  .m-carousel {
-    margin: 50px;
-  }
-}
-
-.m-title {
-  margin-bottom: 20px !important;
-}
-@media screen and (max-width: 768px) {
-  .m-title {
-    margin-bottom: 10px !important;
-  }
-}
-
-.m-subtitle {
-  margin-bottom: 15px !important;
-}
-@media screen and (max-width: 768px) {
-  .m-subtitle {
-    margin-bottom: 7.5px !important;
-  }
-}
-
-.m-innerText {
-  margin-bottom: 15px;
-}
-@media screen and (max-width: 768px) {
-  .m-innerText {
-    margin-bottom: 7.5px;
-  }
-}
-
 .m-button {
   margin-top: 20px !important;
 }
 
-.m-lg {
-  margin: 2em;
-}
-@media screen and (max-width: 768px) {
-  .m-lg {
-    margin: 1em;
-  }
+.ml-0 {
+  margin-left: 0 !important;
 }
 
-.m-md {
-  margin: 1em;
-}
-@media screen and (max-width: 768px) {
-  .m-md {
-    margin: 0.5em;
-  }
-}
-
-.mt-md {
-  margin-top: 1em;
-}
-@media screen and (max-width: 768px) {
-  .mt-md {
-    margin-top: 0.5em;
-  }
-}
-
-.m-sm {
-  margin: 0.5em;
-}
-@media screen and (max-width: 768px) {
-  .m-sm {
-    margin: 0.25em;
-  }
+.mr-0 {
+  margin-right: 0 !important;
 }
 
 /* ----------------------- SCREENS ----------------------- */
@@ -321,7 +257,7 @@ section, p {
 }
 
 /* ----------------------- ORIENTATIONS ----------------------- */
-.dflex-col, #completed, #ongoing, header .screen-sm .drop-down, .button, .dflex-row, a.text-arrow .text, a.text-arrow .projectCards-text, .dflex-left, .projectCards-text, .projectCards, .horizontalScrollWrap, .top-billboard, .dflex-right, .dflex-bottom, .dflex-top {
+.dflex-col, #completed, #ongoing, header .screen-sm .drop-down, .button, .dflex-row, a.text-arrow .text, a.text-arrow .projectCards-text, .dflex-left, .projectCards-text, .horizontalScrollWrap, .top-billboard, .dflex-right, .dflex-bottom, .projectCards, .dflex-top {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -335,11 +271,11 @@ section, p {
   justify-content: flex-start;
 }
 
-.dflex-bottom {
+.dflex-bottom, .projectCards {
   justify-content: flex-end;
 }
 
-.dflex-row, a.text-arrow .text, a.text-arrow .projectCards-text, .dflex-left, .projectCards-text, .projectCards, .horizontalScrollWrap, .top-billboard, .dflex-right {
+.dflex-row, a.text-arrow .text, a.text-arrow .projectCards-text, .dflex-left, .projectCards-text, .horizontalScrollWrap, .top-billboard, .dflex-right {
   flex-direction: row;
 }
 
@@ -348,7 +284,7 @@ section, p {
   text-align: right;
 }
 
-.dflex-left, .projectCards-text, .projectCards, .horizontalScrollWrap, .top-billboard {
+.dflex-left, .projectCards-text, .horizontalScrollWrap, .top-billboard {
   justify-content: flex-start !important;
   text-align: left !important;
 }
@@ -387,17 +323,10 @@ a.text-arrow:hover .arrow.f-3.left, a.text-arrow:hover .arrow.left.projectCards-
   margin-left: 0;
   margin-right: 15px;
 }
-a.text-arrow:hover .arrow.f-2 {
+a.text-arrow:hover .arrow.f-2, a.text-arrow:hover .arrow.f-1, a.text-arrow:hover .arrow.button, a.text-arrow:hover .arrow.f-0, a.text-arrow:hover footer a.arrow, footer a.text-arrow:hover a.arrow, a.text-arrow:hover header a.arrow, header a.text-arrow:hover a.arrow {
   margin-left: 10px;
 }
-a.text-arrow:hover .arrow.f-2.left {
-  margin-left: 0;
-  margin-right: 10px;
-}
-a.text-arrow:hover .arrow.f-1, a.text-arrow:hover .arrow.button {
-  margin-left: 10px;
-}
-a.text-arrow:hover .arrow.f-1.left, a.text-arrow:hover .arrow.left.button {
+a.text-arrow:hover .arrow.f-2.left, a.text-arrow:hover .arrow.f-1.left, a.text-arrow:hover .arrow.left.button, a.text-arrow:hover .arrow.f-0.left, a.text-arrow:hover footer a.arrow.left, footer a.text-arrow:hover a.arrow.left, a.text-arrow:hover header a.arrow.left, header a.text-arrow:hover a.arrow.left {
   margin-left: 0;
   margin-right: 10px;
 }
@@ -422,7 +351,7 @@ a.text-underline:hover:before {
   visibility: visible;
   width: 100%;
 }
-a.text-underline.champagne:before, a.text-underline.projectCards:before, footer a.text-underline:before {
+a.text-underline.champagne:before, a.text-underline.projectCards:before, a.text-underline.bottom-picture-title:before, footer a.text-underline:before {
   background-color: #FAD6A5;
 }
 
@@ -469,6 +398,16 @@ a.text-underline.champagne:before, a.text-underline.projectCards:before, footer 
     margin-left: -16px;
   }
 }
+.arrow.f-0, footer a.arrow, header a.arrow {
+  width: 16px;
+  margin-left: -16px;
+}
+@media screen and (max-width: 768px) {
+  .arrow.f-0, footer a.arrow, header a.arrow {
+    width: 16px;
+    margin-left: -16px;
+  }
+}
 
 /* ----------------------- BUTTONS ----------------------- */
 .button {
@@ -478,17 +417,17 @@ a.text-underline.champagne:before, a.text-underline.projectCards:before, footer 
   background-color: transparent;
   border-radius: 3em;
 }
-.button.champagne, .button.projectCards, footer a.button {
+.button.champagne, .button.projectCards, .button.bottom-picture-title, footer a.button {
   border: solid #FAD6A5 3px;
 }
-.button.champagne:hover, .button.projectCards:hover, footer a.button:hover {
+.button.champagne:hover, .button.projectCards:hover, .button.bottom-picture-title:hover, footer a.button:hover {
   color: #12283B;
   background-color: #FAD6A5;
 }
-.button.blue, header .screen-sm .drop-down a.button, header .screen-lg a.button {
+.button.blue, header a.button {
   border: solid #12283B 3px;
 }
-.button.blue:hover, header .screen-sm .drop-down a.button:hover, header .screen-lg a.button:hover {
+.button.blue:hover, header a.button:hover {
   color: #FAD6A5;
   background-color: #12283B;
 }
@@ -532,13 +471,24 @@ a.text-underline.champagne:before, a.text-underline.projectCards:before, footer 
   }
 }
 
+.header-logo {
+  width: 46px;
+  height: 46px;
+  margin-right: 10px !important;
+}
+@media screen and (max-width: 768px) {
+  .header-logo {
+    width: 36px;
+    height: 36px;
+  }
+}
+
 header {
   position: fixed;
   top: 0;
   width: 100%;
   background-color: #FAD6A5;
   z-index: 999;
-  padding: 0 15px;
 }
 header .screen-lg {
   height: 70px !important;
@@ -586,6 +536,7 @@ header .screen-sm .drop-down {
 }
 header .screen-sm .drop-down a {
   margin: 20px 0;
+  display: none;
   opacity: 0;
 }
 
@@ -593,7 +544,6 @@ header .screen-sm .drop-down a {
 footer {
   height: 100px;
   width: 100%;
-  padding: 0 15px;
   scroll-snap-align: start;
 }
 footer a {
@@ -630,26 +580,29 @@ footer .socials {
   scroll-snap-align: center;
 }
 
+.top-billboard {
+  position: relative;
+}
+
 /* ----------------------- CAROUSEL ----------------------- */
 .carousel-indicators li {
   width: 20px;
-  margin: 0 10px;
+  margin: 0 5px;
   color: white;
 }
 @media screen and (max-width: 768px) {
   .carousel-indicators li {
     width: 10px;
-    margin: 0 5px;
   }
 }
 
-.carousel-item .bottom-picture-title {
+.bottom-picture-title {
   position: absolute;
   right: 80px;
   bottom: 40px;
 }
 @media screen and (max-width: 768px) {
-  .carousel-item .bottom-picture-title {
+  .bottom-picture-title {
     right: 30px;
     bottom: 30px;
   }
@@ -665,26 +618,18 @@ footer .socials {
   }
 }
 
-#completed, #ongoing {
-  padding-bottom: 0;
-  padding-top: 0;
-}
-@media screen and (max-width: 768px) {
-  #completed, #ongoing {
-    padding: 50px;
-  }
-}
-
 /* ----------------------- PROJECT CAROUSEL ----------------------- */
 .carousel .carousel-control-prev {
   display: none;
 }
 .carousel .carousel-control-prev, .carousel .carousel-control-next {
   background-color: #12283B;
-  max-width: 50px;
 }
 .carousel .carousel-inner {
-  padding: 0 50px;
+  padding: 0 80px;
+}
+.carousel .active .projectCards {
+  opacity: 0;
 }
 
 /* ----------------------- PROJECT HORIZONTAL ----------------------- */
@@ -709,7 +654,7 @@ footer .socials {
   width: 50%;
   height: 90%;
   border: solid #FAD6A5 5px;
-  transition: all 0.3s;
+  transition: transform 0.3s;
 }
 @media screen and (max-width: 768px) {
   .projectCards {
@@ -721,20 +666,29 @@ footer .socials {
 }
 .projectCards:hover {
   transform: scale(1.03) !important;
+  z-index: 2;
+}
+
+.projectCards-text {
+  width: 100%;
 }
 
 .projectCardsHeight {
-  height: 60% !important;
+  height: 70% !important;
 }
 
 /* ----------------------- IMAGES ----------------------- */
 .top-billboard {
-  background-image: url("../images/KitezHotel/Lobby.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/KitezHotel/Lobby.jpg");
 }
 
 /* Ongoing Project Images */
 .starResidence {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/StarResidences/Building.jpg");
+}
+
+.sekoSuites {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/SekoSuites/Lobby.jpg");
 }
 
 /* Completed Project Images */
@@ -746,12 +700,28 @@ footer .socials {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/KitezHotel/LobbyLights.jpg");
 }
 
-.doreenHeadOffice {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Doreen/BoardRoom.jpg");
+.doreenExecutiveOffice {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/DoreenExecutiveOffice/BoardRoom.jpg");
+}
+
+.embassyPalaceApartments {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/EmbassyPalaceApartments/BoardRoom.jpg");
 }
 
 .luxuryPenthouse {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/SyedResidence/DiningRoom.jpg");
 }
 
-/*# sourceMappingURL=projects.css.map */
+.privateResidence {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/PrivateResidence/home.jpeg");
+}
+
+.doreenHeadOffice {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/DoreenHeadOffice/Lounge.jpg");
+}
+
+.saadiServicedResidences {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/SaadiServicedResidence/building.jpeg");
+}
+
+/*# sourceMappingURL=portfolio.css.map */

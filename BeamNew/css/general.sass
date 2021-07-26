@@ -73,7 +73,7 @@ section, p
   font-size: 26px
 
   @media screen and (max-width: 768px)
-    font-size: 20px
+    font-size: 18px
     //font-size: 18px
 
 .f-3
@@ -94,6 +94,12 @@ section, p
   @media screen and (max-width: 768px)
     font-size: 38px
 
+.f-6
+  font-size: 64px
+
+  @media screen and (max-width: 768px)
+    font-size: 58px
+
 .f-bold
   font-weight: bold
 
@@ -104,7 +110,7 @@ section, p
 
 .w-max
   width: 100%
-  max-width: 1200px
+  max-width: 980px
 
 .w-33
   width: 33.33%
@@ -114,7 +120,7 @@ section, p
 
 /* ----------------------- PADDING ----------------------- */
 .p-header
-  padding-top: 70px !important
+  padding-top: 75px !important
 
   @media screen and (max-width: 768px)
     padding-top: 60px !important
@@ -126,10 +132,10 @@ section, p
     padding: 40px
 
 .px-carousel
-  padding: 0 100px
+  padding: 0 80px
 
   @media screen and (max-width: 768px)
-    padding: 50px
+    padding: 0 40px
 
 .p-title
   padding-bottom: 20px
@@ -138,12 +144,6 @@ section, p
     padding-bottom: 10px
 
 .p-subtitle
-  padding-bottom: 15px
-
-  @media screen and (max-width: 768px)
-    padding-bottom: 7.5px
-
-.p-innerText
   padding-bottom: 15px
 
   @media screen and (max-width: 768px)
@@ -168,56 +168,14 @@ section, p
     padding: 0.25em
 
 /* ----------------------- MARGIN ----------------------- */
-.m-carousel
-  margin: 100px
-
-  @media screen and (max-width: 768px)
-    margin: 50px
-
-.m-title
-  margin-bottom: 20px !important
-
-  @media screen and (max-width: 768px)
-    margin-bottom: 10px !important
-
-.m-subtitle
-  margin-bottom: 15px !important
-
-  @media screen and (max-width: 768px)
-    margin-bottom: 7.5px !important
-
-.m-innerText
-  margin-bottom: 15px
-
-  @media screen and (max-width: 768px)
-    margin-bottom: 7.5px
-
 .m-button
   margin-top: 20px !important
 
-.m-lg
-  margin: 2em
+.ml-0
+  margin-left: 0 !important
 
-  @media screen and (max-width: 768px)
-    margin: 1em
-
-.m-md
-  margin: 1em
-
-  @media screen and (max-width: 768px)
-    margin: 0.5em
-
-.mt-md
-  margin-top: 1em
-
-  @media screen and (max-width: 768px)
-    margin-top: 0.5em
-
-.m-sm
-  margin: 0.5em
-
-  @media screen and (max-width: 768px)
-    margin: 0.25em
+.mr-0
+  margin-right: 0 !important
 
 /* ----------------------- SCREENS ----------------------- */
 .screen-lg
@@ -301,14 +259,7 @@ a
             margin-left: 0
             margin-right: 15px
 
-        &.f-2
-          margin-left: 10px
-
-          &.left
-            margin-left: 0
-            margin-right: 10px
-
-        &.f-1
+        &.f-2, &.f-1, &.f-0
           margin-left: 10px
 
           &.left
@@ -376,6 +327,14 @@ a
       width: 16px
       margin-left: -16px
 
+  &.f-0
+    width: 16px
+    margin-left: -16px
+
+    @media screen and (max-width: 768px)
+      width: 16px
+      margin-left: -16px
+
 /* ----------------------- BUTTONS ----------------------- */
 .button
   @extend .dflex-col
@@ -435,6 +394,15 @@ a
   @media screen and (max-width: 768px)
     height: 60px !important
 
+.header-logo
+  width: 46px
+  height: 46px
+  margin-right: 10px !important
+
+  @media screen and (max-width: 768px)
+    width: 36px
+    height: 36px
+
 header
   position: fixed
   top: 0
@@ -443,7 +411,11 @@ header
 
   background-color: $champagne
   z-index: 999
-  padding: 0 15px
+  @extend .px-carousel
+
+  a
+    @extend .blue
+    @extend .f-0
 
   .title
     @extend .f-bold
@@ -459,7 +431,6 @@ header
       font-size: 13px
 
     a
-      @extend .blue
       margin: 0 15px
 
   .screen-sm
@@ -498,8 +469,8 @@ header
       background-color: $champagne
 
       a
-        @extend .blue
         margin: 20px 0
+        display: none
         opacity: 0
 
 /* ----------------------- FOOTER ----------------------- */
@@ -507,11 +478,12 @@ footer
   height: 100px
   width: 100%
 
-  padding: 0 15px
   scroll-snap-align: start
+  @extend .px-carousel
 
   a
     @extend .champagne
+    @extend .f-0
     margin: 5px 15px
 
   .socials
@@ -543,29 +515,30 @@ footer
   @extend .bg-img
   @extend .p-carousel
   @extend .dflex-left
+  position: relative
 
 /* ----------------------- CAROUSEL ----------------------- */
 .carousel-indicators
   li
     width: 20px
-    margin: 0 10px
+    margin: 0 5px
     color: white
 
     @media screen and (max-width: 768px)
       width: 10px
-      margin: 0 5px
 
 .carousel-item
   @extend .use-full
 
-  .bottom-picture-title
-    position: absolute
-    right: 80px
-    bottom: 40px
+.bottom-picture-title
+  @extend .champagne
+  position: absolute
+  right: 80px
+  bottom: 40px
 
-    @media screen and (max-width: 768px)
-      right: 30px
-      bottom: 30px
+  @media screen and (max-width: 768px)
+    right: 30px
+    bottom: 30px
 
 .carousel-control-prev, .carousel-control-next
   opacity: 1

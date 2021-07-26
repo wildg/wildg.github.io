@@ -1,1 +1,9 @@
-{"version":3,"sourceRoot":"","sources":["kitezHotel.sass"],"names":[],"mappings":"AAAA;AACA;EACE","file":"kitezHotel.css"}
+{
+    "version": 3,
+    "mappings": "AAAA,4DAA4D;AAC5D,AAAA,cAAc,CAAC;EACb,gBAAgB,EAAE,+CAA+C;CAAG",
+    "sources": [
+        "kitezHotel.sass"
+    ],
+    "names": [],
+    "file": "kitezHotel.css"
+}

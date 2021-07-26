@@ -34,6 +34,11 @@ function dropdown(obj) {
             complete: () => {
                 dropped = false;
                 droppedAnim = false;
+
+                // Stop displaying the links
+                dropMenuLinks.forEach((elem) => {
+                    elem.style.display = "none";
+                })
             }
         }, 0).add({
             targets: dropMenuLinks,
@@ -45,6 +50,11 @@ function dropdown(obj) {
     } else {
         // Set dropped animation to true
         droppedAnim = true;
+
+        // Display the links
+        dropMenuLinks.forEach((elem) => {
+            elem.style.display = "block";
+        })
 
         // Animate the objects
         anime.timeline().add({
@@ -78,29 +88,15 @@ function dropdown(obj) {
     }
 }
 
-/* OTHER ??? */
-// var carousel = document.querySelector(".carousel")
-// carousel.addEventListener('slide.bs.carousel', (d) => {
-//
-//     var activeID = document.querySelector('.active').id;
-//     var activeTextID = document.querySelector('#' + activeID + '-text');
-//     activeTextID.style.display = 'none';
-//
-//     // If moving forward:
-//     if (d.direction === 'left') {
-//         if (activeID == 'doreen-active') {
-//             document.querySelector('#syed-active-text').style.display = "block";
-//         } else {
-//             document.querySelector('#doreen-active-text').style.display = "block";
-//         }
-//     }
-//
-//     // Otherwise:
-//     else {
-//         if (activeID == 'doreen-active') {
-//             document.querySelector('#syed-active-text').style.display = "block";
-//         } else {
-//             document.querySelector('#doreen-active-text').style.display = "block";
-//         }
-//     }
-// })
+/* TOP BILLBOARD ANIMATION */
+const topTextObj = document.querySelector('.top-billboard p');
+
+// Animate the top text
+anime({
+    targets: topTextObj,
+    delay: 100,
+    duration: 300,
+    easing: 'easeInSine',
+    translateY: [-30, 0],
+    opacity: [0, 1]
+})

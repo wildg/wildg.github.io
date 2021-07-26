@@ -2,7 +2,7 @@
 @import 'general'
 
 .top-billboard
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/Doreen/MDRoom.jpg')
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/DoreenHeadOffice/MDRoom.jpg')
 
 #philosophies-wrap
   @extend .use-full
@@ -42,13 +42,13 @@
       height: 60%
 
 #philosophies-creativity
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('../images/KitezHotel/Vertical/Lobby_Vertical.jpg')
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('../images/KitezHotel/LobbyLights.jpg')
 
 #philosophies-consistency
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('../images/Doreen/Vertical/Reception2_Vertical.jpg')
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('../images/SyedResidence/DiningRoom.jpg')
 
 #philosophies-commitment
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('../images/KitezHotel/Outside.jpg')
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),url('../images/KitezHotel/Outside.jpg')
 
 .philosophy-writing
   @extend .dflex-top
@@ -68,3 +68,82 @@
   position: absolute
   opacity: 0
   transition: ease-out 0.1s
+
+/* ----------------------- PHILOSOPHIES ----------------------- */
+#philosophies
+  position: relative
+
+#philosophies-selection-sm
+  @extend .use-full
+  @extend .dflex-col
+  position: absolute
+  top: 0
+  right: 0
+
+#philosophies-sm
+  position: absolute
+  top: 0
+  left: 100%
+
+  width: 100vw
+  height: 100vh
+  overflow: hidden
+
+#philosophies-vision, #philosophies-vision-sm,
+#philosophies-mission, #philosophies-mission-sm,
+#philosophies-values, #philosophies-values-sm
+  @extend .use-full
+  @extend .dflex-col
+  @extend .bg-img
+  @extend .p-carousel
+  opacity: 0
+  z-index: 1
+
+  position: absolute
+  top: 0
+  left: 0
+
+#philosophies-vision
+  opacity: 1
+  z-index: 2
+
+#philosophies-mission, #philosophies-values
+
+  .selection-title
+    opacity: 0
+
+  .selection-description
+    opacity: 0
+
+#philosophies-vision, #philosophies-vision-sm
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../images/DoreenHeadOffice/Atrium.jpg')
+
+#philosophies-mission, #philosophies-mission-sm
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/SekoSuites/CommonArea.jpg')
+
+#philosophies-values, #philosophies-values-sm
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('../images/DoreenHeadOffice/ViceChairman.jpg')
+  padding: 0
+  margin: 0
+
+  .philosophies-back
+    left: 10px
+    top: 10px
+
+.philosophies-back
+  @extend .champagne
+  position: absolute
+  top: -30px
+  left: -30px
+
+.selection-title
+  @extend .f-bold
+  @extend .white
+  @extend .f-4
+  @extend .p-subtitle
+
+.selection-description
+  @extend .w-max
+  @extend .white
+  @extend .f-2
+  @extend .p-subtitle

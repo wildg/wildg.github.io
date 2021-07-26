@@ -15,22 +15,22 @@ function changeServices(chosenService) {
         const activeObj = servicesObj.querySelector('#services-' + activeService),
             activeTitleObj = activeObj.querySelector('.services-title'),
             activeDescriptionObj = activeObj.querySelector('.services-description'),
-            activeButtonObj = activeObj.querySelector('.button');
+            activeListObj = activeObj.querySelector('.services-list');
         activeObj.style.zIndex = '1';
 
         // Get chosen object items
         const chosenObj = servicesObj.querySelector('#services-' + chosenService),
             chosenTitleObj = chosenObj.querySelector('.services-title'),
             chosenDescriptionObj = chosenObj.querySelector('.services-description'),
-            chosenButtonObj = chosenObj.querySelector('.button');
+            chosenListObj = chosenObj.querySelector('.services-list');
         chosenObj.style.zIndex = '2';
 
         anime.timeline().add({
-            targets: activeButtonObj,
+            targets: activeListObj,
             easing: 'easeInOutSine',
             opacity: [1, 0],
             translateY: [0, -10],
-            duration: 100
+            duration: 300
         }, 0).add({
             targets: activeDescriptionObj,
             easing: 'linear',
@@ -62,11 +62,11 @@ function changeServices(chosenService) {
             opacity: [0, 1],
             duration: 300
         }, 1300).add({
-            targets: chosenButtonObj,
+            targets: chosenListObj,
             easing: 'easeInOutSine',
             opacity: [0, 1],
             translateY: [-10, 0],
-            duration: 200,
+            duration: 300,
             complete: () => {
                 serviceChanging = false;
             }
@@ -85,14 +85,14 @@ function changeServicesSmall(chosenService) {
     const chosenObj = document.querySelector('#services-' + chosenService + '-sm'),
         chosenTitleObj = chosenObj.querySelector('.services-title'),
         chosenDescriptionObj = chosenObj.querySelector('.services-description'),
-        chosenButtonObj = chosenObj.querySelector('.button');
+        chosenListObj = chosenObj.querySelector('.services-list');
 
     chosenObj.style.zIndex = '2';
     chosenObj.style.opacity = '1';
 
     chosenTitleObj.style.opacity = '0';
     chosenDescriptionObj.style.opacity = '0';
-    chosenButtonObj.style.opacity = '0';
+    chosenListObj.style.opacity = '0';
 
     anime.timeline().add({
         targets: servicesSelectionSmallObj,
@@ -116,18 +116,18 @@ function changeServicesSmall(chosenService) {
         opacity: [0, 1],
         duration: 300
     }, 500).add({
-        targets: chosenButtonObj,
+        targets: chosenListObj,
         easing: 'easeInOutSine',
         opacity: [0, 1],
         translateY: [-10, 0],
-        duration: 200
+        duration: 300
     }, 600)
 }
 
 function servicesBack(chosenObj) {
     const chosenTitleObj = chosenObj.querySelector('.services-title'),
         chosenDescriptionObj = chosenObj.querySelector('.services-description'),
-        chosenButtonObj = chosenObj.querySelector('.button');
+        chosenListObj = chosenObj.querySelector('.services-list');
 
     anime.timeline().add({
         targets: servicesSelectionSmallObj,
@@ -145,7 +145,7 @@ function servicesBack(chosenObj) {
 
             chosenTitleObj.style.opacity = '0';
             chosenDescriptionObj.style.opacity = '0';
-            chosenButtonObj.style.opacity = '0';
+            chosenListObj.style.opacity = '0';
         }
     }, 0)
 }

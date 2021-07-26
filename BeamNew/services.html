@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Beam Creative Design | Architecture Services</title>
     <meta name="description" content="INSERT INFORMATION ABOUT WEBSITE HERE..." />
+    <link rel="icon" href="images/icons/beamLogo.png">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -21,9 +22,6 @@
             integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
             crossorigin="anonymous"></script>
 
-    <!--	ScrollMagic + AnimeJS	-->
-    <script src="js/animation.anime.min.js"></script>
-
     <!--	Font families	-->
     <link rel="stylesheet" href="https://use.typekit.net/cgl1qhy.css">
 
@@ -37,74 +35,76 @@
 <body>
 
 <header>
-    <div class="screen-lg dflex-left use-full">
-        <div class="h-100 dflex-col">
-            <a class="blue" href="index.html">
+    <div class="screen-lg use-full">
+        <a class="dflex-row ml-0" href="index.html">
+            <img class="header-logo" src="images/icons/beamLogo.png" />
+            <div class="dflex-col">
                 <p class="title">
                     beam
                 </p>
                 <p class="title-under">
                     Creative Design
                 </p>
-            </a>
-        </div>
-        <div class="w-100 h-100 dflex-right">
-            <a class="text-underline f-0" href="about.html">
+            </div>
+        </a>
+        <div class="w-100 dflex-right">
+            <a class="text-underline" href="about.html">
                 About
             </a>
-            <a class="text-underline f-0" href="philosophy.html">
+            <a class="text-underline" href="philosophy.html">
                 Philosophy
             </a>
-            <a class="text-underline f-0" href="projects.html">
-                Projects
+            <a class="text-underline" href="portfolio.html">
+                Portfolio
             </a>
-            <a class="text-underline f-0" href="services.html">
+            <a class="text-underline" href="services.html">
                 Services
             </a>
-            <a class="text-underline f-0" href="research.html">
+            <a class="text-underline" href="research.html">
                 Research
             </a>
-            <a class="text-underline f-0" href="contact.html">
+            <a class="text-underline mr-0" href="contact.html">
                 Contact
             </a>
         </div>
     </div>
-    <div class="screen-sm dflex-col m-0 p-0 use-full">
+    <div class="screen-sm dflex-col use-full">
         <div class="w-100 dflex-left">
-            <div class="w-25 dflex-left p-md">
+            <div class="w-25 dflex-left">
                 <a class="burger-wrap" onclick="dropdown(this)">
                     <div class="bun-1"></div>
                     <div class="bun-2"></div>
                 </a>
             </div>
-            <div class="w-50 dflex-col">
-                <a class="blue" href="index.html">
+            <a class="dflex-row w-50" href="index.html">
+                <img class="header-logo" src="images/icons/beamLogo.png" />
+                <div class="dflex-col">
                     <p class="title">
                         beam
                     </p>
                     <p class="title-under">
                         Creative Design
                     </p>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
         <div class="drop-down dflex-col">
-            <a class="text-underline f-0" href="about.html">
+            <a class="text-underline" href="about.html">
                 About
             </a>
-            <a class="text-underline f-0" href="philosophy.html">
+            <a class="text-underline" href="philosophy.html">
                 Philosophy
             </a>
-            <a class="text-underline f-0" href="projects.html">
-                Projects
+            <a class="text-underline" href="portfolio.html">
+                Portfolio
             </a>
-            <a class="text-underline f-0" href="services.html">
+            <a class="text-underline" href="services.html">
                 Services
             </a>
-            <a class="text-underline f-0" href="research.html">
+            <a class="text-underline" href="research.html">
                 Research
             </a>
-            <a class="text-underline f-0" href="contact.html">
+            <a class="text-underline" href="contact.html">
                 Contact
             </a>
         </div>
@@ -112,27 +112,15 @@
 </header>
 
 <div class="scroll-container">
-    <section class="top-billboard" style="background-image: url('images/RitzCarlton/Bedroom1.jpg')">
-        <div class="f-5 white">
-            Our
-            <br>
-            <p class="champagne p-title f-bold">
-                Expert
-                <br>
-                Services
-            </p>
-        </div>
-    </section>
-
     <section class="billboard-lg">
         <div class="screen-lg dflex-row use-full">
-            <div class="dflex-col w-33 h-100">
+            <div class="dflex-col w-33">
                 <p class="f-4 p-title white f-bold">
                     Services
                 </p>
                 <a class="text-arrow champagne" onclick="changeServices('architecture')">
                     <p class="text f-2">
-                        Architectural Design
+                        Architecture
                         <img class="arrow f-2" src="images/icons/r-arrow-champagne.png" alt="Arrow">
                     </p>
                 </a>
@@ -151,55 +139,62 @@
             </div>
             <div id="services" class="w-66 h-100">
                 <div id="services-architecture">
-                    <p class="services-title p-subtitle f-bold">
-                        Architectural Design
+                    <p class="services-title">
+                        Architecture
                     </p>
-                    <p class="services-description p-innerText">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor turpis sit amet mi commodo
-                        posuere. Nam quis arcu risus. Sed ac magna congue, commodo eros et, facilisis metus. Praesent tempus
-                        tellus et nunc imperdiet vestibulum.
+                    <p class="services-description">
+                        We believe in bringing positive social change through our design. Our focus is always on
+                        creating iconic timeless buildings that represents ours and our clients’ values.
+                        <br>
                     </p>
-                    <a class="button champagne m-button">
-                        Learn More
-                    </a>
+                    <ul class="services-list">
+                        <li>Site Planning</li>
+                        <li>Concept and Schematic Design</li>
+                        <li>Design, Tender and Construction Documentation</li>
+                        <li>Site Supervision</li>
+                    </ul>
                 </div>
                 <section id="services-urban">
-                    <p class="services-title p-subtitle f-bold">
+                    <p class="services-title">
                         Urban Design
                     </p>
-                    <p class="services-description p-innerText">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor turpis sit amet mi commodo
-                        posuere. Nam quis arcu risus. Sed ac magna congue, commodo eros et, facilisis metus. Praesent tempus
-                        tellus et nunc imperdiet vestibulum.
+                    <p class="services-description">
+                        Shaping sustainable communities is key to building a cohesive and vibrant urban development. We
+                        aim to promote mixed-use development for achieving greater environmental, social and economic
+                        sustainability.
                     </p>
-                    <a class="button champagne m-button">
-                        Learn More
-                    </a>
+                    <ul class="services-list">
+                        <li>Urban Design</li>
+                        <li>Master Planning</li>
+                        <li>Industrial Estate Planning</li>
+                    </ul>
                 </section>
                 <section id="services-interior">
-                    <p class="services-title p-subtitle f-bold">
+                    <p class="services-title">
                         Interior Design
                     </p>
-                    <p class="services-description p-innerText">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor turpis sit amet mi commodo
-                        posuere. Nam quis arcu risus. Sed ac magna congue, commodo eros et, facilisis metus. Praesent tempus
-                        tellus et nunc imperdiet vestibulum.
+                    <p class="services-description">
+                        We offer complete design solutions to our clients, including interior design of Hospitality,
+                        F&B, Workplace, Residential, Civic, Healthcare and Leisure projects.
                     </p>
-                    <a class="button champagne m-button">
-                        Learn More
-                    </a>
+                    <ul class="services-list">
+                        <li>Space Planning</li>
+                        <li>Concept and Schematic Design</li>
+                        <li>Design, Tender and Construction Documentation</li>
+                        <li>Site Supervision</li>
+                    </ul>
                 </section>
             </div>
         </div>
 
-        <div class="screen-sm dflex-left position-relative overflow-hidden use-full">
+        <div class="screen-sm position-relative overflow-hidden use-full">
             <div id="services-selection-sm">
                 <p class="f-4 white f-bold p-title">
                     Services
                 </p>
                 <a class="text-arrow champagne" onclick="changeServicesSmall('architecture')">
                     <p class="text f-2">
-                        Architectural Design
+                        Architecture
                         <img class="arrow f-2" src="images/icons/r-arrow-champagne.png" alt="Arrow">
                     </p>
                 </a>
@@ -226,17 +221,19 @@
                                 Back
                             </p>
                         </a>
-                        <p class="services-title p-subtitle f-bold">
-                            Architectural Design
+                        <p class="services-title">
+                            Architecture
                         </p>
-                        <p class="services-description p-innerText">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor turpis sit amet mi commodo
-                            posuere. Nam quis arcu risus. Sed ac magna congue, commodo eros et, facilisis metus. Praesent tempus
-                            tellus et nunc imperdiet vestibulum.
+                        <p class="services-description">
+                            We believe in bringing positive social change through our design. Our focus is always on
+                            creating iconic timeless buildings that represents ours and our clients’ values.
                         </p>
-                        <a class="button champagne m-button">
-                            Learn More
-                        </a>
+                        <ul class="services-list">
+                            <li>Site Planning</li>
+                            <li>Concept and Schematic Design</li>
+                            <li>Design, Tender and Construction Documentation</li>
+                            <li>Site Supervision</li>
+                        </ul>
                     </div>
                 </div>
                 <div id="services-urban-sm">
@@ -248,17 +245,19 @@
                                 Back
                             </p>
                         </a>
-                        <p class="services-title p-subtitle f-bold">
+                        <p class="services-title">
                             Urban Design
                         </p>
-                        <p class="services-description p-innerText">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor turpis sit amet mi commodo
-                            posuere. Nam quis arcu risus. Sed ac magna congue, commodo eros et, facilisis metus. Praesent tempus
-                            tellus et nunc imperdiet vestibulum.
+                        <p class="services-description">
+                            Shaping sustainable communities is key to building a cohesive and vibrant urban development.
+                            We aim to promote mixed-use development for achieving greater environmental, social and
+                            economic sustainability.
                         </p>
-                        <a class="button champagne m-button">
-                            Learn More
-                        </a>
+                        <ul class="services-list">
+                            <li>Urban Design</li>
+                            <li>Master Planning</li>
+                            <li>Industrial Estate Planning</li>
+                        </ul>
                     </div>
                 </div>
                 <div id="services-interior-sm">
@@ -270,17 +269,19 @@
                                 Back
                             </p>
                         </a>
-                        <p class="services-title p-subtitle f-bold">
+                        <p class="services-title">
                             Interior Design
                         </p>
-                        <p class="services-description p-innerText">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor turpis sit amet mi commodo
-                            posuere. Nam quis arcu risus. Sed ac magna congue, commodo eros et, facilisis metus. Praesent tempus
-                            tellus et nunc imperdiet vestibulum.
+                        <p class="services-description">
+                            We offer complete design solutions to our clients, including interior design of Hospitality,
+                            F&B, Workplace, Residential, Civic, Healthcare and Leisure projects.
                         </p>
-                        <a class="button champagne m-button">
-                            Learn More
-                        </a>
+                        <ul class="services-list">
+                            <li>Space Planning</li>
+                            <li>Concept and Schematic Design</li>
+                            <li>Design, Tender and Construction Documentation</li>
+                            <li>Site Supervision</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -288,57 +289,51 @@
     </section>
 
     <footer>
-        <div class="screen-lg dflex-left use-full">
-            <div class="w-50 dflex-left champagne">
-                <a class="text-underline f-0" href="terms.html">
+        <div class="screen-lg use-full">
+            <div class="w-50 dflex-left">
+                <a class="text-underline ml-0" href="terms.html">
                     Terms
                 </a>
-                <a class="text-underline f-0" href="privacy.html">
+                <a class="text-underline" href="privacy.html">
                     Privacy
                 </a>
-                <a class="text-underline f-0" href="careers.html">
+                <a class="text-underline" href="careers.html">
                     Careers
                 </a>
-                <a class="text-underline f-0" href="contact.html">
+                <a class="text-underline" href="contact.html">
                     Contact
                 </a>
             </div>
             <div class="w-50 dflex-right">
-                <a href="">
+                <a href="https://www.instagram.com/beamcreativedesign/" target="_blank">
                     <img class="socials" id="instagram" src="images/icons/Instagram.png" alt="Instagram">
                 </a>
-                <a href="">
+                <a href="" target="_blank">
                     <img class="socials" src="images/icons/LinkedIn.png" alt="LinkedIn">
-                </a>
-                <a href="">
-                    <img class="socials" src="images/icons/Twitter.png" alt="Twitter">
                 </a>
             </div>
         </div>
         <div class="screen-sm dflex-col use-full">
-            <div class="dflex-left champagne w-100">
-                <a class="text-underline f-0" href="terms.html">
+            <div class="dflex-left w-100">
+                <a class="text-underline ml-0" href="terms.html">
                     Terms
                 </a>
-                <a class="text-underline f-0" href="privacy.html">
+                <a class="text-underline" href="privacy.html">
                     Privacy
                 </a>
-                <a class="text-underline f-0" href="careers.html">
+                <a class="text-underline" href="careers.html">
                     Careers
                 </a>
-                <a class="text-underline f-0" href="contact.html">
+                <a class="text-underline" href="contact.html">
                     Contact
                 </a>
             </div>
             <div class="dflex-left w-100">
-                <a href="">
-                    <img class="socials" src="images/icons/Instagram.png" alt="Instagram">
+                <a class="ml-0" href="https://www.instagram.com/beamcreativedesign/" target="_blank">
+                    <img class="socials" src="images/icons/Instagram.png" target="_blank" alt="Instagram">
                 </a>
-                <a href="">
-                    <img class="socials" src="images/icons/LinkedIn.png" alt="LinkedIn">
-                </a>
-                <a href="">
-                    <img class="socials" src="images/icons/Twitter.png" alt="Twitter">
+                <a href="" target="_blank">
+                    <img class="socials" src="images/icons/LinkedIn.png" target="_blank" alt="LinkedIn">
                 </a>
             </div>
         </div>
