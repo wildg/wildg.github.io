@@ -267,32 +267,6 @@ button:hover:before {
     overflow: hidden;
 }
 
-#goodAtFalling-floor,
-#goodAtFalling-mountain,
-#goodAtFalling-sky {
-    width: 100%;
-    height: 100%;
-
-    position: absolute;
-    bottom: 0;
-
-    background-position: 60% center;
-    background-size: cover;
-
-    background-image: url("../images/GoodAtFalling/Floor-Layer.png");
-    top: 75%;
-}
-
-#goodAtFalling-mountain {
-    background-image: url("../images/GoodAtFalling/Mountaints-Layer.png");
-    top: 30%;
-}
-
-#goodAtFalling-sky {
-    background-image: url("../images/GoodAtFalling/Clouds-Layer.png");
-    top: 0;
-}
-
 .billboard-lg-wrap {
     width: 100%;
     height: 100vh;
@@ -331,7 +305,7 @@ button:hover:before {
 }
 
 #merch {
-    background-image: url("../Group 15.png");
+    background-image: url("../images/Merch/cover.png");
 }
 
 #newsLetter {

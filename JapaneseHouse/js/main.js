@@ -54,16 +54,3 @@ $("#merch").waypoint(function(direction) {
         addCurr( currIndicator );
     }
 }, {offset: "50%"});
-
-// $("#newsLetter").waypoint(function(direction) {
-//     if (direction === "down") {
-//         removeCurr( currIndicator );
-//         currIndicator = "indicator-5";
-//         addCurr( currIndicator );
-//     }
-//     if (direction === "up") {
-//         removeCurr( currIndicator );
-//         currIndicator = "indicator-4";
-//         addCurr( currIndicator );
-//     }
-// }, {offset: "50%"});
