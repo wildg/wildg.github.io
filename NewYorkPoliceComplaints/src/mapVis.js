@@ -3,13 +3,12 @@ function mapVis(data) {
         .selectAll('g')
         .data(data.features)
         .enter()
-        .append('g');
+        .append('g')
+        .attr('class', 'precinct');
 
     u.append('path')
         .attr('d', geoGenerator)
-        .attr('fill', function (d) {
-            return "white";
-        })
+        .attr('fill', 'white')
         .attr('id', function (d) {
             this.parentNode.id = d.properties.precinct.toString();
         })
@@ -17,24 +16,13 @@ function mapVis(data) {
 
     u.append('circle')
         .attr("fill", function (d) {
-            return '#ffff99';
-
-            // var precinctNumber = d.properties.precinct;
-            // var precinctData = getComplaintInfo(precinctNumber);
-            // if (precinctData === undefined) {
-            //     return affectedColor("None");
-            // }
-            // return affectedColor(precinctData.mostAffected);
-
-            // var precinctNumber = d.properties.precinct;
-            // var precinctData = getComplaintInfo(precinctNumber);
-            // if (precinctData === undefined) {
-            //     return color(0);
-            // }
-            // return color(precinctData.complaints);
+            var precinctNumber = d.properties.precinct;
+            var precinctData = getComplaintInfo(precinctNumber);
+            if (precinctData !== undefined) {
+                return affectedColor(precinctData.mostAffected);
+            }
         })
-        .attr("opacity", 0.75)
-        // .attr('display', 'none')
+        .attr("opacity", 0.70)
         .attr("cx", function (d) {
             var view = this.parentNode.getBBox();
             return view.x + (view.width / 2);
@@ -44,16 +32,13 @@ function mapVis(data) {
             return view.y + (view.height / 2);
         })
         .attr("r", function (d) {
-            // return 5;
-
             var precinctNumber = this.parentNode.id;
             var precinctData = getComplaintInfo(precinctNumber);
             if (precinctData === undefined) {
                 return 0;
             }
 
-            precinctData = precinctData.Hispanic;
-            return precinctData;
+            return precinctData.complaints / 2;
         });
 
     hello();
